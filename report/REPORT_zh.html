@@ -113,9 +113,14 @@ sinc</a></li>
 </ul></li>
 <li><a href="#到底何时积分复振幅与功率的区别" id="toc-到底何时积分复振幅与功率的区别">到底何时积分：复振幅与功率的区别</a>
 <ul>
-<li><a href="#不要直接积分某一级附近的复角谱来收集振幅" id="toc-不要直接积分某一级附近的复角谱来收集振幅">不要直接积分某一级附近的复角谱来“收集振幅”</a></li>
+<li><a href="#将一个有限角带相干积分与-rcwa-的一个级比较" id="toc-将一个有限角带相干积分与-rcwa-的一个级比较">将一个有限角带相干积分，与
+RCWA 的一个级比较</a></li>
+<li><a href="#为什么只积第一主瓣会有偏差" id="toc-为什么只积第一主瓣会有偏差">为什么只积第一主瓣会有偏差</a></li>
 <li><a href="#要计算功率就应积分带通量权重的模平方" id="toc-要计算功率就应积分带通量权重的模平方">要计算功率，就应积分带通量权重的模平方</a></li>
 <li><a href="#主瓣只占多少功率" id="toc-主瓣只占多少功率">主瓣只占多少功率</a></li>
+<li><a href="#实际例子400-周期的-1-级中心与角带两种算法" id="toc-实际例子400-周期的-1-级中心与角带两种算法">实际例子：400 周期的
++1 级，中心与角带两种算法</a></li>
+<li><a href="#通过物镜或孔径时对系统响应相干积分" id="toc-通过物镜或孔径时对系统响应相干积分">通过物镜或孔径时：对系统响应相干积分</a></li>
 </ul></li>
 <li><a href="#参考场参考面网格和时间的核验" id="toc-参考场参考面网格和时间的核验">参考场、参考面、网格和时间的核验</a>
 <ul>
@@ -137,13 +142,12 @@ sinc</a></li>
 给出各个衍射级的复振幅，而非周期边界的有限 FDTD
 给出连续角谱。究竟应取每一级中心的复数值，还是对该级附近积分？如果中心值已经吻合，旁边的
 sinc 分布又代表什么？</strong></p>
-<p>本实验只使用一个最简单的 Si 一维台阶光栅，不加入复杂
-Mark、薄膜堆栈、扫描位移、高斯照明、成像系统或信号处理应用。先把数学量定义清楚，再运行真正的
-RCWA 和全 PML FDTD，最后逐项比较。</p>
-<p><strong>直接答案预告：</strong>
-对整数周期矩形窗口，若窗内场接近无限周期响应，取精确衍射级中心的<strong>复角谱</strong>，除以窗口长度和同一参考面的入射复场，并去掉传播相位，就得到可与
-RCWA
-比较的复振幅。恢复这个系数不需要对峰附近的复角谱做无权积分。附近的主瓣和旁瓣是这个系数经过有限窗口展宽后的分布；积分其正确加权的模平方得到的是功率。</p>
+<p>本实验只使用一个最简单的 Si 一维台阶光栅，不模拟复杂
+Mark、薄膜堆栈、扫描位移、高斯照明或具体成像系统。先把数学量定义清楚，再运行真正的
+RCWA 和全 PML
+FDTD，最后逐项比较；后文用一般传递函数简述成像系统的积分方式。</p>
+<p><strong>直接答案预告：</strong> RCWA
+的一个离散级对应长有限阵列的一段角谱。对整数周期矩形窗口，级中心复角谱经长度、入射场和传播相位归一化，可以提取复系数；对这一角带的复角谱积分、处理传播相位并正确归一化，在长阵列及级间充分分离的条件下也可近似得到该系数。对角带内带通量权重的模平方积分则得到功率，不能与复场积分混淆。主瓣和旁瓣共同构成有限波束的角分布。</p>
 <p>实际验证采用 10、20、50、100、200、400
 个周期，完整保留独立的空气参考和 Si
 结构求解。另有网格及时间控制。当前最接近 RCWA 的实际工况是
@@ -327,7 +331,12 @@ Maxwell
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>L</mi></msub><annotation encoding="application/x-tex">A_L</annotation></semantics></math>
 与
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
-使用同一种长度单位。</p>
+使用同一种长度单位。本例
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>L</mi></msub><annotation encoding="application/x-tex">A_L</annotation></semantics></math>
+是在监视线事后截取中央
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">Λ</mi></mrow><annotation encoding="application/x-tex">N\Lambda</annotation></semantics></math>
+长度得到的窗谱：有限 Mark 外侧是平坦
+Si，反射场在窗外并不严格为零。因此它不自动等于整个有限器件的完整远场。若要该远场，须指定照明口径与背景定义，扩大监视器覆盖并检查截窗收敛。</p>
 <p>适合比较的无量纲复角谱是</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><msub><mi>A</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>L</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">a_L(q;d)=\frac{A_L(q;d)}{L E_{i,0}}.</annotation></semantics></math></p>
 <p>所有复数比较还要包含监视面传播相位。只看
@@ -379,7 +388,7 @@ FDTD。</p>
 <p>等价地，也可以直接在近场上作复投影：</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>r</mi><mo accent="true">̂</mo></mover><mi>j</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>β</mi><mi>j</mi></msub><mi>d</mi></mrow></msup><mrow><mi>L</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow></mfrac><msubsup><mo>∫</mo><mrow><mi>−</mi><mi>L</mi><mi>/</mi><mn>2</mn></mrow><mrow><mi>L</mi><mi>/</mi><mn>2</mn></mrow></msubsup><msub><mi>E</mi><mi>r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>q</mi><mi>j</mi></msub><mi>x</mi></mrow></msup><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\widehat r_j=\frac{e^{-i\beta_jd}}{L E_{i,0}}\int_{-L/2}^{L/2}E_r(x,d)e^{-iq_jx}\,dx.</annotation></semantics></math></p>
 <p><strong>这里已经有一次空间积分。</strong>
-它是把近场投影到平面波基上，也就是角谱的定义；它不是再对某一级附近的角谱作第二次无权积分。</p>
+它是把近场投影到平面波基上，也就是角谱的定义。下面还会给出另一种方法：对目标级的复角谱角带积分并正确归一化。两种方法在各自条件下估计同一系数，但公式和有限长度误差不同。</p>
 <p>数学正交关系对 1、10、20、200
 个整数周期都成立。因此，对精确中心的理想复幅提取，十几个整数周期已经满足正交条件；如果要求附近整段角谱的尾部很小，几百周期仍然有价值。较大的
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
@@ -397,7 +406,7 @@ FDTD。</p>
 下降；这需要数据检验，不能预先强制假设。</p>
 <p>若窗口不是整数周期，理想不同级的 sinc 在中心也会互相串扰。若用了 Hann
 等窗，分母应采用相干增益
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∫</mo><mi>w</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int w(x)dx</annotation></semantics></math>，且正交关系通常改变。此时可以联合拟合已知的窗口核，解复数线性最小二乘问题；这种拟合是明确带核和归一化的估计，不等于直接积分角谱幅值。</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∫</mo><mi>w</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int w(x)dx</annotation></semantics></math>，且正交关系通常改变。此时可以联合拟合已知的窗口核，解复数线性最小二乘问题；也可根据窗口、角带和相位定义检查积分估计的偏差。</p>
 <h1 id="需要多少周期先算旁瓣再看实际误差">需要多少周期：先算旁瓣，再看实际误差</h1>
 <h2 id="级中心与级附近要分开判断">级中心与级附近要分开判断</h2>
 <p>零级窗谱在一级<strong>精确中心</strong>
@@ -973,7 +982,44 @@ sinc 尾部。较弱级应同时检查绝对复误差和相位。</p>
 实部和虚部均可直接对照；弱二级的相对误差可比强一级更敏感。此图不使用额外拟合增益、Fresnel
 缩放或相位调参。</p>
 <h1 id="到底何时积分复振幅与功率的区别">到底何时积分：复振幅与功率的区别</h1>
-<h2 id="不要直接积分某一级附近的复角谱来收集振幅">不要直接积分某一级附近的复角谱来“收集振幅”</h2>
+<h2 id="将一个有限角带相干积分与-rcwa-的一个级比较">将一个有限角带相干积分，与
+RCWA 的一个级比较</h2>
+<p>无限周期角谱是加权
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>
+峰；有限阵列则是有宽度的复角谱。对于理想矩形窗，在分布意义下
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>L</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mrow><mi mathvariant="normal">sinc</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>−</mo><msub><mi>q</mi><mi>m</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>L</mi><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>⇀</mo><mi>δ</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>−</mo><msub><mi>q</mi><mi>m</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\frac{L}{2\pi}\operatorname{sinc}[(q-q_m)L/2]\rightharpoonup\delta(q-q_m)</annotation></semantics></math>：峰随
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+增大而变窄、变高，其归一化复面积趋于固定权重。一个 RCWA 级可以对应 FDTD
+的一个角带。以邻级中点为边界，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>m</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">[</mo><msub><mi>q</mi><mi>m</mi></msub><mo>−</mo><mi>G</mi><mi>/</mi><mn>2</mn><mo>,</mo><msub><mi>q</mi><mi>m</mi></msub><mo>+</mo><mi>G</mi><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">B_m=[q_m-G/2,q_m+G/2]</annotation></semantics></math>，在台阶顶面参考点
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>c</mi></msub><annotation encoding="application/x-tex">x_c</annotation></semantics></math>
+的带通复场可以写成</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msubsup><mover><mi>r</mi><mo accent="true">̂</mo></mover><mi>m</mi><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">d</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>c</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>q</mi><mi>m</mi></msub><msub><mi>x</mi><mi>c</mi></msub></mrow></msup><mrow><mn>2</mn><mi>π</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow></mfrac><msub><mo>∫</mo><msub><mi>B</mi><mi>m</mi></msub></msub><msub><mi>A</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><mi>β</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi></mrow></msup><msup><mi>e</mi><mrow><mi>i</mi><mi>q</mi><msub><mi>x</mi><mi>c</mi></msub></mrow></msup><mspace width="0.167em"></mspace><mi>d</mi><mi>q</mi><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">\boxed{\displaystyle \widehat r_m^{\mathrm{band}}(x_c)=\frac{e^{-iq_mx_c}}{2\pi E_{i,0}}\int_{B_m} A_L(q;d)e^{-i\beta(q)d}e^{iqx_c}\,dq.}</annotation></semantics></math></p>
+<p>先裁窗再对每个
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+移回参考面，最后在
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>c</mi></msub><annotation encoding="application/x-tex">x_c</annotation></semantics></math>
+相干叠加；公式保留复数的符号和相位。本例积分角带位于空气传播锥
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>q</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">|q|&lt;k_0</annotation></semantics></math>
+内，此处
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mrow><msubsup><mi>k</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msup><mi>q</mi><mn>2</mn></msup></mrow></msqrt><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\beta(q)=\sqrt{k_0^2-q^2}&gt;0</annotation></semantics></math>；跨截止或包含倏逝波时，传播常数分支和回传稳定性须另行处理。如果数据已经归一化为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>L</mi></msub><mo>=</mo><msub><mi>A</mi><mi>L</mi></msub><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">a_L=A_L/(LE_{i,0})</annotation></semantics></math>，上式的前因子改为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>q</mi><mi>m</mi></msub><msub><mi>x</mi><mi>c</mi></msub></mrow></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>π</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Le^{-iq_mx_c}/(2\pi)</annotation></semantics></math>。单位须统一：本文
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+用
+rad/μm、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+用 μm。若改用角度积分，则使用
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>q</mi><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mrow><mi mathvariant="normal">cos</mi><mo>⁡</mo></mrow><mi>θ</mi><mspace width="0.167em"></mspace><mi>d</mi><mi>θ</mi></mrow><annotation encoding="application/x-tex">dq=k_0\cos\theta\,d\theta</annotation></semantics></math>。</p>
+<p>若阵列足够长、目标角带包含越来越多该级旁瓣、相邻级及有限边缘的贡献足够小，且观察点位于离边缘很远的阵列内部，这个带通复场可近似对应
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>m</mi></msub><annotation encoding="application/x-tex">r_m</annotation></semantics></math>。这是<strong>有限角带估计</strong>，不是有限结构中唯一严格的级分解：结果依赖角带、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>c</mi></msub><annotation encoding="application/x-tex">x_c</annotation></semantics></math>、窗形、参考面及邻级干涉。先裁窗再回传和先回传再裁窗一般不交换；不能把有限窗谱逐
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+回传后视作无窗真实参考面场。若只保留第一主瓣，结果一般不是
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>m</mi></msub><annotation encoding="application/x-tex">r_m</annotation></semantics></math>。</p>
+<p>反过来，在整数周期矩形窗口和近周期场的条件下，级中心的复数投影也是估计
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>m</mi></msub><annotation encoding="application/x-tex">r_m</annotation></semantics></math>
+的方法；它利用空间正交性，其有限长度偏差与角带积分并不相同。两者都不应把
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math>
+当作复振幅相加。</p>
+<h2 id="为什么只积第一主瓣会有偏差">为什么只积第一主瓣会有偏差</h2>
 <p>先考虑在参考面
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h=0</annotation></semantics></math>
 直接取矩形窗、只含一个衍射级的解析基准。设其有限窗角谱为
@@ -983,16 +1029,16 @@ sinc 尾部。较弱级应同时检查绝对复误差和相位。</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow></mfrac><msubsup><mo>∫</mo><mrow><msub><mi>q</mi><mi>m</mi></msub><mo>−</mo><mn>2</mn><mi>π</mi><mi>/</mi><mi>L</mi></mrow><mrow><msub><mi>q</mi><mi>m</mi></msub><mo>+</mo><mn>2</mn><mi>π</mi><mi>/</mi><mi>L</mi></mrow></msubsup><msub><mi>A</mi><mi>m</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>d</mi><mi>q</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mrow><mi mathvariant="normal">Si</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>π</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>π</mi></mfrac><msub><mi>r</mi><mi>m</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{1}{2\pi E_{i,0}}\int_{q_m-2\pi/L}^{q_m+2\pi/L}A_m(q)\,dq=\frac{2\operatorname{Si}(\pi)}{\pi}r_m.</annotation></semantics></math></p>
 <p>数值为</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>2</mn><mrow><mi mathvariant="normal">Si</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>π</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>π</mi></mfrac><mo>=</mo><mn>1.178979744</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{2\operatorname{Si}(\pi)}{\pi}=1.178979744.</annotation></semantics></math></p>
-<p>所以主瓣复场积分会比目标系数大约 17.90%，并不等于
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>m</mi></msub><annotation encoding="application/x-tex">r_m</annotation></semantics></math>。这个因子与
-N 无关。对整个孤立 sinc
-进行有条件的有符号积分，正负旁瓣会相互抵消，但真实多级总场在有限角带内还包含邻级核、复相位和参考面传播。直接规定一个角带后积分，不会自动隔离出某一个无限周期系数。</p>
+<p>所以在此
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h=0</annotation></semantics></math>、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>c</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_c=0</annotation></semantics></math>、孤立
+sinc 和上述归一化的例子中，主瓣复场积分会比目标系数大约
+17.90%，这个因子与 N 无关。对整个孤立 sinc
+进行有条件的有符号积分，正负旁瓣会相互抵消，但真实多级总场在有限角带内还包含邻级核、复相位和参考面传播。直接规定一个角带后积分，不会自动精确隔离出某一个无限周期系数。</p>
 <p>需要用周围多个角谱点来抑制噪声时，可以拟合已知核。对一个孤立级，记
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>c</mi><mi>W</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(q)=cW(q)</annotation></semantics></math>，则复数最小二乘估计为</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>c</mi><mo accent="true">̂</mo></mover><mo>=</mo><mfrac><mrow><mo>∫</mo><msup><mi>W</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>q</mi></mrow><mrow><mo>∫</mo><mo stretchy="false" form="prefix">|</mo><mi>W</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>q</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\widehat c=\frac{\int W^*(q)A(q)dq}{\int |W(q)|^2dq}.</annotation></semantics></math></p>
 <p>再除入射复场，并保持传播相位一致。多级重叠时需联合解 Gram
-矩阵。这里积分之所以有效，是因为有匹配核和明确分母，而非因为“该级附近所有幅度相加就等于
-RCWA”。本实验的最简提取不需要引入这一步。</p>
+矩阵。这是利用已知核进行系数拟合，与前述角带相干积分、中心复投影是不同的估计方法。</p>
 <h2 id="要计算功率就应积分带通量权重的模平方">要计算功率，就应积分带通量权重的模平方</h2>
 <p>完整均匀半空间中，向上传播的 TE 连续谱功率（每单位槽长）为</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>r</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mi>π</mi><msub><mi>Z</mi><mn>0</mn></msub></mrow></mfrac><msub><mo>∫</mo><mrow><mo stretchy="false" form="prefix">|</mo><mi>q</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><msub><mi>k</mi><mn>0</mn></msub></mrow></msub><mfrac><mrow><mi>β</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><msub><mi>k</mi><mn>0</mn></msub></mfrac><mo stretchy="false" form="prefix">|</mo><msub><mi>A</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>q</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">P_r=\frac{1}{4\pi Z_0}\int_{|q|&lt;k_0}\frac{\beta(q)}{k_0}|A_L(q)|^2dq.</annotation></semantics></math></p>
@@ -1035,9 +1081,9 @@ N
 <figcaption aria-hidden="true">同一 sinc
 的有符号场积分与功率积分</figcaption>
 </figure>
-<p><strong>图的结论：</strong> 无权复场主瓣积分给 1.17898
-倍系数；主瓣模平方积分给 0.902823 倍孤立 sinc
-标量谱能量。窄瓣时后者近似对应电磁功率比例。两种积分都不是中心复系数提取公式。</p>
+<p><strong>图的结论：</strong> 孤立 sinc 的主瓣复场积分为 1.17898
+倍系数；主瓣模平方积分为 0.902823
+倍标量谱能量。角带范围改变结果，窄瓣时后者近似对应电磁功率比例。</p>
 <p><strong>图的目的：</strong> 在真实 Maxwell
 结果中对比三种常被混用的量。</p>
 <figure>
@@ -1049,6 +1095,100 @@ N
 时弱二级的主瓣角带功率甚至约为中心推得整级功率的 1.104
 倍；这是总谱中强邻级尾部、端部和照明扰动参与叠加的结果，不能把每个角带当作唯一的孤立模式功率，再统一除以
 90.28%。</p>
+<h2 id="实际例子400-周期的-1-级中心与角带两种算法">实际例子：400 周期的
++1 级，中心与角带两种算法</h2>
+<p>采用真实 FDTD 工况 <code>N400_dx20_dy10_t600</code>，长度
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>800</mn></mrow><annotation encoding="application/x-tex">L=800</annotation></semantics></math>
+μm，网格 20/10 nm；监视面距台阶顶面
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=1</annotation></semantics></math>
+μm。+1
+级的角带以相邻级中点为界，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mi>π</mi><mi>/</mi><mn>2</mn><mo>,</mo><mn>3</mn><mi>π</mi><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">q\in[\pi/2,3\pi/2]</annotation></semantics></math>
+rad/μm，对应角度约
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>7.643</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">7.643^\circ</annotation></semantics></math>
+至
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>23.516</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">23.516^\circ</annotation></semantics></math>，中心为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>15.426</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">15.426^\circ</annotation></semantics></math>。使用保存的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mrow><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi></mrow><mspace width="0.222em"></mspace><mi>t</mi><mi>o</mi><mi>p</mi></mrow></msub><annotation encoding="application/x-tex">a_{\mathrm{ridge}\ top}</annotation></semantics></math>，对角带采样点做梯形积分，<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>c</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_c=0</annotation></semantics></math>；积分数据按
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+变化逐点去传播相位。角带边界取落在区间内的离散 FFT 采样点。RCWA
+数值与中心结果读取已存逐级表，积分值由归档复谱重新计算。</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>+1 级复振幅的计算方式</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCWA 离散系数
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mn>1</mn></msub><annotation encoding="application/x-tex">r_1</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3334621</mn><mo>−</mo><mn>0.1488428</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3334621 -0.1488428i</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>FDTD 中心复角谱归一化</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3283702</mn><mo>−</mo><mn>0.1456484</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3283702 -0.1456484i</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>FDTD 邻级中点角带复谱积分</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3281717</mn><mo>−</mo><mn>0.1457275</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3281717 -0.1457275i</annotation></semantics></math></td>
+</tr>
+<tr>
+<td>由 RCWA 合成同窗谱后，用同一角带及回传处理</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3331017</mn><mo>−</mo><mn>0.1488976</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3331017 -0.1488976i</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<p>同窗 RCWA
+角带积分本身与精确系数也有差异，量化了本例带宽、窗口与回传处理的有限误差；它不是新的
+Maxwell 求解。FDTD 带积分相对 RCWA 的复误差为
+<strong>1.6813%</strong>。这里的真实 FDTD 与 RCWA
+剩余差异还包括有限端部、照明和空间网格等因素；400 周期工况采用 20/10 nm
+粗网格，不能与本报告整体最接近 RCWA 的细网格工况混为一谈。</p>
+<table>
+<thead>
+<tr>
+<th>+1 级功率比较方式</th>
+<th>相对入射功率的效率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCWA 离散级
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo><msub><mi>r</mi><mn>1</mn></msub><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>/</mi><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\beta_1|r_1|^2/k_0</annotation></semantics></math></td>
+<td>12.8547%</td>
+</tr>
+<tr>
+<td>FDTD 邻级中点角带的带权功率积分</td>
+<td>12.4380%</td>
+</tr>
+<tr>
+<td>FDTD 中心复系数推得的整级效率</td>
+<td>12.4392%</td>
+</tr>
+<tr>
+<td>FDTD 只积分第一主瓣</td>
+<td>11.2349%</td>
+</tr>
+</tbody>
+</table>
+<p>积分复场得到可相干相加的复数；积分模平方得到的是实数功率，丢失整体相位。上表中两种整级功率估计接近，而第一主瓣漏掉较多旁瓣；不能把主瓣效率直接当成整级效率。有限结构不同级的旁瓣有相干重叠，角带划分仍是约定。</p>
+<h2 id="通过物镜或孔径时对系统响应相干积分">通过物镜或孔径时：对系统响应相干积分</h2>
+<p>若成像或传播可近似为线性、横向平移不变的一维系统，可使用其角响应
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(q)</annotation></semantics></math>：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">t</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mo>∫</mo><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>A</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo>;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>q</mi><mi>x</mi></mrow></msup><mspace width="0.167em"></mspace><mi>d</mi><mi>q</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">E_{\mathrm{out}}(x)=\frac{1}{2\pi}\int H(q)A_L(q;d)e^{iqx}\,dq.</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(q)</annotation></semantics></math>
+必须包含从所用监视面到输出面的传播、孔径和成像相位；若
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>L</mi></msub><annotation encoding="application/x-tex">A_L</annotation></semantics></math>
+已回传至参考面，则须以该参考面定义
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>。当某级角谱足够窄、<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(q)</annotation></semantics></math>
+在该峰范围内近似常数、且系统关注的输出区域内额外相位变化也可忽略时，整束作用可以近似为对应
+RCWA
+离散级的作用。孔径边缘切过峰、传递函数或输出相位在峰宽内变化明显时，应保留连续复角谱积分；多个级的场先相加，再取模平方得到成像强度。更一般的非平移不变系统需要使用位置相关的传播核。</p>
 <h1 id="参考场参考面网格和时间的核验">参考场、参考面、网格和时间的核验</h1>
 <p><strong>图的目的：</strong> 检验全 PML
 平面波是否足够接近均匀照明，以及去传播相位是否正确。</p>
@@ -1385,8 +1525,11 @@ fs，保持源、PML 和其他设置一致，使用对应完整时长的空气�
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msub><mover><mi>r</mi><mo accent="true">̂</mo></mover><mi>m</mi></msub><mo>=</mo><msub><mi>A</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>q</mi><mi>m</mi></msub><mo>;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>β</mi><mi>m</mi></msub><mi>d</mi></mrow></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow></menclose><annotation encoding="application/x-tex">\boxed{\widehat r_m=A_L(q_m;d)e^{-i\beta_md}/(L E_{i,0})}</annotation></semantics></math></p>
 <p>归一化和移参考面。横向原点、偏振、电场分量和材料必须一致。</p>
 <p><strong>2. 需要在该衍射级角谱范围内积分吗？</strong>
-恢复复系数时，最简方法不需要再作角谱无权积分。计算该角带承载的能量时，应积分带通量权重的
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">|A|^2</annotation></semantics></math>。若希望利用多个复谱点估计系数，应使用已知窗口核的复数拟合或匹配投影，并显式处理核之间的重叠。</p>
+若目标是把该级的整个复角带映射到一个复数，可以在明确角带、参考面和观察点后，对复角谱作相干积分，归一化为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><msub><mi>q</mi><mi>m</mi></msub><msub><mi>x</mi><mi>c</mi></msub></mrow></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>π</mi><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">e^{-iq_mx_c}/(2\pi E_{i,0})</annotation></semantics></math>；长阵列、级间分离且边缘影响小的情况下，它近似
+RCWA 系数。它依赖带宽和观察点，并非有限 N
+下一定精确等于系数。整数周期窗的中心复投影是另一种提取办法。若目标是角带功率，应积分带通量权重的
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">|A|^2</annotation></semantics></math>，这会失去复相位。</p>
 <p><strong>3. 如果中心值吻合，旁边分布怎么办？</strong>
 保留它。那是有限窗口或有限阵列的角宽与旁瓣，属于同一个系数所控制的完整波包。峰中心用来标定系数，整条谱的模平方积分用来算功率，二者并不重复计算同一种量。仅积分第一主瓣会漏掉孤立
 sinc 约 9.72% 的标量谱能量；窄瓣且远离掠射时对应同量级的功率份额。增加 N
@@ -1397,11 +1540,16 @@ sinc 约 9.72% 的标量谱能量；窄瓣且远离掠射时对应同量级的�
 周期有余量。精确中心在理想整数周期条件下本来就无其他离散级的 sinc
 串扰，10 个周期也满足数学正交。真实 FDTD 是否够长，最终看复系数随 N
 的变化和独立数值控制，而非只看 sinc 峰宽。</p>
-<p><strong>5. 本次实际结果支持到什么程度？</strong> 已完成六组真实全 PML
-有限尺寸序列与额外控制。最接近 RCWA 的实际工况
-N050_dx10_dy5_t600，七级复向量相对差为 1.1500%，最大逐级绝对复差为
-0.0030416。结果支持“正确归一化的级中心复角谱可以提取周期衍射复系数”的方法，同时明确保留有限长度与离散误差。没有把有限结构与无限周期结构说成在任意
-N、任意边界和任意网格下严格相同。</p>
+<p><strong>5. 本次实际结果支持到什么程度？</strong> N=400 的 +1
+级复角带积分为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3281717</mn><mo>−</mo><mn>0.1457275</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3281717 -0.1457275i</annotation></semantics></math>，中心提取为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3283702</mn><mo>−</mo><mn>0.1456484</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3283702 -0.1456484i</annotation></semantics></math>，RCWA
+为
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>0.3334621</mn><mo>−</mo><mn>0.1488428</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">+0.3334621 -0.1488428i</annotation></semantics></math>；相应角带功率与
+RCWA 效率为 12.4380% 和
+12.8547%。两种方法的差异及有限角带误差已在正文核查。最接近 RCWA
+的实际工况 N050_dx10_dy5_t600，七级复向量相对差为
+1.1500%。有限结构与无限周期结构在任意 N、边界和网格下并不严格相同。</p>
 <h1 id="文件复现与来源">文件、复现与来源</h1>
 <h2 id="文件对应关系">文件对应关系</h2>
 <table>

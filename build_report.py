@@ -28,6 +28,7 @@ def fig(name,caption,purpose,conclusion):
 
 def main():
     summary=json.loads((ROOT/'analysis'/'summary.json').read_text(encoding='utf-8'))
+    experiment=json.loads((ROOT/'experiment.json').read_text(encoding='utf-8'))
     cases=summary['cases']
     with open(ROOT/'analysis'/'all_extracted_orders.csv',encoding='utf-8') as q:orders=list(csv.DictReader(q))
     for row in orders:
@@ -39,6 +40,22 @@ def main():
     prod=sorted([c for c in cases if c['case']==f"N{c['N']:03d}_dx20_dy10_t600"],key=lambda t:t['N'])
     assert {c['N'] for c in prod}=={10,20,50,100,200,400},'The six advertised sizes must have completed air/mark solves.'
     largest=prod[-1]
+    # Compute the follow-up comparison from the saved FDTD complex spectrum;
+    # the bandwidth mask and trapezoidal rule match the existing power table.
+    example=next(r for r in orders if r['case']==largest['case'] and r['m']==1)
+    with np.load(ROOT/'fdtd'/'cases'/largest['case']/'mark'/'fields_R.npz') as monitor:
+        d_um=float(monitor['y_m'])*1e6
+    with np.load(ROOT/'analysis'/(largest['case']+'_angular_spectrum.npz')) as z:
+        q=z['kx_rad_um']; u=z['u']; band=(u>=.5)&(u<=1.5)
+        L=float(largest['N'])*experiment['pitch_um']
+        band_complex=np.trapezoid(z['a_ridge_top'][band],q[band])*L/(2*np.pi)
+        k0=2*np.pi/(experiment['wavelength_nm']/1000)
+        beta=np.sqrt(k0**2-q[band]**2)
+        model_band=np.trapezoid(z['windowed_rcwa_a_monitor'][band]*np.exp(-1j*beta*d_um),q[band])*L/(2*np.pi)
+    rc1=complex(example['rcwa_re'],example['rcwa_im'])
+    center1=complex(example['fdtd_re'],example['fdtd_im'])
+    qbounds=2*np.pi/experiment['pitch_um']*np.array([.5,1.5])
+    theta_bounds=np.degrees(np.arcsin(qbounds/k0))
     # Best means the case with smallest measured complex-vector error, not a
     # numerical extrapolation or a fitted correction applied to FDTD.
     best=min(cases,key=lambda t:t['relative_complex_L2'])
@@ -85,9 +102,9 @@ header-includes:
 
 用户的问题是：**无限周期 RCWA 给出各个衍射级的复振幅，而非周期边界的有限 FDTD 给出连续角谱。究竟应取每一级中心的复数值，还是对该级附近积分？如果中心值已经吻合，旁边的 sinc 分布又代表什么？**
 
-本实验只使用一个最简单的 Si 一维台阶光栅，不加入复杂 Mark、薄膜堆栈、扫描位移、高斯照明、成像系统或信号处理应用。先把数学量定义清楚，再运行真正的 RCWA 和全 PML FDTD，最后逐项比较。
+本实验只使用一个最简单的 Si 一维台阶光栅，不模拟复杂 Mark、薄膜堆栈、扫描位移、高斯照明或具体成像系统。先把数学量定义清楚，再运行真正的 RCWA 和全 PML FDTD，最后逐项比较；后文用一般传递函数简述成像系统的积分方式。
 
-**直接答案预告：** 对整数周期矩形窗口，若窗内场接近无限周期响应，取精确衍射级中心的**复角谱**，除以窗口长度和同一参考面的入射复场，并去掉传播相位，就得到可与 RCWA 比较的复振幅。恢复这个系数不需要对峰附近的复角谱做无权积分。附近的主瓣和旁瓣是这个系数经过有限窗口展宽后的分布；积分其正确加权的模平方得到的是功率。
+**直接答案预告：** RCWA 的一个离散级对应长有限阵列的一段角谱。对整数周期矩形窗口，级中心复角谱经长度、入射场和传播相位归一化，可以提取复系数；对这一角带的复角谱积分、处理传播相位并正确归一化，在长阵列及级间充分分离的条件下也可近似得到该系数。对角带内带通量权重的模平方积分则得到功率，不能与复场积分混淆。主瓣和旁瓣共同构成有限波束的角分布。
 ''')
     add(rf'''实际验证采用 10、20、50、100、200、400 个周期，完整保留独立的空气参考和 Si 结构求解。另有网格及时间控制。当前最接近 RCWA 的实际工况是 **{best['case']}**，七个传播级复系数的整体相对 L2 差为 **{pc(best['relative_complex_L2'])}**；这是一项真实计算的比较值，包含有限边缘、材料离散、PML 和网格误差，不是通过拟合强行校准后的结果。
 
@@ -166,7 +183,7 @@ $$A_L(q;d)=\int_{-L/2}^{L/2} E_r(x,d)e^{-iqx}\,dx.$$
 
 $$E_r(x,d)w_L(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}A_L(q;d)e^{iqx}\,dq.$$
 
-如果 $x$ 用米、电场用 V/m，则 $A_L$ 的单位是 V，不能直接与无量纲的 $r_m$ 比大小。代码为了便于画图使用 μm，角谱数组单位相应为“电场 × μm”；在比值中 $A_L$ 与 $L$ 使用同一种长度单位。
+如果 $x$ 用米、电场用 V/m，则 $A_L$ 的单位是 V，不能直接与无量纲的 $r_m$ 比大小。代码为了便于画图使用 μm，角谱数组单位相应为“电场 × μm”；在比值中 $A_L$ 与 $L$ 使用同一种长度单位。本例 $A_L$ 是在监视线事后截取中央 $N\Lambda$ 长度得到的窗谱：有限 Mark 外侧是平坦 Si，反射场在窗外并不严格为零。因此它不自动等于整个有限器件的完整远场。若要该远场，须指定照明口径与背景定义，扩大监视器覆盖并检查截窗收敛。
 
 适合比较的无量纲复角谱是
 
@@ -214,7 +231,7 @@ $$\boxed{\displaystyle \widehat r_j=\frac{A_L(q_j;d)}{L E_{i,0}}e^{-i\beta_jd}.}
 
 $$\widehat r_j=\frac{e^{-i\beta_jd}}{L E_{i,0}}\int_{-L/2}^{L/2}E_r(x,d)e^{-iq_jx}\,dx.$$
 
-**这里已经有一次空间积分。** 它是把近场投影到平面波基上，也就是角谱的定义；它不是再对某一级附近的角谱作第二次无权积分。
+**这里已经有一次空间积分。** 它是把近场投影到平面波基上，也就是角谱的定义。下面还会给出另一种方法：对目标级的复角谱角带积分并正确归一化。两种方法在各自条件下估计同一系数，但公式和有限长度误差不同。
 
 数学正交关系对 1、10、20、200 个整数周期都成立。因此，对精确中心的理想复幅提取，十几个整数周期已经满足正交条件；如果要求附近整段角谱的尾部很小，几百周期仍然有价值。较大的 $N$ 还能降低物理端部在窗口平均中的份额，并改善角带之间的功率分离。
 
@@ -230,7 +247,7 @@ $$\widehat r_j-r_j=\frac{e^{-i\beta_jd}}{L E_{i,0}}\int_{-L/2}^{L/2}\delta E(x,d
 
 $\delta E$ 包括有限端部、实际入射场不均匀、PML、网格离散和时间截断误差。增加 $L$ 并不消除所有这些来源；尤其不会自动消除固定网格的相位误差。若边缘误差局限在固定宽度内，其平均影响通常随 $1/L$ 下降；这需要数据检验，不能预先强制假设。
 
-若窗口不是整数周期，理想不同级的 sinc 在中心也会互相串扰。若用了 Hann 等窗，分母应采用相干增益 $\int w(x)dx$，且正交关系通常改变。此时可以联合拟合已知的窗口核，解复数线性最小二乘问题；这种拟合是明确带核和归一化的估计，不等于直接积分角谱幅值。
+若窗口不是整数周期，理想不同级的 sinc 在中心也会互相串扰。若用了 Hann 等窗，分母应采用相干增益 $\int w(x)dx$，且正交关系通常改变。此时可以联合拟合已知的窗口核，解复数线性最小二乘问题；也可根据窗口、角带和相位定义检查积分估计的偏差。
 ''')
     add(r'''# 需要多少周期：先算旁瓣，再看实际误差
 
@@ -357,7 +374,19 @@ $$\int_{-\infty}^{\infty}|A_m(q)|^2dq=|E_{i,0}r_m|^2L^2\frac{2}{L}\int_{-\infty}
 ''')
     add(fig('12_best_case_complex_comparison','最接近 RCWA 的实际工况：复系数与逐级误差','把最终精度判断落到同一组真实 FDTD 系数的实部、虚部和相对复误差上。','实部和虚部均可直接对照；弱二级的相对误差可比强一级更敏感。此图不使用额外拟合增益、Fresnel 缩放或相位调参。'))
     add('# 到底何时积分：复振幅与功率的区别')
-    add(r'''## 不要直接积分某一级附近的复角谱来“收集振幅”
+    add(r'''## 将一个有限角带相干积分，与 RCWA 的一个级比较
+
+无限周期角谱是加权 $\delta$ 峰；有限阵列则是有宽度的复角谱。对于理想矩形窗，在分布意义下 $\frac{L}{2\pi}\operatorname{sinc}[(q-q_m)L/2]\rightharpoonup\delta(q-q_m)$：峰随 $L$ 增大而变窄、变高，其归一化复面积趋于固定权重。一个 RCWA 级可以对应 FDTD 的一个角带。以邻级中点为边界，$B_m=[q_m-G/2,q_m+G/2]$，在台阶顶面参考点 $x_c$ 的带通复场可以写成
+
+$$\boxed{\displaystyle \widehat r_m^{\rm band}(x_c)=\frac{e^{-iq_mx_c}}{2\pi E_{i,0}}\int_{B_m} A_L(q;d)e^{-i\beta(q)d}e^{iqx_c}\,dq.}$$
+
+先裁窗再对每个 $q$ 移回参考面，最后在 $x_c$ 相干叠加；公式保留复数的符号和相位。本例积分角带位于空气传播锥 $|q|<k_0$ 内，此处 $\beta(q)=\sqrt{k_0^2-q^2}>0$；跨截止或包含倏逝波时，传播常数分支和回传稳定性须另行处理。如果数据已经归一化为 $a_L=A_L/(LE_{i,0})$，上式的前因子改为 $Le^{-iq_mx_c}/(2\pi)$。单位须统一：本文 $q$ 用 rad/μm、$L$ 用 μm。若改用角度积分，则使用 $dq=k_0\cos\theta\,d\theta$。
+
+若阵列足够长、目标角带包含越来越多该级旁瓣、相邻级及有限边缘的贡献足够小，且观察点位于离边缘很远的阵列内部，这个带通复场可近似对应 $r_m$。这是**有限角带估计**，不是有限结构中唯一严格的级分解：结果依赖角带、$x_c$、窗形、参考面及邻级干涉。先裁窗再回传和先回传再裁窗一般不交换；不能把有限窗谱逐 $q$ 回传后视作无窗真实参考面场。若只保留第一主瓣，结果一般不是 $r_m$。
+
+反过来，在整数周期矩形窗口和近周期场的条件下，级中心的复数投影也是估计 $r_m$ 的方法；它利用空间正交性，其有限长度偏差与角带积分并不相同。两者都不应把 $|A|$ 当作复振幅相加。
+
+## 为什么只积第一主瓣会有偏差
 
 先考虑在参考面 $h=0$ 直接取矩形窗、只含一个衍射级的解析基准。设其有限窗角谱为 $A_m(q)=L E_{i,0}r_m\operatorname{sinc}[(q-q_m)L/2]$。在两个第一零点之间对复场无权积分：
 
@@ -369,13 +398,13 @@ $$\frac{1}{2\pi E_{i,0}}\int_{q_m-2\pi/L}^{q_m+2\pi/L}A_m(q)\,dq=\frac{2\operato
 
 $$\frac{2\operatorname{Si}(\pi)}{\pi}=1.178979744.$$
 
-所以主瓣复场积分会比目标系数大约 17.90%，并不等于 $r_m$。这个因子与 N 无关。对整个孤立 sinc 进行有条件的有符号积分，正负旁瓣会相互抵消，但真实多级总场在有限角带内还包含邻级核、复相位和参考面传播。直接规定一个角带后积分，不会自动隔离出某一个无限周期系数。
+所以在此 $h=0$、$x_c=0$、孤立 sinc 和上述归一化的例子中，主瓣复场积分会比目标系数大约 17.90%，这个因子与 N 无关。对整个孤立 sinc 进行有条件的有符号积分，正负旁瓣会相互抵消，但真实多级总场在有限角带内还包含邻级核、复相位和参考面传播。直接规定一个角带后积分，不会自动精确隔离出某一个无限周期系数。
 
 需要用周围多个角谱点来抑制噪声时，可以拟合已知核。对一个孤立级，记 $A(q)=cW(q)$，则复数最小二乘估计为
 
 $$\widehat c=\frac{\int W^*(q)A(q)dq}{\int |W(q)|^2dq}.$$
 
-再除入射复场，并保持传播相位一致。多级重叠时需联合解 Gram 矩阵。这里积分之所以有效，是因为有匹配核和明确分母，而非因为“该级附近所有幅度相加就等于 RCWA”。本实验的最简提取不需要引入这一步。
+再除入射复场，并保持传播相位一致。多级重叠时需联合解 Gram 矩阵。这是利用已知核进行系数拟合，与前述角带相干积分、中心复投影是不同的估计方法。
 
 ## 要计算功率，就应积分带通量权重的模平方
 
@@ -405,8 +434,38 @@ $$F_{\rm main}=\frac{\int_{-\pi}^{\pi}(\sin v/v)^2dv}{\int_{-\infty}^{\infty}(\s
 
 与此不同，如果使用固定的邻级中点角带 $B_m=[q_m-G/2,q_m+G/2]$，该角带随着 N 增大包含越来越多旁瓣，孤立级的功率积分可趋于 RCWA 的 $\eta_m$。有限 N 下，总场的不同级窗谱还会相干重叠，角带功率是一个实用分区，并非对有限物理结构存在唯一严格的“无限周期级功率分解”。
 ''')
-    add(fig('04_field_vs_power_integrals','图 4：同一 sinc 的有符号场积分与功率积分','用最简单的解析例子直接检验“需要对峰附近积分吗”。','无权复场主瓣积分给 1.17898 倍系数；主瓣模平方积分给 0.902823 倍孤立 sinc 标量谱能量。窄瓣时后者近似对应电磁功率比例。两种积分都不是中心复系数提取公式。'))
+    add(fig('04_field_vs_power_integrals','图 4：同一 sinc 的有符号场积分与功率积分','用最简单的解析例子直接检验“需要对峰附近积分吗”。','孤立 sinc 的主瓣复场积分为 1.17898 倍系数；主瓣模平方积分为 0.902823 倍标量谱能量。角带范围改变结果，窄瓣时后者近似对应电磁功率比例。'))
     add(fig('09_peak_and_integrated_power','图 9：真实 FDTD 的中心推得效率、主瓣功率与邻级中点角带功率','在真实 Maxwell 结果中对比三种常被混用的量。','较宽的固定级间角带可包含更多旁瓣。N=10 时弱二级的主瓣角带功率甚至约为中心推得整级功率的 1.104 倍；这是总谱中强邻级尾部、端部和照明扰动参与叠加的结果，不能把每个角带当作唯一的孤立模式功率，再统一除以 90.28%。'))
+    add(rf'''## 实际例子：400 周期的 +1 级，中心与角带两种算法
+
+采用真实 FDTD 工况 `{largest['case']}`，长度 $L={L:.0f}$ μm，网格 20/10 nm；监视面距台阶顶面 $d={d_um:g}$ μm。+1 级的角带以相邻级中点为界，$q\in[\pi/2,3\pi/2]$ rad/μm，对应角度约 ${theta_bounds[0]:.3f}^\circ$ 至 ${theta_bounds[1]:.3f}^\circ$，中心为 ${example['theta_deg']:.3f}^\circ$。使用保存的 $a_{{\rm ridge\ top}}$，对角带采样点做梯形积分，$x_c=0$；积分数据按 $q$ 变化逐点去传播相位。角带边界取落在区间内的离散 FFT 采样点。RCWA 数值与中心结果读取已存逐级表，积分值由归档复谱重新计算。
+
+| +1 级复振幅的计算方式 | 结果 |
+| --- | --- |
+| RCWA 离散系数 $r_1$ | ${cfmt(rc1)}$ |
+| FDTD 中心复角谱归一化 | ${cfmt(center1)}$ |
+| FDTD 邻级中点角带复谱积分 | ${cfmt(band_complex)}$ |
+| 由 RCWA 合成同窗谱后，用同一角带及回传处理 | ${cfmt(model_band)}$ |
+
+同窗 RCWA 角带积分本身与精确系数也有差异，量化了本例带宽、窗口与回传处理的有限误差；它不是新的 Maxwell 求解。FDTD 带积分相对 RCWA 的复误差为 **{pc(abs(band_complex-rc1)/abs(rc1))}**。这里的真实 FDTD 与 RCWA 剩余差异还包括有限端部、照明和空间网格等因素；400 周期工况采用 20/10 nm 粗网格，不能与本报告整体最接近 RCWA 的细网格工况混为一谈。
+
+| +1 级功率比较方式 | 相对入射功率的效率 |
+| --- | --- |
+| RCWA 离散级 $\beta_1|r_1|^2/k_0$ | {pc(example['rcwa_efficiency'])} |
+| FDTD 邻级中点角带的带权功率积分 | {pc(example['nearest_order_band_efficiency'])} |
+| FDTD 中心复系数推得的整级效率 | {pc(example['peak_estimated_efficiency'])} |
+| FDTD 只积分第一主瓣 | {pc(example['mainlobe_efficiency'])} |
+
+积分复场得到可相干相加的复数；积分模平方得到的是实数功率，丢失整体相位。上表中两种整级功率估计接近，而第一主瓣漏掉较多旁瓣；不能把主瓣效率直接当成整级效率。有限结构不同级的旁瓣有相干重叠，角带划分仍是约定。
+
+## 通过物镜或孔径时：对系统响应相干积分
+
+若成像或传播可近似为线性、横向平移不变的一维系统，可使用其角响应 $H(q)$：
+
+$$E_{{\rm out}}(x)=\frac{{1}}{{2\pi}}\int H(q)A_L(q;d)e^{{iqx}}\,dq.$$
+
+$H(q)$ 必须包含从所用监视面到输出面的传播、孔径和成像相位；若 $A_L$ 已回传至参考面，则须以该参考面定义 $H$。当某级角谱足够窄、$H(q)$ 在该峰范围内近似常数、且系统关注的输出区域内额外相位变化也可忽略时，整束作用可以近似为对应 RCWA 离散级的作用。孔径边缘切过峰、传递函数或输出相位在峰宽内变化明显时，应保留连续复角谱积分；多个级的场先相加，再取模平方得到成像强度。更一般的非平移不变系统需要使用位置相关的传播核。
+''')
     add('# 参考场、参考面、网格和时间的核验')
     add(fig('10_incident_and_reference_plane_checks','图 10：空气参考的实际入射场及两个反射监视面的比较','检验全 PML 平面波是否足够接近均匀照明，以及去传播相位是否正确。','有限边界使入射场存在扰动；测量而非假设其复场是必要的。R 与 R2 在移到相同参考面后应接近，但有限窗口与数值色散仍可留下小差别。'))
     add(r'''如果直接用反射监视面处的入射复场 $E_i(d)=E_{i,0}e^{-ik_0d}$ 归一化，传播校正必须改为 $e^{-i(\beta_m+k_0)d}$。本实验是在 $h=0$ 测入射场，因此只乘 $e^{-i\beta_md}$。这两种写法都可以正确，但不能混用。
@@ -469,13 +528,13 @@ $$\boxed{{\widehat r_m=A_L(q_m;d)e^{{-i\beta_md}}/(L E_{{i,0}})}}$$
 
 归一化和移参考面。横向原点、偏振、电场分量和材料必须一致。
 
-**2. 需要在该衍射级角谱范围内积分吗？** 恢复复系数时，最简方法不需要再作角谱无权积分。计算该角带承载的能量时，应积分带通量权重的 $|A|^2$。若希望利用多个复谱点估计系数，应使用已知窗口核的复数拟合或匹配投影，并显式处理核之间的重叠。
+**2. 需要在该衍射级角谱范围内积分吗？** 若目标是把该级的整个复角带映射到一个复数，可以在明确角带、参考面和观察点后，对复角谱作相干积分，归一化为 $e^{{-iq_mx_c}}/(2\pi E_{{i,0}})$；长阵列、级间分离且边缘影响小的情况下，它近似 RCWA 系数。它依赖带宽和观察点，并非有限 N 下一定精确等于系数。整数周期窗的中心复投影是另一种提取办法。若目标是角带功率，应积分带通量权重的 $|A|^2$，这会失去复相位。
 
 **3. 如果中心值吻合，旁边分布怎么办？** 保留它。那是有限窗口或有限阵列的角宽与旁瓣，属于同一个系数所控制的完整波包。峰中心用来标定系数，整条谱的模平方积分用来算功率，二者并不重复计算同一种量。仅积分第一主瓣会漏掉孤立 sinc 约 9.72% 的标量谱能量；窄瓣且远离掠射时对应同量级的功率份额。增加 N 并不会消除这个标量积分的固定比例。
 
 **4. 多少周期够？** 没有对所有精度目标通用的最小数。对本例，若希望一级主瓣邻域中的零级尾部场约低于一级峰高 0.1%，解析保守判据要求 N 大于约 {1+ratio/(np.pi*.001):.1f}，400 周期有余量。精确中心在理想整数周期条件下本来就无其他离散级的 sinc 串扰，10 个周期也满足数学正交。真实 FDTD 是否够长，最终看复系数随 N 的变化和独立数值控制，而非只看 sinc 峰宽。
 
-**5. 本次实际结果支持到什么程度？** 已完成六组真实全 PML 有限尺寸序列与额外控制。最接近 RCWA 的实际工况 {best['case']}，七级复向量相对差为 {pc(best['relative_complex_L2'])}，最大逐级绝对复差为 {best['maximum_absolute_complex_error']:.7f}。结果支持“正确归一化的级中心复角谱可以提取周期衍射复系数”的方法，同时明确保留有限长度与离散误差。没有把有限结构与无限周期结构说成在任意 N、任意边界和任意网格下严格相同。
+**5. 本次实际结果支持到什么程度？** N=400 的 +1 级复角带积分为 ${cfmt(band_complex)}$，中心提取为 ${cfmt(center1)}$，RCWA 为 ${cfmt(rc1)}$；相应角带功率与 RCWA 效率为 {pc(example['nearest_order_band_efficiency'])} 和 {pc(example['rcwa_efficiency'])}。两种方法的差异及有限角带误差已在正文核查。最接近 RCWA 的实际工况 {best['case']}，七级复向量相对差为 {pc(best['relative_complex_L2'])}。有限结构与无限周期结构在任意 N、边界和网格下并不严格相同。
 ''')
     add(r'''# 文件、复现与来源
 
@@ -533,9 +592,16 @@ $$\boxed{{\widehat r_m=A_L(q_m;d)e^{{-i\beta_md}}/(L E_{{i,0}})}}$$
     sys.path.insert(0,str(ROOT/'.builddeps'))
     import pypandoc
     pandoc=pypandoc.get_pandoc_path()
-    cmd=[pandoc,str(path.name),'-f','markdown+tex_math_dollars+tex_math_single_backslash','-s','--metadata-file=metadata.yaml',
+    # Keep figure purposes near their figures in PDF; the Markdown and HTML
+    # remain free of PDF-only LaTeX layout directives.
+    pdf_source=OUT/'.report_pdf_build.md'
+    pdf_source.write_text(md.replace('**图的目的：**',r'\Needspace{20\baselineskip}'+'\n\n**图的目的：**'),encoding='utf-8')
+    cmd=[pandoc,str(pdf_source.name),'-f','markdown+tex_math_dollars+tex_math_single_backslash','-s','--metadata-file=metadata.yaml',
       '--resource-path=.;..','--pdf-engine=xelatex','-o','REPORT_zh.pdf']
-    subprocess.run(cmd,cwd=OUT,check=True)
+    try:
+        subprocess.run(cmd,cwd=OUT,check=True)
+    finally:
+        pdf_source.unlink(missing_ok=True)
     subprocess.run([pandoc,str(path.name),'-f','markdown+tex_math_dollars+tex_math_single_backslash',
       '-s','--metadata-file=metadata.yaml','--toc','--mathml','--embed-resources','--resource-path=.;..','--css=style.css',
       '-o','REPORT_zh.html'],cwd=OUT,check=True)
@@ -558,10 +624,10 @@ $$\widehat r_m=\frac{{A_L(q_m;d)}}{{L E_{{i,0}}}}e^{{-i\beta_md}},\qquad q_m=m2\
 
 提取。这里 $E_{{i,0}}$ 是台阶顶面的实际入射复场，且横向原点、偏振和参考面统一。
 
-- **恢复复系数：** 取精确级中心的复角谱，作长度、入射场和传播相位归一化；无需再对峰附近作无权复场积分。
+- **恢复复系数：** 精确级中心的复角谱可按长度、入射场和传播相位归一化。也可对目标角带的复角谱逐点去传播相位后相干积分，除以 $2\pi E_{{i,0}}$；在参考点 $x_c=0$ 时，这在长阵列、级间分离等条件下近似 RCWA 系数，并依赖角带和参考点。
 - **计算角带功率：** 积分 $[\beta(q)/k_0]|A_L(q)|^2$，还要保持入射功率和坐标 Jacobian 的定义一致。
 - **中心之外的分布：** 主瓣与旁瓣由同一个系数和有限窗口决定，承载有限波束的角分布。它们不是额外的一组 RCWA 系数。
-- **不要混用积分：** 理想孤立 sinc 的主瓣复场无权积分为系数的 1.178979744 倍；主瓣标量谱能量只占90.282333%。实际电磁功率还带纵向通量权重。
+- **不要混用积分：** 理想孤立 sinc 在参考面、原点的主瓣复场归一化积分为系数的 1.178979744 倍；主瓣标量谱能量只占90.282333%。实际电磁功率还带纵向通量权重。N=400 的一级复角带积分为 ${cfmt(band_complex)}$，中心提取为 ${cfmt(center1)}$，RCWA 为 ${cfmt(rc1)}$。
 - **周期数：** 精确中心的整数周期正交对任意正整数 N 成立；较大 N 缩窄峰并减弱端部份额，不能自动消除网格与光源边缘误差。
 
 ## 实际数值
