@@ -1,0 +1,342 @@
+{
+  "checks": [
+    {
+      "name": "RCWA has exactly seven air propagating orders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RCWA mirror symmetry at common groove origin",
+      "passed": true,
+      "detail": 1.4690567593535446e-14
+    },
+    {
+      "name": "Passive RCWA reflection",
+      "passed": true,
+      "detail": 0.36136091512762164
+    },
+    {
+      "name": "Independent complex Fresnel calibration",
+      "passed": true,
+      "detail": 1.508563712114386e-14
+    },
+    {
+      "name": "Independent physical-x RCWA monitor projection",
+      "passed": true,
+      "detail": 6.4120786374450145e-15
+    },
+    {
+      "name": "All reported mesh, PML and strict time controls are analyzed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Strict time control explicitly reuses existing full-length air",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Strict mark uses 1200fs cap and 1e-12 shutoff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Strict mark actually simulated at least 1200fs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Finest mesh reports effective rather than requested PML",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600 actual saved four boundaries are PML",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600 actual saved dimension is 2D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600 actual saved four boundaries are PML",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600 actual saved dimension is 2D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N010_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N020_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N050_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N100_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N200_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600 actual air and mark results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/air engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/air finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/air actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/mark engine completed successfully",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/mark finite PML plane-wave settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N400_dx20_dy10_t600/mark actual complex R field at 532nm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exactly seven extracted rows per complete case",
+      "passed": true,
+      "detail": 84
+    },
+    {
+      "name": "Every extracted amplitude retains real and imaginary components",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Report and README use the current actual best case",
+      "passed": true,
+      "detail": "N050_dx10_dy5_t600"
+    },
+    {
+      "name": "No accidental non-whitespace control characters in report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All report figures exist",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "Every figure has purpose and conclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Report explicitly distinguishes scalar sinc energy from weighted power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Report generated from all six advertised sizes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PDF and offline HTML exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Offline HTML embeds all figures",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "Offline HTML includes MathML formulas",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 67,
+  "total": 67,
+  "all_passed": true
+}

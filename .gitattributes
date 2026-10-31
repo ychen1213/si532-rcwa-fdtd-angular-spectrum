@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.fsp binary
+*.npz binary
+*.mat binary
+*.pdf binary
+*.png binary
+# Matplotlib/Pandoc generated assets retain their native formatting.
+*.svg whitespace=-blank-at-eol
+report/*.html whitespace=-blank-at-eol

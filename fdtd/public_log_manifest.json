@@ -1,0 +1,122 @@
+[
+  {
+    "source": "cases\\N010_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N010_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 67
+  },
+  {
+    "source": "cases\\N010_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N010_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 75
+  },
+  {
+    "source": "cases\\N010_sourceThroughPML_diagnostic\\air\\engine_stdout.log",
+    "public": "cases\\N010_sourceThroughPML_diagnostic\\air\\engine_stdout_public.log",
+    "retained_lines": 75
+  },
+  {
+    "source": "cases\\N020_dx10_dy5_t600\\air\\engine_stdout.log",
+    "public": "cases\\N020_dx10_dy5_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 225
+  },
+  {
+    "source": "cases\\N020_dx10_dy5_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N020_dx10_dy5_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 225
+  },
+  {
+    "source": "cases\\N020_dx10_dy5_t600_pml48\\air\\engine_stdout.log",
+    "public": "cases\\N020_dx10_dy5_t600_pml48\\air\\engine_stdout_public.log",
+    "retained_lines": 225
+  },
+  {
+    "source": "cases\\N020_dx10_dy5_t600_pml48\\mark\\engine_stdout.log",
+    "public": "cases\\N020_dx10_dy5_t600_pml48\\mark\\engine_stdout_public.log",
+    "retained_lines": 225
+  },
+  {
+    "source": "cases\\N020_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N020_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 75
+  },
+  {
+    "source": "cases\\N020_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N020_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 81
+  },
+  {
+    "source": "cases\\N020_dx5_dy2.5_t600\\air\\engine_stdout.log",
+    "public": "cases\\N020_dx5_dy2.5_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 249
+  },
+  {
+    "source": "cases\\N020_dx5_dy2.5_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N020_dx5_dy2.5_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 249
+  },
+  {
+    "source": "cases\\N050_dx10_dy5_t600\\air\\engine_stdout.log",
+    "public": "cases\\N050_dx10_dy5_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 433
+  },
+  {
+    "source": "cases\\N050_dx10_dy5_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N050_dx10_dy5_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 427
+  },
+  {
+    "source": "cases\\N050_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N050_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 147
+  },
+  {
+    "source": "cases\\N050_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N050_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 235
+  },
+  {
+    "source": "cases\\N100_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N100_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 353
+  },
+  {
+    "source": "cases\\N100_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N100_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 619
+  },
+  {
+    "source": "cases\\N200_dx20_dy10_t1200\\air\\engine_stdout.log",
+    "public": "cases\\N200_dx20_dy10_t1200\\air\\engine_stdout_public.log",
+    "retained_lines": 671
+  },
+  {
+    "source": "cases\\N200_dx20_dy10_t1200\\mark\\engine_stdout.log",
+    "public": "cases\\N200_dx20_dy10_t1200\\mark\\engine_stdout_public.log",
+    "retained_lines": 369
+  },
+  {
+    "source": "cases\\N200_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N200_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 663
+  },
+  {
+    "source": "cases\\N200_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N200_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 665
+  },
+  {
+    "source": "cases\\N400_dx20_dy10_t600\\air\\engine_stdout.log",
+    "public": "cases\\N400_dx20_dy10_t600\\air\\engine_stdout_public.log",
+    "retained_lines": 665
+  },
+  {
+    "source": "cases\\N400_dx20_dy10_t600\\mark\\engine_stdout.log",
+    "public": "cases\\N400_dx20_dy10_t600\\mark\\engine_stdout_public.log",
+    "retained_lines": 655
+  },
+  {
+    "source": "cases\\N200_dx20_dy10_t1200_strictmark\\mark\\engine_stdout.log",
+    "public": "cases\\N200_dx20_dy10_t1200_strictmark\\mark\\engine_stdout_public.log",
+    "retained_lines": 671
+  }
+]

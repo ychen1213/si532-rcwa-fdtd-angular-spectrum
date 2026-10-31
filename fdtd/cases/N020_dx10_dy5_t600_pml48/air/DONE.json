@@ -1,0 +1,319 @@
+{
+  "status": "completed",
+  "settings": {
+    "N": 20,
+    "pitch_m": 2e-06,
+    "duty": 0.5,
+    "etch_depth_m": 1e-07,
+    "wavelength_m": 5.32e-07,
+    "buffer_m": 4e-06,
+    "dx_m": 1e-08,
+    "dy_m": 5e-09,
+    "t_max_s": 6.000000000000001e-13,
+    "auto_shutoff": 1e-07,
+    "pml_layers": 48,
+    "y_min_m": -7e-07,
+    "y_max_m": 1.8e-06,
+    "source_y_m": 7e-07,
+    "R_y_m": 1e-06,
+    "R2_y_m": 1.2e-06,
+    "I_y_m": 0.0,
+    "material": "Si (Silicon) - Palik",
+    "source_wavelength_start_m": 5e-07,
+    "source_wavelength_stop_m": 5.65e-07,
+    "polarization": "Ez (TE)",
+    "boundary": "all PML",
+    "interpolation": "specified position",
+    "mesh_refinement": "conformal variant 0"
+  },
+  "air": true,
+  "solve_s": 55.346141200046986,
+  "engine": {
+    "command": [
+      "D:\\Ansys Inc\\v252\\Lumerical\\bin\\fdtd-engine.exe",
+      "-t",
+      "8",
+      "-fullinfo",
+      "-log-stdout",
+      "D:\\工作\\Si532_RCWA_FDTD_AngularSpectrum_20261031\\fdtd\\cases\\N020_dx10_dy5_t600_pml48\\air\\model.fsp"
+    ],
+    "returncode": 0,
+    "started_utc": "2026-10-31T02:13:09.167436+00:00",
+    "elapsed_seconds": 55.346141200046986,
+    "stdout": "D:\\工作\\Si532_RCWA_FDTD_AngularSpectrum_20261031\\fdtd\\cases\\N020_dx10_dy5_t600_pml48\\air\\engine_stdout.log",
+    "stderr": "D:\\工作\\Si532_RCWA_FDTD_AngularSpectrum_20261031\\fdtd\\cases\\N020_dx10_dy5_t600_pml48\\air\\engine_stderr.log",
+    "threads": 8,
+    "processes": 1,
+    "device": "CPU"
+  },
+  "monitors": {
+    "R": {
+      "x": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "z": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "f": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ex": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ey": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ez": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hx": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hy": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "x_m": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y_m": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "frequency_hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "transmission": {
+        "shape": [],
+        "dtype": "float64"
+      }
+    },
+    "R2": {
+      "x": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "z": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "f": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ex": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ey": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ez": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hx": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hy": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "x_m": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y_m": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "frequency_hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "transmission": {
+        "shape": [],
+        "dtype": "float64"
+      }
+    },
+    "I": {
+      "x": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "z": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "f": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ex": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ey": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "Ez": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hx": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hy": {
+        "shape": [
+          4801,
+          1,
+          1,
+          1
+        ],
+        "dtype": "complex128"
+      },
+      "Hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "x_m": {
+        "shape": [
+          4801,
+          1
+        ],
+        "dtype": "float64"
+      },
+      "y_m": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "frequency_hz": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "transmission": {
+        "shape": [],
+        "dtype": "float64"
+      }
+    }
+  },
+  "material": {
+    "getindex": {
+      "n_real": 4.1501040188082685,
+      "n_imag": 0.04393515056151286,
+      "epsilon_real": 17.22143306947368,
+      "epsilon_imag": 0.36467088982456175
+    },
+    "getfdtdindex": {
+      "n_real": 4.149873311036015,
+      "n_imag": 0.04833494047986202,
+      "epsilon_real": 17.219112231177824,
+      "epsilon_imag": 0.40116775897578744
+    }
+  },
+  "solver_statistics": {
+    "iterations": 11772,
+    "simulated_time_s": 1.73852e-13,
+    "peak_memory_GiB": 0.400308,
+    "engine_overall_wall_s": 44.728754,
+    "fdtd_loop_wall_s": 37.916419,
+    "Nx": 4896,
+    "Ny": 596,
+    "final_auto_shutoff": 4.26141e-08,
+    "terminated_early": true,
+    "completed_successfully": true,
+    "FDTD_results": "x\ny\nz\nstatus\nautoshutoff level\ninitialization time\nsimulation run time\nsimulation checkpoint time\nmiscellaneous time\nsolver speed\ntotal solver speed\ntotal processes\ntotal threads\npeak cpu memory usage",
+    "simulation time": 6.000000000000001e-13,
+    "auto shutoff min": 1e-07
+  },
+  "completed_utc": "2026-10-31T02:14:04.803499+00:00",
+  "phase_convention": "Lumerical phasors exp(-i omega t), outgoing +y exp(+i ky y)"
+}

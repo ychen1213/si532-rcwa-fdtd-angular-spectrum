@@ -1,0 +1,656 @@
+# Public numerical excerpt; original local solver log is preserved unchanged.
+CPU threads per process: 8
+Ansys Lumerical 2025 R2 FDTD Solver Version 8.34.4175 (Windows 64bit)
+Peak CPU memory used by end of initialization: 0.084867 GiB
+Running 2D Simulation
+Starting meshing
+Simulation size in gridpoints: 40448 x 298 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 1.890625 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 40448 x 298 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 1.734375 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 40448 x 298 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 1.578125 seconds of CPU time
+Peak CPU memory used by end of meshing: 1.501256 GiB
+0.236292% complete. Elapsed simulation time: 1.41775e-15 secs. Max time remaining: 5 mins, 21 secs. Auto Shutoff: 1
+0.236292% complete. Elapsed simulation time: 1.41775e-15 secs. Max time remaining: 5 mins, 21 secs. Auto Shutoff: 1
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 767.947 Mnodes/s
+   1.0045 seconds total loop time
+1.49652% complete. Elapsed simulation time: 8.97911e-15 secs. Max time remaining: 5 mins, 19 secs. Auto Shutoff: 1
+1.49652% complete. Elapsed simulation time: 8.97911e-15 secs. Max time remaining: 5 mins, 19 secs. Auto Shutoff: 1
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.161 Mnodes/s
+   1.0135 seconds total loop time
+2.75674% complete. Elapsed simulation time: 1.65405e-14 secs. Max time remaining: 5 mins, 16 secs. Auto Shutoff: 1
+2.75674% complete. Elapsed simulation time: 1.65405e-14 secs. Max time remaining: 5 mins, 16 secs. Auto Shutoff: 1
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 757.727 Mnodes/s
+   1.0181 seconds total loop time
+4.01697% complete. Elapsed simulation time: 2.41018e-14 secs. Max time remaining: 5 mins, 10 secs. Auto Shutoff: 0.25585
+4.01697% complete. Elapsed simulation time: 2.41018e-14 secs. Max time remaining: 5 mins, 10 secs. Auto Shutoff: 0.25585
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 767.853 Mnodes/s
+   1.0047 seconds total loop time
+5.27719% complete. Elapsed simulation time: 3.16632e-14 secs. Max time remaining: 5 mins, 5 secs. Auto Shutoff: 0.0239451
+5.27719% complete. Elapsed simulation time: 3.16632e-14 secs. Max time remaining: 5 mins, 5 secs. Auto Shutoff: 0.0239451
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 780.802 Mnodes/s
+   0.9880 seconds total loop time
+6.53742% complete. Elapsed simulation time: 3.92245e-14 secs. Max time remaining: 5 mins, 1 secs. Auto Shutoff: 0.00584695
+6.53742% complete. Elapsed simulation time: 3.92245e-14 secs. Max time remaining: 5 mins, 1 secs. Auto Shutoff: 0.00584695
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 756.98 Mnodes/s
+   2.0382 seconds total loop time
+7.79764% complete. Elapsed simulation time: 4.67859e-14 secs. Max time remaining: 4 mins, 57 secs. Auto Shutoff: 0.0017867
+7.79764% complete. Elapsed simulation time: 4.67859e-14 secs. Max time remaining: 4 mins, 57 secs. Auto Shutoff: 0.0017867
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 775.632 Mnodes/s
+   0.9946 seconds total loop time
+9.05787% complete. Elapsed simulation time: 5.43472e-14 secs. Max time remaining: 4 mins, 53 secs. Auto Shutoff: 0.000940603
+9.05787% complete. Elapsed simulation time: 5.43472e-14 secs. Max time remaining: 4 mins, 53 secs. Auto Shutoff: 0.000940603
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 753.345 Mnodes/s
+   1.0240 seconds total loop time
+10.3181% complete. Elapsed simulation time: 6.19086e-14 secs. Max time remaining: 4 mins, 49 secs. Auto Shutoff: 0.0003753
+10.3181% complete. Elapsed simulation time: 6.19086e-14 secs. Max time remaining: 4 mins, 49 secs. Auto Shutoff: 0.0003753
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 729.673 Mnodes/s
+   1.0572 seconds total loop time
+11.5783% complete. Elapsed simulation time: 6.94699e-14 secs. Max time remaining: 4 mins, 45 secs. Auto Shutoff: 0.000172704
+11.5783% complete. Elapsed simulation time: 6.94699e-14 secs. Max time remaining: 4 mins, 45 secs. Auto Shutoff: 0.000172704
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 764.207 Mnodes/s
+   1.0094 seconds total loop time
+13.1536% complete. Elapsed simulation time: 7.89216e-14 secs. Max time remaining: 4 mins, 40 secs. Auto Shutoff: 8.42297e-05
+13.1536% complete. Elapsed simulation time: 7.89216e-14 secs. Max time remaining: 4 mins, 40 secs. Auto Shutoff: 8.42297e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 742.514 Mnodes/s
+   1.0389 seconds total loop time
+14.4138% complete. Elapsed simulation time: 8.6483e-14 secs. Max time remaining: 4 mins, 36 secs. Auto Shutoff: 5.68006e-05
+14.4138% complete. Elapsed simulation time: 8.6483e-14 secs. Max time remaining: 4 mins, 36 secs. Auto Shutoff: 5.68006e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 747.098 Mnodes/s
+   1.0326 seconds total loop time
+15.6741% complete. Elapsed simulation time: 9.40443e-14 secs. Max time remaining: 4 mins, 32 secs. Auto Shutoff: 2.74874e-05
+15.6741% complete. Elapsed simulation time: 9.40443e-14 secs. Max time remaining: 4 mins, 32 secs. Auto Shutoff: 2.74874e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 770.036 Mnodes/s
+   1.0018 seconds total loop time
+16.9343% complete. Elapsed simulation time: 1.01606e-13 secs. Max time remaining: 4 mins, 28 secs. Auto Shutoff: 2.89298e-05
+16.9343% complete. Elapsed simulation time: 1.01606e-13 secs. Max time remaining: 4 mins, 28 secs. Auto Shutoff: 2.89298e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 773.788 Mnodes/s
+   0.9969 seconds total loop time
+18.1945% complete. Elapsed simulation time: 1.09167e-13 secs. Max time remaining: 4 mins, 24 secs. Auto Shutoff: 2.47045e-05
+18.1945% complete. Elapsed simulation time: 1.09167e-13 secs. Max time remaining: 4 mins, 24 secs. Auto Shutoff: 2.47045e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 744.638 Mnodes/s
+   1.0360 seconds total loop time
+19.4547% complete. Elapsed simulation time: 1.16728e-13 secs. Max time remaining: 4 mins, 20 secs. Auto Shutoff: 1.43008e-05
+19.4547% complete. Elapsed simulation time: 1.16728e-13 secs. Max time remaining: 4 mins, 20 secs. Auto Shutoff: 1.43008e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 738.56 Mnodes/s
+   1.0445 seconds total loop time
+20.715% complete. Elapsed simulation time: 1.2429e-13 secs. Max time remaining: 4 mins, 16 secs. Auto Shutoff: 2.47226e-05
+20.715% complete. Elapsed simulation time: 1.2429e-13 secs. Max time remaining: 4 mins, 16 secs. Auto Shutoff: 2.47226e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 739.076 Mnodes/s
+   1.0438 seconds total loop time
+21.9752% complete. Elapsed simulation time: 1.31851e-13 secs. Max time remaining: 4 mins, 12 secs. Auto Shutoff: 1.44419e-05
+21.9752% complete. Elapsed simulation time: 1.31851e-13 secs. Max time remaining: 4 mins, 12 secs. Auto Shutoff: 1.44419e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 770.711 Mnodes/s
+   1.0009 seconds total loop time
+23.2354% complete. Elapsed simulation time: 1.39412e-13 secs. Max time remaining: 4 mins, 7 secs. Auto Shutoff: 1.47483e-05
+23.2354% complete. Elapsed simulation time: 1.39412e-13 secs. Max time remaining: 4 mins, 7 secs. Auto Shutoff: 1.47483e-05
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 765.367 Mnodes/s
+   1.0079 seconds total loop time
+24.4956% complete. Elapsed simulation time: 1.46974e-13 secs. Max time remaining: 4 mins, 3 secs. Auto Shutoff: 8.01968e-06
+24.4956% complete. Elapsed simulation time: 1.46974e-13 secs. Max time remaining: 4 mins, 3 secs. Auto Shutoff: 8.01968e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 768.78 Mnodes/s
+   1.0034 seconds total loop time
+25.7559% complete. Elapsed simulation time: 1.54535e-13 secs. Max time remaining: 3 mins, 59 secs. Auto Shutoff: 9.16951e-06
+25.7559% complete. Elapsed simulation time: 1.54535e-13 secs. Max time remaining: 3 mins, 59 secs. Auto Shutoff: 9.16951e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 742.875 Mnodes/s
+   1.0384 seconds total loop time
+27.0161% complete. Elapsed simulation time: 1.62096e-13 secs. Max time remaining: 3 mins, 55 secs. Auto Shutoff: 5.64628e-06
+27.0161% complete. Elapsed simulation time: 1.62096e-13 secs. Max time remaining: 3 mins, 55 secs. Auto Shutoff: 5.64628e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 769.835 Mnodes/s
+   1.0021 seconds total loop time
+28.2763% complete. Elapsed simulation time: 1.69658e-13 secs. Max time remaining: 3 mins, 51 secs. Auto Shutoff: 5.63302e-06
+28.2763% complete. Elapsed simulation time: 1.69658e-13 secs. Max time remaining: 3 mins, 51 secs. Auto Shutoff: 5.63302e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 751.66 Mnodes/s
+   1.0263 seconds total loop time
+29.5365% complete. Elapsed simulation time: 1.77219e-13 secs. Max time remaining: 3 mins, 47 secs. Auto Shutoff: 4.00322e-06
+29.5365% complete. Elapsed simulation time: 1.77219e-13 secs. Max time remaining: 3 mins, 47 secs. Auto Shutoff: 4.00322e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.404 Mnodes/s
+   1.0132 seconds total loop time
+30.7968% complete. Elapsed simulation time: 1.84781e-13 secs. Max time remaining: 3 mins, 43 secs. Auto Shutoff: 4.8341e-06
+30.7968% complete. Elapsed simulation time: 1.84781e-13 secs. Max time remaining: 3 mins, 43 secs. Auto Shutoff: 4.8341e-06
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 757.355 Mnodes/s
+   2.0372 seconds total loop time
+32.057% complete. Elapsed simulation time: 1.92342e-13 secs. Max time remaining: 3 mins, 39 secs. Auto Shutoff: 7.15883e-06
+32.057% complete. Elapsed simulation time: 1.92342e-13 secs. Max time remaining: 3 mins, 39 secs. Auto Shutoff: 7.15883e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.289 Mnodes/s
+   1.0133 seconds total loop time
+33.3172% complete. Elapsed simulation time: 1.99903e-13 secs. Max time remaining: 3 mins, 35 secs. Auto Shutoff: 4.29843e-06
+33.3172% complete. Elapsed simulation time: 1.99903e-13 secs. Max time remaining: 3 mins, 35 secs. Auto Shutoff: 4.29843e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 757.079 Mnodes/s
+   1.0189 seconds total loop time
+34.5774% complete. Elapsed simulation time: 2.07465e-13 secs. Max time remaining: 3 mins, 31 secs. Auto Shutoff: 8.36654e-06
+34.5774% complete. Elapsed simulation time: 2.07465e-13 secs. Max time remaining: 3 mins, 31 secs. Auto Shutoff: 8.36654e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 758.465 Mnodes/s
+   1.0171 seconds total loop time
+35.8377% complete. Elapsed simulation time: 2.15026e-13 secs. Max time remaining: 3 mins, 27 secs. Auto Shutoff: 5.47209e-06
+35.8377% complete. Elapsed simulation time: 2.15026e-13 secs. Max time remaining: 3 mins, 27 secs. Auto Shutoff: 5.47209e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 736.429 Mnodes/s
+   1.0475 seconds total loop time
+37.0979% complete. Elapsed simulation time: 2.22587e-13 secs. Max time remaining: 3 mins, 23 secs. Auto Shutoff: 5.59104e-06
+37.0979% complete. Elapsed simulation time: 2.22587e-13 secs. Max time remaining: 3 mins, 23 secs. Auto Shutoff: 5.59104e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 766.623 Mnodes/s
+   1.0063 seconds total loop time
+38.3581% complete. Elapsed simulation time: 2.30149e-13 secs. Max time remaining: 3 mins, 19 secs. Auto Shutoff: 6.97633e-06
+38.3581% complete. Elapsed simulation time: 2.30149e-13 secs. Max time remaining: 3 mins, 19 secs. Auto Shutoff: 6.97633e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.204 Mnodes/s
+   1.0134 seconds total loop time
+39.6183% complete. Elapsed simulation time: 2.3771e-13 secs. Max time remaining: 3 mins, 15 secs. Auto Shutoff: 3.71012e-06
+39.6183% complete. Elapsed simulation time: 2.3771e-13 secs. Max time remaining: 3 mins, 15 secs. Auto Shutoff: 3.71012e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.467 Mnodes/s
+   1.0131 seconds total loop time
+40.8786% complete. Elapsed simulation time: 2.45271e-13 secs. Max time remaining: 3 mins, 11 secs. Auto Shutoff: 4.95145e-06
+40.8786% complete. Elapsed simulation time: 2.45271e-13 secs. Max time remaining: 3 mins, 11 secs. Auto Shutoff: 4.95145e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 760.297 Mnodes/s
+   1.0146 seconds total loop time
+42.1388% complete. Elapsed simulation time: 2.52833e-13 secs. Max time remaining: 3 mins, 7 secs. Auto Shutoff: 2.49998e-06
+42.1388% complete. Elapsed simulation time: 2.52833e-13 secs. Max time remaining: 3 mins, 7 secs. Auto Shutoff: 2.49998e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 765.333 Mnodes/s
+   1.0080 seconds total loop time
+43.399% complete. Elapsed simulation time: 2.60394e-13 secs. Max time remaining: 3 mins, 2 secs. Auto Shutoff: 2.04236e-06
+43.399% complete. Elapsed simulation time: 2.60394e-13 secs. Max time remaining: 3 mins, 2 secs. Auto Shutoff: 2.04236e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 745.361 Mnodes/s
+   1.0350 seconds total loop time
+44.6592% complete. Elapsed simulation time: 2.67955e-13 secs. Max time remaining: 2 mins, 58 secs. Auto Shutoff: 2.14293e-06
+44.6592% complete. Elapsed simulation time: 2.67955e-13 secs. Max time remaining: 2 mins, 58 secs. Auto Shutoff: 2.14293e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 748.575 Mnodes/s
+   1.0305 seconds total loop time
+45.9195% complete. Elapsed simulation time: 2.75517e-13 secs. Max time remaining: 2 mins, 54 secs. Auto Shutoff: 3.66227e-06
+45.9195% complete. Elapsed simulation time: 2.75517e-13 secs. Max time remaining: 2 mins, 54 secs. Auto Shutoff: 3.66227e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 759.732 Mnodes/s
+   1.0154 seconds total loop time
+47.1797% complete. Elapsed simulation time: 2.83078e-13 secs. Max time remaining: 2 mins, 50 secs. Auto Shutoff: 2.16072e-06
+47.1797% complete. Elapsed simulation time: 2.83078e-13 secs. Max time remaining: 2 mins, 50 secs. Auto Shutoff: 2.16072e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 759.441 Mnodes/s
+   1.0158 seconds total loop time
+48.4399% complete. Elapsed simulation time: 2.90639e-13 secs. Max time remaining: 2 mins, 46 secs. Auto Shutoff: 4.01825e-06
+48.4399% complete. Elapsed simulation time: 2.90639e-13 secs. Max time remaining: 2 mins, 46 secs. Auto Shutoff: 4.01825e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 762.438 Mnodes/s
+   1.0118 seconds total loop time
+49.7001% complete. Elapsed simulation time: 2.98201e-13 secs. Max time remaining: 2 mins, 42 secs. Auto Shutoff: 2.81569e-06
+49.7001% complete. Elapsed simulation time: 2.98201e-13 secs. Max time remaining: 2 mins, 42 secs. Auto Shutoff: 2.81569e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 762.098 Mnodes/s
+   1.0122 seconds total loop time
+50.9604% complete. Elapsed simulation time: 3.05762e-13 secs. Max time remaining: 2 mins, 38 secs. Auto Shutoff: 2.74503e-06
+50.9604% complete. Elapsed simulation time: 3.05762e-13 secs. Max time remaining: 2 mins, 38 secs. Auto Shutoff: 2.74503e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 757.763 Mnodes/s
+   1.0180 seconds total loop time
+52.2206% complete. Elapsed simulation time: 3.13324e-13 secs. Max time remaining: 2 mins, 34 secs. Auto Shutoff: 3.47325e-06
+52.2206% complete. Elapsed simulation time: 3.13324e-13 secs. Max time remaining: 2 mins, 34 secs. Auto Shutoff: 3.47325e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 764.77 Mnodes/s
+   1.0087 seconds total loop time
+53.7959% complete. Elapsed simulation time: 3.22775e-13 secs. Max time remaining: 2 mins, 29 secs. Auto Shutoff: 1.7615e-06
+53.7959% complete. Elapsed simulation time: 3.22775e-13 secs. Max time remaining: 2 mins, 29 secs. Auto Shutoff: 1.7615e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 726.606 Mnodes/s
+   1.0617 seconds total loop time
+55.0561% complete. Elapsed simulation time: 3.30337e-13 secs. Max time remaining: 2 mins, 25 secs. Auto Shutoff: 1.143e-06
+55.0561% complete. Elapsed simulation time: 3.30337e-13 secs. Max time remaining: 2 mins, 25 secs. Auto Shutoff: 1.143e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 777.718 Mnodes/s
+   0.9919 seconds total loop time
+56.3163% complete. Elapsed simulation time: 3.37898e-13 secs. Max time remaining: 2 mins, 21 secs. Auto Shutoff: 2.33858e-06
+56.3163% complete. Elapsed simulation time: 3.37898e-13 secs. Max time remaining: 2 mins, 21 secs. Auto Shutoff: 2.33858e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 782.709 Mnodes/s
+   0.9856 seconds total loop time
+57.5765% complete. Elapsed simulation time: 3.45459e-13 secs. Max time remaining: 2 mins, 17 secs. Auto Shutoff: 1.08715e-06
+57.5765% complete. Elapsed simulation time: 3.45459e-13 secs. Max time remaining: 2 mins, 17 secs. Auto Shutoff: 1.08715e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 773.428 Mnodes/s
+   0.9974 seconds total loop time
+58.8368% complete. Elapsed simulation time: 3.53021e-13 secs. Max time remaining: 2 mins, 13 secs. Auto Shutoff: 2.13805e-06
+58.8368% complete. Elapsed simulation time: 3.53021e-13 secs. Max time remaining: 2 mins, 13 secs. Auto Shutoff: 2.13805e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 778.438 Mnodes/s
+   0.9910 seconds total loop time
+60.097% complete. Elapsed simulation time: 3.60582e-13 secs. Max time remaining: 2 mins, 9 secs. Auto Shutoff: 1.89098e-06
+60.097% complete. Elapsed simulation time: 3.60582e-13 secs. Max time remaining: 2 mins, 9 secs. Auto Shutoff: 1.89098e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 731.367 Mnodes/s
+   1.0548 seconds total loop time
+61.3572% complete. Elapsed simulation time: 3.68143e-13 secs. Max time remaining: 2 mins, 5 secs. Auto Shutoff: 1.81307e-06
+61.3572% complete. Elapsed simulation time: 3.68143e-13 secs. Max time remaining: 2 mins, 5 secs. Auto Shutoff: 1.81307e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 765.829 Mnodes/s
+   1.0073 seconds total loop time
+62.6174% complete. Elapsed simulation time: 3.75705e-13 secs. Max time remaining: 2 mins, 1 secs. Auto Shutoff: 1.94708e-06
+62.6174% complete. Elapsed simulation time: 3.75705e-13 secs. Max time remaining: 2 mins, 1 secs. Auto Shutoff: 1.94708e-06
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 758.413 Mnodes/s
+   2.0343 seconds total loop time
+63.8777% complete. Elapsed simulation time: 3.83266e-13 secs. Max time remaining: 1 min, 56 secs. Auto Shutoff: 9.13224e-07
+63.8777% complete. Elapsed simulation time: 3.83266e-13 secs. Max time remaining: 1 min, 56 secs. Auto Shutoff: 9.13224e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 766.908 Mnodes/s
+   1.0059 seconds total loop time
+65.1379% complete. Elapsed simulation time: 3.90827e-13 secs. Max time remaining: 1 min, 52 secs. Auto Shutoff: 1.36989e-06
+65.1379% complete. Elapsed simulation time: 3.90827e-13 secs. Max time remaining: 1 min, 52 secs. Auto Shutoff: 1.36989e-06
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 755.246 Mnodes/s
+   2.0428 seconds total loop time
+66.3981% complete. Elapsed simulation time: 3.98389e-13 secs. Max time remaining: 1 min, 48 secs. Auto Shutoff: 7.47508e-07
+66.3981% complete. Elapsed simulation time: 3.98389e-13 secs. Max time remaining: 1 min, 48 secs. Auto Shutoff: 7.47508e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 748.141 Mnodes/s
+   1.0311 seconds total loop time
+67.6583% complete. Elapsed simulation time: 4.0595e-13 secs. Max time remaining: 1 min, 44 secs. Auto Shutoff: 8.53323e-07
+67.6583% complete. Elapsed simulation time: 4.0595e-13 secs. Max time remaining: 1 min, 44 secs. Auto Shutoff: 8.53323e-07
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 760.785 Mnodes/s
+   2.0280 seconds total loop time
+68.9186% complete. Elapsed simulation time: 4.13511e-13 secs. Max time remaining: 1 min, 40 secs. Auto Shutoff: 5.66199e-07
+68.9186% complete. Elapsed simulation time: 4.13511e-13 secs. Max time remaining: 1 min, 40 secs. Auto Shutoff: 5.66199e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 770.435 Mnodes/s
+   1.0013 seconds total loop time
+70.1788% complete. Elapsed simulation time: 4.21073e-13 secs. Max time remaining: 1 min, 36 secs. Auto Shutoff: 6.34557e-07
+70.1788% complete. Elapsed simulation time: 4.21073e-13 secs. Max time remaining: 1 min, 36 secs. Auto Shutoff: 6.34557e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 755.061 Mnodes/s
+   1.0217 seconds total loop time
+71.7541% complete. Elapsed simulation time: 4.30524e-13 secs. Max time remaining: 1 min, 31 secs. Auto Shutoff: 1.04535e-06
+71.7541% complete. Elapsed simulation time: 4.30524e-13 secs. Max time remaining: 1 min, 31 secs. Auto Shutoff: 1.04535e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 772.909 Mnodes/s
+   0.9981 seconds total loop time
+73.0143% complete. Elapsed simulation time: 4.38086e-13 secs. Max time remaining: 1 min, 27 secs. Auto Shutoff: 1.06096e-06
+73.0143% complete. Elapsed simulation time: 4.38086e-13 secs. Max time remaining: 1 min, 27 secs. Auto Shutoff: 1.06096e-06
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 747.543 Mnodes/s
+   1.0319 seconds total loop time
+74.2745% complete. Elapsed simulation time: 4.45647e-13 secs. Max time remaining: 1 min, 23 secs. Auto Shutoff: 4.77523e-07
+74.2745% complete. Elapsed simulation time: 4.45647e-13 secs. Max time remaining: 1 min, 23 secs. Auto Shutoff: 4.77523e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 774.12 Mnodes/s
+   0.9965 seconds total loop time
+75.5348% complete. Elapsed simulation time: 4.53209e-13 secs. Max time remaining: 1 min, 19 secs. Auto Shutoff: 8.87893e-07
+75.5348% complete. Elapsed simulation time: 4.53209e-13 secs. Max time remaining: 1 min, 19 secs. Auto Shutoff: 8.87893e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 735.838 Mnodes/s
+   1.0484 seconds total loop time
+76.795% complete. Elapsed simulation time: 4.6077e-13 secs. Max time remaining: 1 min, 15 secs. Auto Shutoff: 3.99482e-07
+76.795% complete. Elapsed simulation time: 4.6077e-13 secs. Max time remaining: 1 min, 15 secs. Auto Shutoff: 3.99482e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 768.558 Mnodes/s
+   1.0037 seconds total loop time
+78.0552% complete. Elapsed simulation time: 4.68331e-13 secs. Max time remaining: 1 min, 11 secs. Auto Shutoff: 4.33665e-07
+78.0552% complete. Elapsed simulation time: 4.68331e-13 secs. Max time remaining: 1 min, 11 secs. Auto Shutoff: 4.33665e-07
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 762.204 Mnodes/s
+   2.0242 seconds total loop time
+79.3154% complete. Elapsed simulation time: 4.75893e-13 secs. Max time remaining: 1 min, 7 secs. Auto Shutoff: 3.64422e-07
+79.3154% complete. Elapsed simulation time: 4.75893e-13 secs. Max time remaining: 1 min, 7 secs. Auto Shutoff: 3.64422e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 763.961 Mnodes/s
+   1.0098 seconds total loop time
+80.5757% complete. Elapsed simulation time: 4.83454e-13 secs. Max time remaining: 1 min, 3 secs. Auto Shutoff: 3.63459e-07
+80.5757% complete. Elapsed simulation time: 4.83454e-13 secs. Max time remaining: 1 min, 3 secs. Auto Shutoff: 3.63459e-07
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 754.172 Mnodes/s
+   2.0458 seconds total loop time
+81.8359% complete. Elapsed simulation time: 4.91015e-13 secs. Max time remaining: 59 secs. Auto Shutoff: 3.97073e-07
+81.8359% complete. Elapsed simulation time: 4.91015e-13 secs. Max time remaining: 59 secs. Auto Shutoff: 3.97073e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 760.633 Mnodes/s
+   1.0142 seconds total loop time
+83.0961% complete. Elapsed simulation time: 4.98577e-13 secs. Max time remaining: 54 secs. Auto Shutoff: 2.81429e-07
+83.0961% complete. Elapsed simulation time: 4.98577e-13 secs. Max time remaining: 54 secs. Auto Shutoff: 2.81429e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 759.383 Mnodes/s
+   1.0159 seconds total loop time
+84.6714% complete. Elapsed simulation time: 5.08028e-13 secs. Max time remaining: 49 secs. Auto Shutoff: 3.24431e-07
+84.6714% complete. Elapsed simulation time: 5.08028e-13 secs. Max time remaining: 49 secs. Auto Shutoff: 3.24431e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 759.187 Mnodes/s
+   1.0161 seconds total loop time
+86.2467% complete. Elapsed simulation time: 5.1748e-13 secs. Max time remaining: 44 secs. Auto Shutoff: 2.3731e-07
+86.2467% complete. Elapsed simulation time: 5.1748e-13 secs. Max time remaining: 44 secs. Auto Shutoff: 2.3731e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 777.376 Mnodes/s
+   0.9923 seconds total loop time
+87.5069% complete. Elapsed simulation time: 5.25041e-13 secs. Max time remaining: 40 secs. Auto Shutoff: 2.4735e-07
+87.5069% complete. Elapsed simulation time: 5.25041e-13 secs. Max time remaining: 40 secs. Auto Shutoff: 2.4735e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 754.11 Mnodes/s
+   1.0230 seconds total loop time
+88.7671% complete. Elapsed simulation time: 5.32603e-13 secs. Max time remaining: 36 secs. Auto Shutoff: 2.87558e-07
+88.7671% complete. Elapsed simulation time: 5.32603e-13 secs. Max time remaining: 36 secs. Auto Shutoff: 2.87558e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 744.177 Mnodes/s
+   1.0366 seconds total loop time
+90.0273% complete. Elapsed simulation time: 5.40164e-13 secs. Max time remaining: 32 secs. Auto Shutoff: 2.13417e-07
+90.0273% complete. Elapsed simulation time: 5.40164e-13 secs. Max time remaining: 32 secs. Auto Shutoff: 2.13417e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 685.269 Mnodes/s
+   1.1257 seconds total loop time
+91.2876% complete. Elapsed simulation time: 5.47725e-13 secs. Max time remaining: 28 secs. Auto Shutoff: 3.80197e-07
+91.2876% complete. Elapsed simulation time: 5.47725e-13 secs. Max time remaining: 28 secs. Auto Shutoff: 3.80197e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 750.851 Mnodes/s
+   1.0274 seconds total loop time
+92.5478% complete. Elapsed simulation time: 5.55287e-13 secs. Max time remaining: 24 secs. Auto Shutoff: 2.65096e-07
+92.5478% complete. Elapsed simulation time: 5.55287e-13 secs. Max time remaining: 24 secs. Auto Shutoff: 2.65096e-07
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 761.816 Mnodes/s
+   2.0252 seconds total loop time
+93.808% complete. Elapsed simulation time: 5.62848e-13 secs. Max time remaining: 20 secs. Auto Shutoff: 4.06998e-07
+93.808% complete. Elapsed simulation time: 5.62848e-13 secs. Max time remaining: 20 secs. Auto Shutoff: 4.06998e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 759.73 Mnodes/s
+   1.0154 seconds total loop time
+95.0682% complete. Elapsed simulation time: 5.70409e-13 secs. Max time remaining: 16 secs. Auto Shutoff: 3.12788e-07
+95.0682% complete. Elapsed simulation time: 5.70409e-13 secs. Max time remaining: 16 secs. Auto Shutoff: 3.12788e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 764.021 Mnodes/s
+   1.0097 seconds total loop time
+96.6435% complete. Elapsed simulation time: 5.79861e-13 secs. Max time remaining: 11 secs. Auto Shutoff: 1.39133e-07
+96.6435% complete. Elapsed simulation time: 5.79861e-13 secs. Max time remaining: 11 secs. Auto Shutoff: 1.39133e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 763.328 Mnodes/s
+   1.0106 seconds total loop time
+97.9038% complete. Elapsed simulation time: 5.87423e-13 secs. Max time remaining: 7 secs. Auto Shutoff: 1.55013e-07
+97.9038% complete. Elapsed simulation time: 5.87423e-13 secs. Max time remaining: 7 secs. Auto Shutoff: 1.55013e-07
+  Finished 128 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 772.089 Mnodes/s
+   1.9983 seconds total loop time
+99.164% complete. Elapsed simulation time: 5.94984e-13 secs. Max time remaining: 3 secs. Auto Shutoff: 1.63342e-07
+99.164% complete. Elapsed simulation time: 5.94984e-13 secs. Max time remaining: 3 secs. Auto Shutoff: 1.63342e-07
+  Finished 64 iterations
+  Total X spatial steps 40448
+  Total Y spatial steps 298
+  Total Z spatial steps 1
+  FDTD loop runs at: 755.548 Mnodes/s
+   1.0210 seconds total loop time
+Completed 20314 iterations, or 6.000051e-13s of Simulation Time
+Simulation completed successfully at: 周六 10月 31 09:56:34 2026
+Peak CPU memory used in the simulation (GiB): 1.501256
+Overall wall time measurements in seconds: 332.185257
+  time to mesh and initialize: 3.552351
+  time to run FDTD simulation: 322.463288
+  time to checkpoint simulation: 0.000000
+  time to finalize data and save to files: 0.123402
+  miscellaneous time: 6.046165
+  FDTD solver speed on process 0 (Mnodes/s): 759.326377
+  total FDTD solver speed on 1 processes (Mnodes/s): 759.326377

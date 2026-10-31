@@ -1,0 +1,9 @@
+{
+  "source_span_added_total_um": 4,
+  "max_absolute_Ez_change": {
+    "R": 0.0,
+    "R2": 0.0,
+    "I": 0.0
+  },
+  "interpretation": "Source span extension beyond FDTD user span makes no change in effective injected fields in this installation."
+}

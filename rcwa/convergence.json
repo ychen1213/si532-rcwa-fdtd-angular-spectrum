@@ -1,0 +1,20 @@
+[
+  {
+    "from": "harmonics_020_dx5nm",
+    "to": "harmonics_040_dx5nm",
+    "max_complex_r_change": 0.000973694645218793,
+    "max_power_R_change": 0.0001750516180836631
+  },
+  {
+    "from": "harmonics_040_dx5nm",
+    "to": "harmonics_080_dx5nm",
+    "max_complex_r_change": 0.0012095144456967886,
+    "max_power_R_change": 1.3793708044523845e-05
+  },
+  {
+    "from": "harmonics_080_dx5nm",
+    "to": "harmonics_080_dx2.5nm",
+    "max_complex_r_change": 0.0003973931757794956,
+    "max_power_R_change": 5.304055680513398e-06
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "title": "532 nm Si grating: extracting RCWA complex orders from finite FDTD angular spectra",
+  "created_local_date": "2026-10-31",
+  "timezone": "Asia/Hong_Kong",
+  "wavelength_nm": 532,
+  "pitch_um": 2,
+  "duty_cycle": 0.5,
+  "ridge_width_um": 1,
+  "etch_depth_nm": 100,
+  "polarization": "TE; canonical Ey; native 2D XY Ez",
+  "incident_angle_deg": 0,
+  "canonical_coordinates": "x transverse, z downwards, ridge top z=0, groove bottom z=100nm",
+  "native_fdtd_coordinates": "x transverse, y upwards; z_canonical=-y_native; scalar Ey_canonical=Ez_native",
+  "structure": "Si substrate and Si ridges; finite N centered complete cells; flat groove-bottom substrate outside the mark",
+  "material": "Si (Silicon) - Palik, installed Lumerical v252 FDTD fit over 500..565nm",
+  "reference": "RCWA monochromatic material equals actual FDTD fitted complex index at 532nm",
+  "phasor": "exp(-i omega t)",
+  "angular_spectrum": "A(kx)=integral E_reflected(x,y_monitor)*exp(-i*kx*x) dx",
+  "extraction": "r_m=exp(-i*k_y,m*y_monitor)*A(m*2pi/pitch)/(L*E_incident_at_ridge_top)",
+  "scope": "Reflective propagating orders -3..3 in air; 2D per unit invariant length; no claim of finite-array exactly equalling infinite periodic scattering"
+}

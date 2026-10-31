@@ -1,0 +1,42 @@
+{
+  "Lumerical_dataset": {
+    "parameters": [
+      [
+        "lambda",
+        "f"
+      ]
+    ],
+    "attributes": [
+      "n_upper",
+      "n_lower"
+    ]
+  },
+  "arrays": {
+    "lambda": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "f": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "n_upper": {
+      "shape": [
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "n_lower": {
+      "shape": [
+        1
+      ],
+      "dtype": "complex128"
+    }
+  }
+}

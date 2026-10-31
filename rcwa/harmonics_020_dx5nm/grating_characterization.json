@@ -1,0 +1,146 @@
+{
+  "Lumerical_dataset": {
+    "parameters": [
+      [
+        "lambda",
+        "f"
+      ],
+      [
+        "theta",
+        "phi"
+      ],
+      [
+        "n"
+      ],
+      [
+        "m"
+      ]
+    ],
+    "attributes": [
+      "Rss",
+      "Rsp",
+      "Rps",
+      "Rpp",
+      "Tss",
+      "Tsp",
+      "Tps",
+      "Tpp"
+    ]
+  },
+  "arrays": {
+    "lambda": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "f": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "theta": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "phi": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "n": {
+      "shape": [
+        41,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "m": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Rss": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Rsp": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Rps": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Rpp": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Tss": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Tsp": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Tps": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "Tpp": {
+      "shape": [
+        1,
+        1,
+        41,
+        1
+      ],
+      "dtype": "complex128"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "Lumerical_dataset": {
+    "parameters": [
+      [
+        "lambda",
+        "f"
+      ],
+      [
+        "theta",
+        "phi"
+      ]
+    ],
+    "attributes": [
+      "Rs",
+      "Ts",
+      "Rp",
+      "Tp"
+    ]
+  },
+  "arrays": {
+    "lambda": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "f": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "theta": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "phi": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Rs": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Ts": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Rp": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Tp": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    }
+  }
+}

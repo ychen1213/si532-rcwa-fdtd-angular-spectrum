@@ -1,0 +1,6 @@
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
+pypandoc_binary>=1.17
+# Electromagnetic solves additionally require a licensed Ansys Lumerical v252 installation.
+# PDF build additionally requires XeLaTeX with ctex and Windows SimSun/SimHei fonts.

@@ -1,0 +1,17 @@
+{
+  "x span": 0.000108,
+  "y min": -7e-07,
+  "y max": 1.7999999999999997e-06,
+  "dx": 1e-08,
+  "dy": 5e-09,
+  "pml layers": 48.0,
+  "pml profile": 1.0,
+  "x min bc": "PML",
+  "x max bc": "PML",
+  "y min bc": "PML",
+  "y max bc": "PML",
+  "simulation time": 6.000000000000001e-13,
+  "auto shutoff min": 1e-07,
+  "dt stability factor": 0.99,
+  "source x span": 0.000108
+}

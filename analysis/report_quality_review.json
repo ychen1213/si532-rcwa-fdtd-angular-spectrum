@@ -1,0 +1,10 @@
+{
+  "pdf": "report/REPORT_zh.pdf",
+  "pages": 23,
+  "figures": 12,
+  "rendered_all_pages": true,
+  "visual_review": "All 23 pages reviewed in contact sheets; scientific plots and final answer/runtime tables inspected separately.",
+  "result": "No clipped content, missing glyphs, broken math or unreadable figure legends observed.",
+  "verification_checks_passed": 67,
+  "verification_checks_total": 67
+}

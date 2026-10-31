@@ -1,0 +1,11 @@
+{
+  "air_reference": "N200_dx20_dy10_t1200/air",
+  "reference_reused": true,
+  "path_base": "fdtd/cases",
+  "reference_auto_shutoff_min": 1e-07,
+  "reference_actual_time_s": 1.20001e-12,
+  "reference_requested_time_s": 1.2000000000000001e-12,
+  "reference_completed_all_requested_time": true,
+  "new_mark_auto_shutoff_min": 1e-12,
+  "reason": "The existing air job completed all 1200 fs without satisfying its 1e-7 stopping threshold. Lowering that unused threshold changes no Maxwell update or DFT time step; this full-duration reference is reused explicitly. No new air solve or DONE is claimed."
+}

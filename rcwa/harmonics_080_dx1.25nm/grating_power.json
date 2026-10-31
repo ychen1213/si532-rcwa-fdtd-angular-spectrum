@@ -1,0 +1,126 @@
+{
+  "Lumerical_dataset": {
+    "parameters": [
+      [
+        "lambda",
+        "f"
+      ],
+      [
+        "theta",
+        "phi"
+      ],
+      [
+        "n"
+      ],
+      [
+        "m"
+      ]
+    ],
+    "attributes": [
+      "Rs_power",
+      "Ts_power",
+      "Rp_power",
+      "Tp_power",
+      "kx",
+      "ky"
+    ]
+  },
+  "arrays": {
+    "lambda": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "f": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "theta": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "phi": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "n": {
+      "shape": [
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "m": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Rs_power": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Ts_power": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Rp_power": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "Tp_power": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "kx": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "ky": {
+      "shape": [
+        1,
+        1,
+        31,
+        1
+      ],
+      "dtype": "float64"
+    }
+  }
+}

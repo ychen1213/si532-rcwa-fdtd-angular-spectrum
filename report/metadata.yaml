@@ -1,0 +1,30 @@
+title: "532 nm Si 光栅：从有限 FDTD 复角谱得到 RCWA 衍射级复振幅"
+subtitle: "2 μm 周期、50% 占空比、100 nm 台阶；推导、真实计算与直接答案"
+author: "可复现数值实验报告"
+date: "2026-10-31（Asia/Hong_Kong）"
+lang: zh-CN
+documentclass: ctexart
+classoption: [UTF8, a4paper, 11pt]
+geometry: [margin=22mm]
+mainfont: "Times New Roman"
+sansfont: "Arial"
+monofont: "Consolas"
+toc: true
+toc-depth: 2
+numbersections: true
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+header-includes:
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
+  - \usepackage{longtable,booktabs}
+  - \usepackage{needspace,etoolbox}
+  - \BeforeBeginEnvironment{longtable}{\Needspace{11\baselineskip}}
+  - \setlength{\emergencystretch}{3em}
+  - \setlength{\parskip}{0.35em}
+  - \setcounter{topnumber}{2}
+  - \setcounter{bottomnumber}{2}
+  - \renewcommand{\topfraction}{0.95}
+  - \renewcommand{\textfraction}{0.05}
+  - \renewcommand{\floatpagefraction}{0.8}

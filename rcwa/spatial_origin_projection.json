@@ -1,0 +1,14 @@
+{
+  "method": "trapezoidal integral Ey(x)*exp(-i*kxm*x)/period at physical monitor coordinates",
+  "x_range_nm": [
+    -1000,
+    1000
+  ],
+  "points": 1601,
+  "z_nm": -100.0,
+  "deembedding": "r=-C*exp(i*(kzm*zmonitor+k0*zreference)); subtract incident for m=0",
+  "prediction": "r_physical_x0=r_raw_z_deembedded*exp(+i*m*pi)",
+  "max_complex_error": 6.4120786374450145e-15,
+  "conclusion": "Native RCWA field_amplitudes phase starts at x_min, not at physical x=0.",
+  "half_mesh_note": "This test deliberately uses uncorrected coefficients; the finite-mesh lateral phase bias is audited separately."
+}

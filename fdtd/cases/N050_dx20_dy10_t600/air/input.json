@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "N": 50,
+    "pitch_m": 2e-06,
+    "duty": 0.5,
+    "etch_depth_m": 1e-07,
+    "wavelength_m": 5.32e-07,
+    "buffer_m": 4e-06,
+    "dx_m": 2e-08,
+    "dy_m": 1e-08,
+    "t_max_s": 6.000000000000001e-13,
+    "auto_shutoff": 1e-07,
+    "pml_layers": 24,
+    "y_min_m": -7e-07,
+    "y_max_m": 1.8e-06,
+    "source_y_m": 7e-07,
+    "R_y_m": 1e-06,
+    "R2_y_m": 1.2e-06,
+    "I_y_m": 0.0,
+    "material": "Si (Silicon) - Palik",
+    "source_wavelength_start_m": 5e-07,
+    "source_wavelength_stop_m": 5.65e-07,
+    "polarization": "Ez (TE)",
+    "boundary": "all PML",
+    "interpolation": "specified position",
+    "mesh_refinement": "conformal variant 0"
+  },
+  "air": true
+}

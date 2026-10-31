@@ -1,0 +1,16 @@
+{
+  "lambda_nm": 532,
+  "material": "Si (Silicon) - Palik",
+  "getindex": {
+    "real": 4.1501040188082685,
+    "imag": 0.04393515056151286
+  },
+  "getfdtdindex": {
+    "real": 4.149873311036015,
+    "imag": 0.04833494047986202
+  },
+  "fit_band_nm": [
+    500,
+    565
+  ]
+}

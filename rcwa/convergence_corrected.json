@@ -1,0 +1,57 @@
+[
+  {
+    "from": "harmonics_020_dx5nm",
+    "to": "harmonics_040_dx5nm",
+    "from_actual_dx_nm": 5.0,
+    "to_actual_dx_nm": 5.0,
+    "max_complex_r_change_before_lateral_correction": 0.000973694645218793,
+    "max_complex_r_change_centered": 0.0009736946452188017,
+    "max_R_change": 0.0001750516180836631,
+    "from_total_R": 0.36136364444281155,
+    "to_total_R": 0.3614267216312538
+  },
+  {
+    "from": "harmonics_040_dx5nm",
+    "to": "harmonics_080_dx5nm",
+    "from_actual_dx_nm": 5.0,
+    "to_actual_dx_nm": 3.125,
+    "max_complex_r_change_before_lateral_correction": 0.0012095144456967886,
+    "max_complex_r_change_centered": 0.00011916465891787141,
+    "max_R_change": 1.3793708044523845e-05,
+    "from_total_R": 0.3614267216312538,
+    "to_total_R": 0.3613861825668503
+  },
+  {
+    "from": "harmonics_080_dx5nm",
+    "to": "harmonics_080_dx2.5nm",
+    "from_actual_dx_nm": 3.125,
+    "to_actual_dx_nm": 2.5,
+    "max_complex_r_change_before_lateral_correction": 0.0003973931757794956,
+    "max_complex_r_change_centered": 1.0289903776660098e-05,
+    "max_R_change": 5.304055680513398e-06,
+    "from_total_R": 0.3613861825668503,
+    "to_total_R": 0.3613752826291735
+  },
+  {
+    "from": "harmonics_080_dx2.5nm",
+    "to": "harmonics_080_dx1.25nm",
+    "from_actual_dx_nm": 2.5,
+    "to_actual_dx_nm": 1.25,
+    "max_complex_r_change_before_lateral_correction": 0.0007907630999784518,
+    "max_complex_r_change_centered": 1.3709064302331052e-05,
+    "max_R_change": 7.064819984345383e-06,
+    "from_total_R": 0.3613752826291735,
+    "to_total_R": 0.3613607578577331
+  },
+  {
+    "from": "harmonics_080_dx1.25nm",
+    "to": "harmonics_160_dx1.25nm",
+    "from_actual_dx_nm": 1.25,
+    "to_actual_dx_nm": 1.25,
+    "max_complex_r_change_before_lateral_correction": 1.4574378634106102e-05,
+    "max_complex_r_change_centered": 1.4574378634105577e-05,
+    "max_R_change": 1.936343048028477e-06,
+    "from_total_R": 0.3613607578577331,
+    "to_total_R": 0.3613609151276216
+  }
+]

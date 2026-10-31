@@ -1,0 +1,42 @@
+[
+  {
+    "case": "N100_dx20_dy10_t600",
+    "N": 100,
+    "L_um": 199.99999999999997,
+    "cropped_monitor_samples": 10001,
+    "reflected_poynting_W_per_m_slot": 9.197741786762983e-08,
+    "reflected_Eonly_spectrum_W_per_m_slot": 9.204662438190752e-08,
+    "reflected_EH_spectrum_W_per_m_slot": 9.19698040128505e-08,
+    "incident_uniform_mean_normalization_W_per_m_slot": 2.6540266394003744e-07,
+    "actual_incident_poynting_W_per_m_slot": 2.6493978743073564e-07,
+    "R_Poynting_uniform_mean_normalization": 0.3465580054931564,
+    "R_Eonly_spectrum_uniform_mean_normalization": 0.34681876592882904,
+    "R_Poynting_actual_incident_normalization": 0.34716347725490604,
+    "R_Eonly_spectrum_actual_incident_normalization": 0.34742469326533926,
+    "Eonly_spectrum_minus_poynting_relative": 0.0007524294101981203,
+    "actual_incident_over_uniform_mean": 0.9982559462575463,
+    "EH_Parseval_relative_error": 2.87809459700473e-16,
+    "FFT_endpoint_quadrature_relative_difference": -8.277960999398717e-05,
+    "Eonly_q_sum_minus_trapezoid_relative": 1.2369514962186381e-08
+  },
+  {
+    "case": "N400_dx20_dy10_t600",
+    "N": 400,
+    "L_um": 799.9999999999999,
+    "cropped_monitor_samples": 40001,
+    "reflected_poynting_W_per_m_slot": 3.686904352730297e-07,
+    "reflected_Eonly_spectrum_W_per_m_slot": 3.6917188441160086e-07,
+    "reflected_EH_spectrum_W_per_m_slot": 3.686828224831788e-07,
+    "incident_uniform_mean_normalization_W_per_m_slot": 1.0615994700733932e-06,
+    "actual_incident_poynting_W_per_m_slot": 1.0597467971662233e-06,
+    "R_Poynting_uniform_mean_normalization": 0.3472971169131616,
+    "R_Eonly_spectrum_uniform_mean_normalization": 0.3477506298925322,
+    "R_Poynting_actual_incident_normalization": 0.34790426945277186,
+    "R_Eonly_spectrum_actual_incident_normalization": 0.34835857527361375,
+    "Eonly_spectrum_minus_poynting_relative": 0.0013058357161195334,
+    "actual_incident_over_uniform_mean": 0.9982548287189312,
+    "EH_Parseval_relative_error": 2.871821304113465e-16,
+    "FFT_endpoint_quadrature_relative_difference": -2.0648189165140992e-05,
+    "Eonly_q_sum_minus_trapezoid_relative": 6.320715150391775e-10
+  }
+]

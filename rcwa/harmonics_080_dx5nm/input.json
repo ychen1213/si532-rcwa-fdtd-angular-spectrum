@@ -1,0 +1,17 @@
+{
+  "wavelength_nm": 532,
+  "period_nm": 2000,
+  "duty_cycle": 0.5,
+  "depth_nm": 100,
+  "Si_n": {
+    "real": 4.149873311036015,
+    "imag": 0.04833494047986202
+  },
+  "harmonic_max_order": 80,
+  "expected_total_harmonics": 161,
+  "dx_nm": 5,
+  "TE": "Ey",
+  "incident_direction": "+z",
+  "convention": "exp(-i omega t)",
+  "source_reference_z_nm": -200
+}

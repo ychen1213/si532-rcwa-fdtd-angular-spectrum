@@ -1,0 +1,206 @@
+{
+  "Lumerical_dataset": {
+    "parameters": [
+      [
+        "lambda",
+        "f"
+      ],
+      [
+        "theta",
+        "phi"
+      ],
+      [
+        "n"
+      ],
+      [
+        "m"
+      ]
+    ],
+    "attributes": [
+      "ekx_fs",
+      "eky_fs",
+      "ekz_fs",
+      "ekx_bs",
+      "eky_bs",
+      "ekz_bs",
+      "ekx_fp",
+      "eky_fp",
+      "ekz_fp",
+      "ekx_bp",
+      "eky_bp",
+      "ekz_bp",
+      "kx",
+      "ky"
+    ]
+  },
+  "arrays": {
+    "lambda": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "f": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "theta": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "phi": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "n": {
+      "shape": [
+        81,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "m": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "ekx_fs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "eky_fs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekz_fs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekx_bs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "eky_bs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekz_bs": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekx_fp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "eky_fp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekz_fp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekx_bp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "eky_bp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "ekz_bp": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "complex128"
+    },
+    "kx": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "ky": {
+      "shape": [
+        1,
+        1,
+        81,
+        1
+      ],
+      "dtype": "float64"
+    }
+  }
+}
