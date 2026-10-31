@@ -1,0 +1,9 @@
+{
+  "snapshot_commit": "3c782833397c067321e487e944b355e7e67eff5a",
+  "independent_public_archive_reanalysis": true,
+  "private_engine_logs_absent": true,
+  "lumerical_solver_launched": false,
+  "extracted_rows": 84,
+  "maximum_numeric_difference_in_complex_amplitude_phase_and_band_power": 0.0,
+  "comparison": "Original analysis vs freshly extracted Git archive using only publishable files"
+}
