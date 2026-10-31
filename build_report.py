@@ -330,7 +330,32 @@ $$N>1+\frac{{|r_0/r_1|}}{{\pi\times0.001}}\approx {1+ratio/(np.pi*.001):.1f}.$$
               [str,str,lambda v:f'{v:.7f}',lambda v:f'{v:.8f}']))
     add('# FDTD 连续角谱：长度变大后看到了什么')
     add(fig('05_fdtd_spectra_all_N','图 5：真实 FDTD 的完整传播角谱，N 从 10 到 400','直接观察有限长度如何把离散衍射级变成连续分布。','所有尺寸都在相同的衍射方向附近形成峰。增加 N 使峰变窄；归一化峰中心趋于固定复系数，而未经 L 归一化的峰高会随长度增加。下图的对数纵轴显示仍然存在的旁瓣和有限边缘背景。'))
-    add(fig('06_local_sinc_validation','图 6：400 周期各级附近的 FDTD 与有限窗 RCWA 对照','把整个连续峰形与由 RCWA 同一组系数预测的有限窗形状比较。','每个主峰及其附近结构由同一组离散系数和窗口核共同决定。实际曲线与理想有限窗的差别反映端部、入射不均匀及数值误差；并不说明每个旁瓣还需要分配一个新的 RCWA 系数。'))
+    add(r'''## 为什么 RCWA 的一个离散级对应 FDTD 的一段角谱
+
+先把三种比较方式分清楚：**级中心复数提取、复角谱积分和功率谱积分是相关但不同的量。** 在满足整数周期窗及归一化条件时，级中心的复角谱可以用来提取 RCWA 的复系数；对目标角带的复角谱作相干积分，经过参考面、观察位置和归一化处理，在长阵列、级间充分分离等条件下也可以近似得到复系数；对角带的带通量权重模平方积分则得到该角带的功率，结果是实数而不保留整体相位。下图先看完整峰形，后面的“实际例子：400 周期的 +1 级”用真实数据逐项比较这三种做法。
+
+对无限周期 RCWA，第 $m$ 级具有确定的横向波数
+
+$$q_m=\frac{2\pi m}{\Lambda},$$
+
+其 $r_m$ 是参考面上对应平面波的**傅里叶复系数**。它不是普通连续曲线在 $q_m$ 处的某个有限函数值。按照本报告的傅里叶变换约定，将场统一到 $h=0$ 参考面后，连续角谱中这一级是带权重的 Dirac δ 峰：
+
+$$A_{\infty,m}(q;0)=2\pi E_{i,0}r_m\,\delta(q-q_m),\qquad
+\frac{A_{\infty,m}(q;0)}{2\pi E_{i,0}}=r_m\,\delta(q-q_m).$$
+
+因此，在 $A/(2\pi E_{i,0})$ 这个规范下，$r_m$ 是 δ 峰的复权重；在监视面 $d$ 则还带传播因子 $e^{i\beta_m d}$。δ 是分布，须通过积分理解；把它画成一个竖线只表示方向和权重，不表示具有普通有限峰高的曲线。
+
+若只看这个级，用长度 $L=N\Lambda$ 的理想矩形观察窗截取参考面上的周期场，其连续窗谱为
+
+$$A_{L,m}(q;0)=L E_{i,0}r_m\,
+\operatorname{sinc}\!\left[\frac{(q-q_m)L}{2}\right],\qquad
+\operatorname{sinc}v=\frac{\sin v}{v},\quad \operatorname{sinc}0=1.$$
+
+随着 $L$ 增大，**未经 $L$ 归一化**的峰按 $L$ 变高、宽度按 $1/L$ 变窄；在 $A/(2\pi E_{i,0})$ 规范下，这个有符号复窗谱以分布意义趋于权重为 $r_m$ 的 δ 峰，其完整积分的复权重保持不变。也就是说，越来越窄的有限窗角谱在极限意义下对应 RCWA 的一个离散级。这是“RCWA 的一个点对应 FDTD 的一个范围”的数学表达。若画的是 $|A/(L E_{i,0})|$，峰高已经除以 $L$，因此不能再从该归一化图要求峰高随 $L$ 增加；模的面积也不是上述带符号复场的 δ 权重。
+
+这个单级公式是理解的起点。实际总场中，各级的复窗谱要先相干相加；有限物理结构又会有端部散射与照明变化，故真实 FDTD 与理想截窗周期场只是近似对应。特别地，本实验是将监视线中央 $N\Lambda$ 长度事后截窗，有限 Mark 外侧还有平坦 Si；下图不是自动包含全部窗外场的完整器件远场。
+''')
+    add(fig('06_local_sinc_validation','图 6：400 周期各级附近的 FDTD 与有限窗 RCWA 对照',r'把整个连续峰形与由 RCWA 同一组系数预测的有限窗形状比较。蓝色实线是真实 N=400 FDTD 的监视线截窗角谱；橙色虚线是将 RCWA 的所有空气侧传播级相干合成到同一监视面，再用相同长度的矩形窗截取所得对照。两者都除以同一个 $L E_{i,0}$。横轴为 $(q-q_m)L/(2\pi)$，是相对各级中心的无量纲波数，不是角度；纵轴是归一化复场的模 $|A/(L E_{i,0})|$，不是复场实部，也不是功率谱。','每个主峰及其附近结构由同一组离散系数和窗口核共同决定。实际曲线与理想有限窗的差别反映端部、入射不均匀及数值误差；并不说明每个旁瓣还需要分配一个新的 RCWA 系数。橙线展示的是截窗后的周期场预测，蓝线也经过事后截窗；有限 Mark 窗外的平坦 Si 反射不包括在这段窗谱中，所以该图不能直接替代完整器件的远场。图线相近只能说明所画的模接近，不能单凭此图认定复相位一致；相位与复数差别要看后文的复系数表及复平面对照。'))
     add(r'''## 为什么旁边的分布不矛盾
 
 无限周期的某一级是严格单一方向的平面波；有限宽度的同一级是具有角宽的波包。RCWA 的一个 $r_m$ 规定该波包的整体复幅尺度，窗口规定它如何分布在附近的角度。
@@ -405,6 +430,8 @@ $$\frac{2\operatorname{Si}(\pi)}{\pi}=1.178979744.$$
 $$\widehat c=\frac{\int W^*(q)A(q)dq}{\int |W(q)|^2dq}.$$
 
 再除入射复场，并保持传播相位一致。多级重叠时需联合解 Gram 矩阵。这是利用已知核进行系数拟合，与前述角带相干积分、中心复投影是不同的估计方法。
+
+这里积分之所以有效，是因为有匹配核和明确分母，而非因为该级附近所有幅度相加就等于 RCWA。本实验的最简中心复投影提取不需要引入这一步。
 
 ## 要计算功率，就应积分带通量权重的模平方
 
@@ -534,7 +561,7 @@ $$\boxed{{\widehat r_m=A_L(q_m;d)e^{{-i\beta_md}}/(L E_{{i,0}})}}$$
 
 **4. 多少周期够？** 没有对所有精度目标通用的最小数。对本例，若希望一级主瓣邻域中的零级尾部场约低于一级峰高 0.1%，解析保守判据要求 N 大于约 {1+ratio/(np.pi*.001):.1f}，400 周期有余量。精确中心在理想整数周期条件下本来就无其他离散级的 sinc 串扰，10 个周期也满足数学正交。真实 FDTD 是否够长，最终看复系数随 N 的变化和独立数值控制，而非只看 sinc 峰宽。
 
-**5. 本次实际结果支持到什么程度？** N=400 的 +1 级复角带积分为 ${cfmt(band_complex)}$，中心提取为 ${cfmt(center1)}$，RCWA 为 ${cfmt(rc1)}$；相应角带功率与 RCWA 效率为 {pc(example['nearest_order_band_efficiency'])} 和 {pc(example['rcwa_efficiency'])}。两种方法的差异及有限角带误差已在正文核查。最接近 RCWA 的实际工况 {best['case']}，七级复向量相对差为 {pc(best['relative_complex_L2'])}。有限结构与无限周期结构在任意 N、边界和网格下并不严格相同。
+**5. 本次实际结果支持到什么程度？** N=400 的 +1 级复角带积分为 ${cfmt(band_complex)}$，中心提取为 ${cfmt(center1)}$，RCWA 为 ${cfmt(rc1)}$；相应角带功率与 RCWA 效率为 {pc(example['nearest_order_band_efficiency'])} 和 {pc(example['rcwa_efficiency'])}。两种方法的差异及有限角带误差已在正文核查。最接近 RCWA 的实际工况 {best['case']}，七级复向量相对差为 {pc(best['relative_complex_L2'])}。有限结构与无限周期结构在任意 N、边界和网格下并不严格相同。该最佳实际工况的最大逐级绝对复差为 {best['maximum_absolute_complex_error']:.8f}。
 ''')
     add(r'''# 文件、复现与来源
 
@@ -595,7 +622,13 @@ $$\boxed{{\widehat r_m=A_L(q_m;d)e^{{-i\beta_md}}/(L E_{{i,0}})}}$$
     # Keep figure purposes near their figures in PDF; the Markdown and HTML
     # remain free of PDF-only LaTeX layout directives.
     pdf_source=OUT/'.report_pdf_build.md'
-    pdf_source.write_text(md.replace('**图的目的：**',r'\Needspace{20\baselineskip}'+'\n\n**图的目的：**'),encoding='utf-8')
+    pdf_md=md.replace('**图的目的：**',r'\Needspace{20\baselineskip}'+'\n\n**图的目的：**')
+    # The local-spectrum figure now has a detailed purpose and conclusion.
+    # Reserve more space so those descriptions stay with the plot.
+    marker=r'\Needspace{20\baselineskip}'+'\n\n**图的目的：** 把整个连续峰形'
+    assert pdf_md.count(marker)==1
+    pdf_md=pdf_md.replace(marker,r'\Needspace{34\baselineskip}'+'\n\n**图的目的：** 把整个连续峰形')
+    pdf_source.write_text(pdf_md,encoding='utf-8')
     cmd=[pandoc,str(pdf_source.name),'-f','markdown+tex_math_dollars+tex_math_single_backslash','-s','--metadata-file=metadata.yaml',
       '--resource-path=.;..','--pdf-engine=xelatex','-o','REPORT_zh.pdf']
     try:

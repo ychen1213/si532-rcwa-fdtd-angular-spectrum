@@ -1,11 +1,13 @@
 {
   "pdf": "report/REPORT_zh.pdf",
-  "pages": 27,
+  "pages": 28,
   "figures": 12,
   "rendered_all_pages": true,
   "visual_review": "All pages inspected in contact sheets; revised integral derivations, example tables, figure pagination, and final answers inspected individually.",
   "result": "No clipped content, missing glyphs, broken math, or unreadable figure legends observed.",
   "verification_checks_passed": 67,
   "verification_checks_total": 67,
-  "revised_complex_band_example_verified_against_saved_fdtd": true
+  "revised_complex_band_example_verified_against_saved_fdtd": true,
+  "previous_report_paragraphs_checked": 229,
+  "previous_report_paragraphs_missing": 0
 }
