@@ -1,0 +1,26 @@
+{
+  "air": {
+    "Gaussian_waist_fit_um": 19.000009031877244,
+    "Pin_down_W_per_m": 3.154415477797941e-08,
+    "analytic_unit_amplitude_Gaussian_Pin_W_per_m": 3.1604794922316876e-08,
+    "measured_vs_nominal_power_relative": -0.001918700769503956,
+    "fit_method": "ln|incident angular spectrum| vs kx^2 for amplitude>2% peak; Gaussian field exp(-w^2 kx^2/4)",
+    "interpretation": "2D line Gaussian; 38um intensity1/e^2 diameter corresponds to waist19um"
+  },
+  "air_fine": {
+    "Gaussian_waist_fit_um": 19.000009611594564,
+    "Pin_down_W_per_m": 3.158543622284546e-08,
+    "analytic_unit_amplitude_Gaussian_Pin_W_per_m": 3.1604794922316876e-08,
+    "measured_vs_nominal_power_relative": -0.0006125241286645267,
+    "fit_method": "ln|incident angular spectrum| vs kx^2 for amplitude>2% peak; Gaussian field exp(-w^2 kx^2/4)",
+    "interpretation": "2D line Gaussian; 38um intensity1/e^2 diameter corresponds to waist19um"
+  },
+  "air_finerY": {
+    "Gaussian_waist_fit_um": 19.000009367765568,
+    "Pin_down_W_per_m": 3.159581308506017e-08,
+    "analytic_unit_amplitude_Gaussian_Pin_W_per_m": 3.1604794922316876e-08,
+    "measured_vs_nominal_power_relative": -0.000284192233450109,
+    "fit_method": "ln|incident angular spectrum| vs kx^2 for amplitude>2% peak; Gaussian field exp(-w^2 kx^2/4)",
+    "interpretation": "2D line Gaussian; 38um intensity1/e^2 diameter corresponds to waist19um"
+  }
+}

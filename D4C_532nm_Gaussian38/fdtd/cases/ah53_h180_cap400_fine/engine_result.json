@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\Ansys Inc\\v252\\Lumerical\\bin\\fdtd-engine.exe",
+    "-t",
+    "8",
+    "-fullinfo",
+    "-log-stdout",
+    "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\ah53_h180_cap400_fine\\model.fsp"
+  ],
+  "returncode": 0,
+  "started_utc": "2026-11-05T14:43:51.486178+00:00",
+  "elapsed_seconds": 172.49857029994018,
+  "stdout": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\ah53_h180_cap400_fine\\engine_stdout.log",
+  "stderr": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\ah53_h180_cap400_fine\\engine_stderr.log",
+  "threads": 8,
+  "processes": 1,
+  "device": "CPU"
+}

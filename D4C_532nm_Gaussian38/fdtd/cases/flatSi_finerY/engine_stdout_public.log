@@ -1,0 +1,1152 @@
+All processes are communicating and ready to proceed to simulation...
+CPU threads per process: 8
+Checked out feature at start: 'FDTD_Solutions_engine'
+Ansys Lumerical 2025 R2 FDTD Solver Version 8.34.4175 (Windows 64bit)
+ expires (month/day/year): 12/31/2035
+current time: 周四 11月 5 22:22:49 2026
+host available memory (GiB) 7.177
+
+All processes are communicating and ready to proceed to simulation...
+Estimate of memory required: 2.814 GiB
+
+All processes are communicating and ready to proceed to simulation...
+number of processors is 1
+processors are distributed as: 1x1x1
+Peak CPU memory used by end of initialization: 0.078340 GiB
+Running 2D Simulation
+Starting meshing
+Simulation size in gridpoints: 19456 x 1576 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 4.875000 seconds of CPU time
+18% initialized.
+18% initialized.
+20% initialized.
+20% initialized.
+25% initialized.
+25% initialized.
+Starting meshing
+Simulation size in gridpoints: 19456 x 1576 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 4.562500 seconds of CPU time
+43% initialized.
+43% initialized.
+45% initialized.
+45% initialized.
+finished material properties
+Selected kernel with optimization level: 2 and split-field propagation direction: 0
+Starting meshing
+Simulation size in gridpoints: 19456 x 1576 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 4.765625 seconds of CPU time
+86% initialized.
+86% initialized.
+90% initialized.
+90% initialized.
+Selected kernel with optimization level: 2 and split-field propagation direction: 0
+100% initialized.
+100% initialized.
+-----------------------------------------
+Beginning initialization of 2D FDTD Simulation
+  Including TM Simulation
+Starting to add sources to simulation
+
+Adding Gaussian source propagating in Y
+Starting to add boundary conditions to simulation
+Adding PML BC
+Adding PML BC
+Adding PML BC
+Adding PML BC
+Starting to add monitors to Simulation
+Adding analysis monitor
+Adding frequency monitor
+Adding frequency monitor
+Adding frequency monitor
+Adding frequency monitor
+Finished initialization of 2D Simulation
+-----------------------------------------
+Peak CPU memory used by end of meshing: 3.634076 GiB
+All processes are communicating and ready to proceed to simulation...
+Starting 12486 total iterations
+0.384442% complete. Elapsed simulation time: 3.84442e-16 secs. Max time remaining: 7 mins, 13 secs. Auto Shutoff: 1
+0.384442% complete. Elapsed simulation time: 3.84442e-16 secs. Max time remaining: 7 mins, 13 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 868.689 Mnodes/s
+   1.1295 seconds total loop time
+      1.8%, 0.0205 seconds spent in sources
+      0.5%, 0.0051 seconds spent in monitors
+      0.6%, 0.0071 seconds spent in boundary conditions
+     97.0%, 1.0953 seconds spent in electromagnetic field updates
+         38.8%, 0.4380 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.4%, 0.3774 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2799 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+1.40962% complete. Elapsed simulation time: 1.40962e-15 secs. Max time remaining: 7 mins, 8 secs. Auto Shutoff: 1
+1.40962% complete. Elapsed simulation time: 1.40962e-15 secs. Max time remaining: 7 mins, 8 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 860.484 Mnodes/s
+   1.1403 seconds total loop time
+      1.8%, 0.0203 seconds spent in sources
+      0.4%, 0.0046 seconds spent in monitors
+      0.6%, 0.0070 seconds spent in boundary conditions
+     95.7%, 1.0915 seconds spent in electromagnetic field updates
+         39.8%, 0.4542 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         31.3%, 0.3572 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.5%, 0.2799 seconds spent in E-field updates (material update)
+      1.4%, 0.0155 seconds spent in updating auto-shutoff conditions
+
+2.4348% complete. Elapsed simulation time: 2.4348e-15 secs. Max time remaining: 7 mins, 6 secs. Auto Shutoff: 1
+2.4348% complete. Elapsed simulation time: 2.4348e-15 secs. Max time remaining: 7 mins, 6 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 865.894 Mnodes/s
+   1.1332 seconds total loop time
+      1.8%, 0.0201 seconds spent in sources
+      0.3%, 0.0040 seconds spent in monitors
+      0.7%, 0.0078 seconds spent in boundary conditions
+     97.1%, 1.0998 seconds spent in electromagnetic field updates
+         39.3%, 0.4458 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.8%, 0.3712 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.9%, 0.2827 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+3.45998% complete. Elapsed simulation time: 3.45998e-15 secs. Max time remaining: 7 mins, 5 secs. Auto Shutoff: 1
+3.45998% complete. Elapsed simulation time: 3.45998e-15 secs. Max time remaining: 7 mins, 5 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 877.277 Mnodes/s
+   1.1185 seconds total loop time
+      1.9%, 0.0209 seconds spent in sources
+      0.3%, 0.0035 seconds spent in monitors
+      0.6%, 0.0065 seconds spent in boundary conditions
+     97.1%, 1.0861 seconds spent in electromagnetic field updates
+         39.2%, 0.4385 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.9%, 0.3684 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.0%, 0.2791 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+4.48516% complete. Elapsed simulation time: 4.48516e-15 secs. Max time remaining: 6 mins, 58 secs. Auto Shutoff: 1
+4.48516% complete. Elapsed simulation time: 4.48516e-15 secs. Max time remaining: 6 mins, 58 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 875.877 Mnodes/s
+   1.1203 seconds total loop time
+      1.8%, 0.0202 seconds spent in sources
+      0.4%, 0.0042 seconds spent in monitors
+      0.6%, 0.0063 seconds spent in boundary conditions
+     97.1%, 1.0880 seconds spent in electromagnetic field updates
+         38.5%, 0.4314 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.8%, 0.3789 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2776 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+5.51034% complete. Elapsed simulation time: 5.51034e-15 secs. Max time remaining: 6 mins, 53 secs. Auto Shutoff: 1
+5.51034% complete. Elapsed simulation time: 5.51034e-15 secs. Max time remaining: 6 mins, 53 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 864.295 Mnodes/s
+   1.1353 seconds total loop time
+      1.8%, 0.0207 seconds spent in sources
+      0.4%, 0.0040 seconds spent in monitors
+      0.6%, 0.0072 seconds spent in boundary conditions
+     95.7%, 1.0863 seconds spent in electromagnetic field updates
+         38.3%, 0.4344 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.7%, 0.3710 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.7%, 0.2809 seconds spent in E-field updates (material update)
+      1.4%, 0.0157 seconds spent in updating auto-shutoff conditions
+
+6.53552% complete. Elapsed simulation time: 6.53552e-15 secs. Max time remaining: 6 mins, 49 secs. Auto Shutoff: 1
+6.53552% complete. Elapsed simulation time: 6.53552e-15 secs. Max time remaining: 6 mins, 49 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 868.899 Mnodes/s
+   1.1293 seconds total loop time
+      1.8%, 0.0207 seconds spent in sources
+      0.4%, 0.0040 seconds spent in monitors
+      0.6%, 0.0071 seconds spent in boundary conditions
+     97.1%, 1.0960 seconds spent in electromagnetic field updates
+         38.7%, 0.4369 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.3%, 0.3758 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.1%, 0.2833 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+7.5607% complete. Elapsed simulation time: 7.5607e-15 secs. Max time remaining: 6 mins, 44 secs. Auto Shutoff: 1
+7.5607% complete. Elapsed simulation time: 7.5607e-15 secs. Max time remaining: 6 mins, 44 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 867.605 Mnodes/s
+   1.1309 seconds total loop time
+      1.8%, 0.0205 seconds spent in sources
+      0.3%, 0.0039 seconds spent in monitors
+      0.6%, 0.0071 seconds spent in boundary conditions
+     97.1%, 1.0979 seconds spent in electromagnetic field updates
+         38.8%, 0.4390 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.4%, 0.3773 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.9%, 0.2815 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+8.58588% complete. Elapsed simulation time: 8.58588e-15 secs. Max time remaining: 6 mins, 40 secs. Auto Shutoff: 1
+8.58588% complete. Elapsed simulation time: 8.58588e-15 secs. Max time remaining: 6 mins, 40 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 920.092 Mnodes/s
+   1.0664 seconds total loop time
+      1.8%, 0.0196 seconds spent in sources
+      0.0%, 0.0003 seconds spent in monitors
+      0.6%, 0.0059 seconds spent in boundary conditions
+     97.4%, 1.0391 seconds spent in electromagnetic field updates
+         38.5%, 0.4105 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.0%, 0.3519 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.9%, 0.2767 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+9.61106% complete. Elapsed simulation time: 9.61106e-15 secs. Max time remaining: 6 mins, 36 secs. Auto Shutoff: 1
+9.61106% complete. Elapsed simulation time: 9.61106e-15 secs. Max time remaining: 6 mins, 36 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 890.485 Mnodes/s
+   1.1019 seconds total loop time
+      1.8%, 0.0201 seconds spent in sources
+      0.1%, 0.0009 seconds spent in monitors
+      0.6%, 0.0066 seconds spent in boundary conditions
+     97.4%, 1.0728 seconds spent in electromagnetic field updates
+         39.0%, 0.4298 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.9%, 0.3628 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.4%, 0.2802 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+10.6362% complete. Elapsed simulation time: 1.06362e-14 secs. Max time remaining: 6 mins, 32 secs. Auto Shutoff: 1
+10.6362% complete. Elapsed simulation time: 1.06362e-14 secs. Max time remaining: 6 mins, 32 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 860.673 Mnodes/s
+   1.1400 seconds total loop time
+      1.8%, 0.0204 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0078 seconds spent in boundary conditions
+     97.4%, 1.1101 seconds spent in electromagnetic field updates
+         38.5%, 0.4386 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         34.1%, 0.3889 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2826 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+11.6614% complete. Elapsed simulation time: 1.16614e-14 secs. Max time remaining: 6 mins, 27 secs. Auto Shutoff: 1
+11.6614% complete. Elapsed simulation time: 1.16614e-14 secs. Max time remaining: 6 mins, 27 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 847.71 Mnodes/s
+   1.1575 seconds total loop time
+      1.7%, 0.0199 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0074 seconds spent in boundary conditions
+     96.3%, 1.1141 seconds spent in electromagnetic field updates
+         38.6%, 0.4470 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.8%, 0.3798 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2872 seconds spent in E-field updates (material update)
+      1.2%, 0.0144 seconds spent in updating auto-shutoff conditions
+
+12.6866% complete. Elapsed simulation time: 1.26866e-14 secs. Max time remaining: 6 mins, 23 secs. Auto Shutoff: 1
+12.6866% complete. Elapsed simulation time: 1.26866e-14 secs. Max time remaining: 6 mins, 23 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 894.877 Mnodes/s
+   1.0965 seconds total loop time
+      1.8%, 0.0199 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0063 seconds spent in boundary conditions
+     97.5%, 1.0686 seconds spent in electromagnetic field updates
+         38.7%, 0.4241 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.2%, 0.3641 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.6%, 0.2803 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+13.7118% complete. Elapsed simulation time: 1.37118e-14 secs. Max time remaining: 6 mins, 18 secs. Auto Shutoff: 1
+13.7118% complete. Elapsed simulation time: 1.37118e-14 secs. Max time remaining: 6 mins, 18 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 856.871 Mnodes/s
+   1.1451 seconds total loop time
+      1.8%, 0.0206 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0075 seconds spent in boundary conditions
+     97.4%, 1.1152 seconds spent in electromagnetic field updates
+         38.9%, 0.4452 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.6%, 0.3847 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.9%, 0.2852 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+14.737% complete. Elapsed simulation time: 1.4737e-14 secs. Max time remaining: 6 mins, 14 secs. Auto Shutoff: 1
+14.737% complete. Elapsed simulation time: 1.4737e-14 secs. Max time remaining: 6 mins, 14 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 863.977 Mnodes/s
+   1.1357 seconds total loop time
+      1.8%, 0.0201 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0073 seconds spent in boundary conditions
+     97.4%, 1.1066 seconds spent in electromagnetic field updates
+         39.1%, 0.4440 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.2%, 0.3771 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.1%, 0.2855 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+15.7621% complete. Elapsed simulation time: 1.57621e-14 secs. Max time remaining: 6 mins, 10 secs. Auto Shutoff: 1
+15.7621% complete. Elapsed simulation time: 1.57621e-14 secs. Max time remaining: 6 mins, 10 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 827.06 Mnodes/s
+   1.1864 seconds total loop time
+      1.7%, 0.0204 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0084 seconds spent in boundary conditions
+     96.2%, 1.1412 seconds spent in electromagnetic field updates
+         38.5%, 0.4573 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.6%, 0.3872 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.0%, 0.2967 seconds spent in E-field updates (material update)
+      1.2%, 0.0146 seconds spent in updating auto-shutoff conditions
+
+16.7873% complete. Elapsed simulation time: 1.67873e-14 secs. Max time remaining: 6 mins, 6 secs. Auto Shutoff: 1
+16.7873% complete. Elapsed simulation time: 1.67873e-14 secs. Max time remaining: 6 mins, 6 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 876.415 Mnodes/s
+   1.1196 seconds total loop time
+      1.8%, 0.0203 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0066 seconds spent in boundary conditions
+     97.4%, 1.0909 seconds spent in electromagnetic field updates
+         39.0%, 0.4368 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.8%, 0.3781 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.6%, 0.2759 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+17.8125% complete. Elapsed simulation time: 1.78125e-14 secs. Max time remaining: 6 mins, 2 secs. Auto Shutoff: 1
+17.8125% complete. Elapsed simulation time: 1.78125e-14 secs. Max time remaining: 6 mins, 2 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 737.523 Mnodes/s
+   1.3304 seconds total loop time
+      1.8%, 0.0238 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0090 seconds spent in boundary conditions
+     97.4%, 1.2955 seconds spent in electromagnetic field updates
+         38.6%, 0.5130 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.7%, 0.4482 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.1%, 0.3342 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+18.8377% complete. Elapsed simulation time: 1.88377e-14 secs. Max time remaining: 6 mins, 1 secs. Auto Shutoff: 1
+18.8377% complete. Elapsed simulation time: 1.88377e-14 secs. Max time remaining: 6 mins, 1 secs. Auto Shutoff: 1
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 736.825 Mnodes/s
+   1.3317 seconds total loop time
+      1.8%, 0.0242 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0088 seconds spent in boundary conditions
+     97.4%, 1.2966 seconds spent in electromagnetic field updates
+         38.5%, 0.5133 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         34.4%, 0.4581 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.4%, 0.3251 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+19.8629% complete. Elapsed simulation time: 1.98629e-14 secs. Max time remaining: 5 mins, 59 secs. Auto Shutoff: 0.472384
+19.8629% complete. Elapsed simulation time: 1.98629e-14 secs. Max time remaining: 5 mins, 59 secs. Auto Shutoff: 0.472384
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 732.441 Mnodes/s
+   1.3396 seconds total loop time
+      2.0%, 0.0263 seconds spent in sources
+      0.0%, 0.0005 seconds spent in monitors
+      0.7%, 0.0091 seconds spent in boundary conditions
+     97.2%, 1.3020 seconds spent in electromagnetic field updates
+         38.4%, 0.5144 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         34.0%, 0.4556 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.3319 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+20.888% complete. Elapsed simulation time: 2.0888e-14 secs. Max time remaining: 5 mins, 58 secs. Auto Shutoff: 0.451577
+20.888% complete. Elapsed simulation time: 2.0888e-14 secs. Max time remaining: 5 mins, 58 secs. Auto Shutoff: 0.451577
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 737.414 Mnodes/s
+   1.3306 seconds total loop time
+      1.9%, 0.0252 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.8%, 0.0103 seconds spent in boundary conditions
+     97.2%, 1.2930 seconds spent in electromagnetic field updates
+         38.3%, 0.5092 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.9%, 0.4508 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.0%, 0.3328 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+21.9132% complete. Elapsed simulation time: 2.19132e-14 secs. Max time remaining: 5 mins, 56 secs. Auto Shutoff: 0.418277
+21.9132% complete. Elapsed simulation time: 2.19132e-14 secs. Max time remaining: 5 mins, 56 secs. Auto Shutoff: 0.418277
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 716.651 Mnodes/s
+   1.3692 seconds total loop time
+      1.8%, 0.0249 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0099 seconds spent in boundary conditions
+     96.1%, 1.3153 seconds spent in electromagnetic field updates
+         38.8%, 0.5314 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.7%, 0.4612 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         23.6%, 0.3227 seconds spent in E-field updates (material update)
+      1.2%, 0.0169 seconds spent in updating auto-shutoff conditions
+
+22.9384% complete. Elapsed simulation time: 2.29384e-14 secs. Max time remaining: 5 mins, 53 secs. Auto Shutoff: 0.307181
+22.9384% complete. Elapsed simulation time: 2.29384e-14 secs. Max time remaining: 5 mins, 53 secs. Auto Shutoff: 0.307181
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 723.575 Mnodes/s
+   1.3561 seconds total loop time
+      1.8%, 0.0248 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.9%, 0.0124 seconds spent in boundary conditions
+     97.1%, 1.3162 seconds spent in electromagnetic field updates
+         38.6%, 0.5234 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.9%, 0.4595 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.6%, 0.3332 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+23.9636% complete. Elapsed simulation time: 2.39636e-14 secs. Max time remaining: 5 mins, 52 secs. Auto Shutoff: 0.244186
+23.9636% complete. Elapsed simulation time: 2.39636e-14 secs. Max time remaining: 5 mins, 52 secs. Auto Shutoff: 0.244186
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 692.004 Mnodes/s
+   1.4179 seconds total loop time
+      1.8%, 0.0261 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      1.0%, 0.0147 seconds spent in boundary conditions
+     97.0%, 1.3750 seconds spent in electromagnetic field updates
+         39.3%, 0.5578 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         34.1%, 0.4842 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         23.5%, 0.3330 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+24.9888% complete. Elapsed simulation time: 2.49888e-14 secs. Max time remaining: 5 mins, 49 secs. Auto Shutoff: 0.198681
+24.9888% complete. Elapsed simulation time: 2.49888e-14 secs. Max time remaining: 5 mins, 49 secs. Auto Shutoff: 0.198681
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 719.444 Mnodes/s
+   1.3638 seconds total loop time
+      2.0%, 0.0280 seconds spent in sources
+      0.3%, 0.0047 seconds spent in monitors
+      0.7%, 0.0095 seconds spent in boundary conditions
+     95.5%, 1.3028 seconds spent in electromagnetic field updates
+         37.8%, 0.5153 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.4%, 0.4558 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.3%, 0.3316 seconds spent in E-field updates (material update)
+      1.2%, 0.0169 seconds spent in updating auto-shutoff conditions
+
+26.0139% complete. Elapsed simulation time: 2.60139e-14 secs. Max time remaining: 5 mins, 46 secs. Auto Shutoff: 0.173608
+26.0139% complete. Elapsed simulation time: 2.60139e-14 secs. Max time remaining: 5 mins, 46 secs. Auto Shutoff: 0.173608
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 722.604 Mnodes/s
+   1.3579 seconds total loop time
+      1.8%, 0.0243 seconds spent in sources
+      0.3%, 0.0041 seconds spent in monitors
+      0.6%, 0.0086 seconds spent in boundary conditions
+     95.8%, 1.3014 seconds spent in electromagnetic field updates
+         37.8%, 0.5132 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         34.0%, 0.4612 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.1%, 0.3268 seconds spent in E-field updates (material update)
+      1.3%, 0.0178 seconds spent in updating auto-shutoff conditions
+
+27.0391% complete. Elapsed simulation time: 2.70391e-14 secs. Max time remaining: 5 mins, 43 secs. Auto Shutoff: 0.145622
+27.0391% complete. Elapsed simulation time: 2.70391e-14 secs. Max time remaining: 5 mins, 43 secs. Auto Shutoff: 0.145622
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 731.223 Mnodes/s
+   1.3419 seconds total loop time
+      1.8%, 0.0236 seconds spent in sources
+      0.4%, 0.0055 seconds spent in monitors
+      0.8%, 0.0104 seconds spent in boundary conditions
+     96.9%, 1.3007 seconds spent in electromagnetic field updates
+         38.6%, 0.5174 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         34.0%, 0.4557 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.4%, 0.3274 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+28.0643% complete. Elapsed simulation time: 2.80643e-14 secs. Max time remaining: 5 mins, 40 secs. Auto Shutoff: 0.131312
+28.0643% complete. Elapsed simulation time: 2.80643e-14 secs. Max time remaining: 5 mins, 40 secs. Auto Shutoff: 0.131312
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 731.01 Mnodes/s
+   1.3423 seconds total loop time
+      1.8%, 0.0237 seconds spent in sources
+      0.4%, 0.0052 seconds spent in monitors
+      0.7%, 0.0094 seconds spent in boundary conditions
+     97.0%, 1.3021 seconds spent in electromagnetic field updates
+         38.9%, 0.5216 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.7%, 0.4526 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.4%, 0.3278 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+29.0895% complete. Elapsed simulation time: 2.90895e-14 secs. Max time remaining: 5 mins, 36 secs. Auto Shutoff: 0.112014
+29.0895% complete. Elapsed simulation time: 2.90895e-14 secs. Max time remaining: 5 mins, 36 secs. Auto Shutoff: 0.112014
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 732.605 Mnodes/s
+   1.3393 seconds total loop time
+      1.6%, 0.0216 seconds spent in sources
+      0.4%, 0.0047 seconds spent in monitors
+      0.7%, 0.0097 seconds spent in boundary conditions
+     95.9%, 1.2849 seconds spent in electromagnetic field updates
+         38.7%, 0.5187 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.7%, 0.4383 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.5%, 0.3279 seconds spent in E-field updates (material update)
+      1.3%, 0.0169 seconds spent in updating auto-shutoff conditions
+
+30.1147% complete. Elapsed simulation time: 3.01147e-14 secs. Max time remaining: 5 mins, 32 secs. Auto Shutoff: 0.0691144
+30.1147% complete. Elapsed simulation time: 3.01147e-14 secs. Max time remaining: 5 mins, 32 secs. Auto Shutoff: 0.0691144
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 731.661 Mnodes/s
+   1.3411 seconds total loop time
+      1.9%, 0.0252 seconds spent in sources
+      0.3%, 0.0044 seconds spent in monitors
+      0.7%, 0.0090 seconds spent in boundary conditions
+     97.0%, 1.3008 seconds spent in electromagnetic field updates
+         38.8%, 0.5207 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.5%, 0.4491 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.7%, 0.3309 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+31.1398% complete. Elapsed simulation time: 3.11398e-14 secs. Max time remaining: 5 mins, 29 secs. Auto Shutoff: 0.0515719
+31.1398% complete. Elapsed simulation time: 3.11398e-14 secs. Max time remaining: 5 mins, 29 secs. Auto Shutoff: 0.0515719
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 721.38 Mnodes/s
+   1.3602 seconds total loop time
+      1.9%, 0.0259 seconds spent in sources
+      0.3%, 0.0040 seconds spent in monitors
+      0.8%, 0.0108 seconds spent in boundary conditions
+     96.9%, 1.3178 seconds spent in electromagnetic field updates
+         38.8%, 0.5278 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.6%, 0.4576 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.4%, 0.3323 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+32.165% complete. Elapsed simulation time: 3.2165e-14 secs. Max time remaining: 5 mins, 25 secs. Auto Shutoff: 0.0367027
+32.165% complete. Elapsed simulation time: 3.2165e-14 secs. Max time remaining: 5 mins, 25 secs. Auto Shutoff: 0.0367027
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 734.128 Mnodes/s
+   1.3366 seconds total loop time
+      1.6%, 0.0219 seconds spent in sources
+      0.3%, 0.0047 seconds spent in monitors
+      0.6%, 0.0087 seconds spent in boundary conditions
+     97.2%, 1.2997 seconds spent in electromagnetic field updates
+         38.3%, 0.5115 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         34.5%, 0.4604 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.5%, 0.3277 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+33.1902% complete. Elapsed simulation time: 3.31902e-14 secs. Max time remaining: 5 mins, 21 secs. Auto Shutoff: 0.0246393
+33.1902% complete. Elapsed simulation time: 3.31902e-14 secs. Max time remaining: 5 mins, 21 secs. Auto Shutoff: 0.0246393
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 722.581 Mnodes/s
+   1.3579 seconds total loop time
+      1.7%, 0.0236 seconds spent in sources
+      0.5%, 0.0066 seconds spent in monitors
+      0.8%, 0.0105 seconds spent in boundary conditions
+     95.7%, 1.2994 seconds spent in electromagnetic field updates
+         38.5%, 0.5227 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.3%, 0.4524 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         23.9%, 0.3241 seconds spent in E-field updates (material update)
+      1.2%, 0.0162 seconds spent in updating auto-shutoff conditions
+
+34.2154% complete. Elapsed simulation time: 3.42154e-14 secs. Max time remaining: 5 mins, 17 secs. Auto Shutoff: 0.00955312
+34.2154% complete. Elapsed simulation time: 3.42154e-14 secs. Max time remaining: 5 mins, 17 secs. Auto Shutoff: 0.00955312
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 741.867 Mnodes/s
+   1.3226 seconds total loop time
+      1.8%, 0.0232 seconds spent in sources
+      0.4%, 0.0047 seconds spent in monitors
+      0.6%, 0.0082 seconds spent in boundary conditions
+     97.2%, 1.2850 seconds spent in electromagnetic field updates
+         38.8%, 0.5131 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.6%, 0.4439 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.3279 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+35.2406% complete. Elapsed simulation time: 3.52406e-14 secs. Max time remaining: 5 mins, 13 secs. Auto Shutoff: 0.00564359
+35.2406% complete. Elapsed simulation time: 3.52406e-14 secs. Max time remaining: 5 mins, 13 secs. Auto Shutoff: 0.00564359
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 737.378 Mnodes/s
+   1.3307 seconds total loop time
+      1.9%, 0.0253 seconds spent in sources
+      0.4%, 0.0048 seconds spent in monitors
+      0.7%, 0.0088 seconds spent in boundary conditions
+     97.0%, 1.2901 seconds spent in electromagnetic field updates
+         38.2%, 0.5087 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.6%, 0.4472 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.1%, 0.3342 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+36.2657% complete. Elapsed simulation time: 3.62657e-14 secs. Max time remaining: 5 mins, 8 secs. Auto Shutoff: 0.00325432
+36.2657% complete. Elapsed simulation time: 3.62657e-14 secs. Max time remaining: 5 mins, 8 secs. Auto Shutoff: 0.00325432
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 729.688 Mnodes/s
+   1.3447 seconds total loop time
+      1.8%, 0.0241 seconds spent in sources
+      0.4%, 0.0052 seconds spent in monitors
+      0.7%, 0.0094 seconds spent in boundary conditions
+     97.0%, 1.3043 seconds spent in electromagnetic field updates
+         39.1%, 0.5262 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         33.1%, 0.4457 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.7%, 0.3323 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+37.2909% complete. Elapsed simulation time: 3.72909e-14 secs. Max time remaining: 5 mins, 3 secs. Auto Shutoff: 0.00183958
+37.2909% complete. Elapsed simulation time: 3.72909e-14 secs. Max time remaining: 5 mins, 3 secs. Auto Shutoff: 0.00183958
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 868.291 Mnodes/s
+   1.1300 seconds total loop time
+      1.8%, 0.0201 seconds spent in sources
+      0.3%, 0.0037 seconds spent in monitors
+      0.6%, 0.0067 seconds spent in boundary conditions
+     95.9%, 1.0836 seconds spent in electromagnetic field updates
+         38.8%, 0.4388 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.1%, 0.3629 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.9%, 0.2818 seconds spent in E-field updates (material update)
+      1.3%, 0.0145 seconds spent in updating auto-shutoff conditions
+
+38.3161% complete. Elapsed simulation time: 3.83161e-14 secs. Max time remaining: 4 mins, 58 secs. Auto Shutoff: 0.000559486
+38.3161% complete. Elapsed simulation time: 3.83161e-14 secs. Max time remaining: 4 mins, 58 secs. Auto Shutoff: 0.000559486
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 825.719 Mnodes/s
+   1.1883 seconds total loop time
+      1.9%, 0.0231 seconds spent in sources
+      0.4%, 0.0042 seconds spent in monitors
+      0.9%, 0.0111 seconds spent in boundary conditions
+     96.6%, 1.1483 seconds spent in electromagnetic field updates
+         38.0%, 0.4518 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         34.7%, 0.4124 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         23.9%, 0.2841 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+39.3413% complete. Elapsed simulation time: 3.93413e-14 secs. Max time remaining: 4 mins, 52 secs. Auto Shutoff: 0.00030226
+39.3413% complete. Elapsed simulation time: 3.93413e-14 secs. Max time remaining: 4 mins, 52 secs. Auto Shutoff: 0.00030226
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 854.046 Mnodes/s
+   1.1489 seconds total loop time
+      1.8%, 0.0206 seconds spent in sources
+      0.4%, 0.0051 seconds spent in monitors
+      0.7%, 0.0077 seconds spent in boundary conditions
+     97.0%, 1.1142 seconds spent in electromagnetic field updates
+         38.8%, 0.4455 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.4%, 0.3841 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2845 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+40.3665% complete. Elapsed simulation time: 4.03665e-14 secs. Max time remaining: 4 mins, 47 secs. Auto Shutoff: 0.000161463
+40.3665% complete. Elapsed simulation time: 4.03665e-14 secs. Max time remaining: 4 mins, 47 secs. Auto Shutoff: 0.000161463
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 833.431 Mnodes/s
+   1.1773 seconds total loop time
+      1.8%, 0.0211 seconds spent in sources
+      0.4%, 0.0043 seconds spent in monitors
+      0.7%, 0.0084 seconds spent in boundary conditions
+     95.7%, 1.1264 seconds spent in electromagnetic field updates
+         38.5%, 0.4527 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.7%, 0.3855 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.5%, 0.2882 seconds spent in E-field updates (material update)
+      1.3%, 0.0157 seconds spent in updating auto-shutoff conditions
+
+41.3916% complete. Elapsed simulation time: 4.13916e-14 secs. Max time remaining: 4 mins, 41 secs. Auto Shutoff: 8.54188e-05
+41.3916% complete. Elapsed simulation time: 4.13916e-14 secs. Max time remaining: 4 mins, 41 secs. Auto Shutoff: 8.54188e-05
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 803.091 Mnodes/s
+   1.2218 seconds total loop time
+      1.8%, 0.0215 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0080 seconds spent in boundary conditions
+     96.1%, 1.1743 seconds spent in electromagnetic field updates
+         39.4%, 0.4815 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         31.8%, 0.3886 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.9%, 0.3041 seconds spent in E-field updates (material update)
+      1.3%, 0.0163 seconds spent in updating auto-shutoff conditions
+
+42.4168% complete. Elapsed simulation time: 4.24168e-14 secs. Max time remaining: 4 mins, 36 secs. Auto Shutoff: 2.33199e-05
+42.4168% complete. Elapsed simulation time: 4.24168e-14 secs. Max time remaining: 4 mins, 36 secs. Auto Shutoff: 2.33199e-05
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 846.466 Mnodes/s
+   1.1592 seconds total loop time
+      1.9%, 0.0221 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.8%, 0.0090 seconds spent in boundary conditions
+     97.2%, 1.1263 seconds spent in electromagnetic field updates
+         40.1%, 0.4644 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.5%, 0.3770 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.6%, 0.2848 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+43.442% complete. Elapsed simulation time: 4.3442e-14 secs. Max time remaining: 4 mins, 31 secs. Auto Shutoff: 1.20435e-05
+43.442% complete. Elapsed simulation time: 4.3442e-14 secs. Max time remaining: 4 mins, 31 secs. Auto Shutoff: 1.20435e-05
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 801.998 Mnodes/s
+   1.2235 seconds total loop time
+      1.9%, 0.0235 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.9%, 0.0116 seconds spent in boundary conditions
+     97.0%, 1.1863 seconds spent in electromagnetic field updates
+         38.7%, 0.4739 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         34.5%, 0.4219 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         23.7%, 0.2904 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+44.4672% complete. Elapsed simulation time: 4.44672e-14 secs. Max time remaining: 4 mins, 26 secs. Auto Shutoff: 6.16938e-06
+44.4672% complete. Elapsed simulation time: 4.44672e-14 secs. Max time remaining: 4 mins, 26 secs. Auto Shutoff: 6.16938e-06
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 834.137 Mnodes/s
+   1.1763 seconds total loop time
+      1.8%, 0.0214 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0085 seconds spent in boundary conditions
+     95.8%, 1.1265 seconds spent in electromagnetic field updates
+         38.1%, 0.4485 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.9%, 0.3870 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.7%, 0.2910 seconds spent in E-field updates (material update)
+      1.5%, 0.0182 seconds spent in updating auto-shutoff conditions
+
+45.4923% complete. Elapsed simulation time: 4.54923e-14 secs. Max time remaining: 4 mins, 21 secs. Auto Shutoff: 1.57709e-06
+45.4923% complete. Elapsed simulation time: 4.54923e-14 secs. Max time remaining: 4 mins, 21 secs. Auto Shutoff: 1.57709e-06
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 883.53 Mnodes/s
+   1.1106 seconds total loop time
+      1.9%, 0.0209 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0069 seconds spent in boundary conditions
+     97.3%, 1.0810 seconds spent in electromagnetic field updates
+         39.7%, 0.4412 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.2%, 0.3578 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.4%, 0.2819 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+46.5175% complete. Elapsed simulation time: 4.65175e-14 secs. Max time remaining: 4 mins, 15 secs. Auto Shutoff: 7.87689e-07
+46.5175% complete. Elapsed simulation time: 4.65175e-14 secs. Max time remaining: 4 mins, 15 secs. Auto Shutoff: 7.87689e-07
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 845.981 Mnodes/s
+   1.1598 seconds total loop time
+      1.8%, 0.0213 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0085 seconds spent in boundary conditions
+     97.3%, 1.1282 seconds spent in electromagnetic field updates
+         39.1%, 0.4536 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.8%, 0.3916 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.4%, 0.2830 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+47.5427% complete. Elapsed simulation time: 4.75427e-14 secs. Max time remaining: 4 mins, 10 secs. Auto Shutoff: 3.91296e-07
+47.5427% complete. Elapsed simulation time: 4.75427e-14 secs. Max time remaining: 4 mins, 10 secs. Auto Shutoff: 3.91296e-07
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 822.86 Mnodes/s
+   1.1924 seconds total loop time
+      2.0%, 0.0233 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.8%, 0.0100 seconds spent in boundary conditions
+     97.0%, 1.1571 seconds spent in electromagnetic field updates
+         38.4%, 0.4584 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         34.5%, 0.4113 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.1%, 0.2873 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+48.5679% complete. Elapsed simulation time: 4.85679e-14 secs. Max time remaining: 4 mins, 5 secs. Auto Shutoff: 1.94006e-07
+48.5679% complete. Elapsed simulation time: 4.85679e-14 secs. Max time remaining: 4 mins, 5 secs. Auto Shutoff: 1.94006e-07
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 858.24 Mnodes/s
+   1.1433 seconds total loop time
+      1.7%, 0.0199 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0071 seconds spent in boundary conditions
+     96.1%, 1.0990 seconds spent in electromagnetic field updates
+         38.7%, 0.4422 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.6%, 0.3727 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.8%, 0.2840 seconds spent in E-field updates (material update)
+      1.4%, 0.0156 seconds spent in updating auto-shutoff conditions
+
+49.5931% complete. Elapsed simulation time: 4.95931e-14 secs. Max time remaining: 3 mins, 60 secs. Auto Shutoff: 4.79073e-08
+49.5931% complete. Elapsed simulation time: 4.95931e-14 secs. Max time remaining: 3 mins, 60 secs. Auto Shutoff: 4.79073e-08
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 853.601 Mnodes/s
+   1.1495 seconds total loop time
+      1.9%, 0.0221 seconds spent in sources
+      0.0%, 0.0005 seconds spent in monitors
+      0.8%, 0.0088 seconds spent in boundary conditions
+     97.1%, 1.1166 seconds spent in electromagnetic field updates
+         39.4%, 0.4534 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.0%, 0.3790 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.7%, 0.2841 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+50.6182% complete. Elapsed simulation time: 5.06182e-14 secs. Max time remaining: 3 mins, 54 secs. Auto Shutoff: 2.38252e-08
+50.6182% complete. Elapsed simulation time: 5.06182e-14 secs. Max time remaining: 3 mins, 54 secs. Auto Shutoff: 2.38252e-08
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 862.757 Mnodes/s
+   1.1373 seconds total loop time
+      1.7%, 0.0197 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0070 seconds spent in boundary conditions
+     97.5%, 1.1090 seconds spent in electromagnetic field updates
+         39.3%, 0.4467 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.2%, 0.3773 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.1%, 0.2849 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+51.6434% complete. Elapsed simulation time: 5.16434e-14 secs. Max time remaining: 3 mins, 49 secs. Auto Shutoff: 1.17919e-08
+51.6434% complete. Elapsed simulation time: 5.16434e-14 secs. Max time remaining: 3 mins, 49 secs. Auto Shutoff: 1.17919e-08
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 801.135 Mnodes/s
+   1.2248 seconds total loop time
+      1.9%, 0.0229 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.9%, 0.0112 seconds spent in boundary conditions
+     97.0%, 1.1886 seconds spent in electromagnetic field updates
+         39.0%, 0.4778 seconds spent in B-field updates
+          0.0%, 0.0001 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.4%, 0.4094 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.6%, 0.3013 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+52.6686% complete. Elapsed simulation time: 5.26686e-14 secs. Max time remaining: 3 mins, 44 secs. Auto Shutoff: 5.78706e-09
+52.6686% complete. Elapsed simulation time: 5.26686e-14 secs. Max time remaining: 3 mins, 44 secs. Auto Shutoff: 5.78706e-09
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 830.587 Mnodes/s
+   1.1813 seconds total loop time
+      1.8%, 0.0215 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.7%, 0.0086 seconds spent in boundary conditions
+     96.0%, 1.1339 seconds spent in electromagnetic field updates
+         39.1%, 0.4613 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         32.4%, 0.3831 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         24.5%, 0.2894 seconds spent in E-field updates (material update)
+      1.3%, 0.0154 seconds spent in updating auto-shutoff conditions
+
+53.6938% complete. Elapsed simulation time: 5.36938e-14 secs. Max time remaining: 3 mins, 39 secs. Auto Shutoff: 1.36615e-09
+53.6938% complete. Elapsed simulation time: 5.36938e-14 secs. Max time remaining: 3 mins, 39 secs. Auto Shutoff: 1.36615e-09
+  Finished 32 iterations
+  Total X spatial steps 19456
+  Total Y spatial steps 1576
+  Total Z spatial steps 1
+  FDTD loop runs at: 884.404 Mnodes/s
+   1.1095 seconds total loop time
+      1.8%, 0.0196 seconds spent in sources
+      0.0%, 0.0004 seconds spent in monitors
+      0.6%, 0.0063 seconds spent in boundary conditions
+     97.5%, 1.0819 seconds spent in electromagnetic field updates
+         39.0%, 0.4322 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0000 seconds spent in H-field updates (material update)
+         33.2%, 0.3678 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         25.4%, 0.2817 seconds spent in E-field updates (material update)
+      0.0%, 0.0000 seconds spent in updating auto-shutoff conditions
+
+100% complete. Max time remaining: 0 mins, 0 secs. Auto Shutoff: 6.64392e-10
+Early termination of simulation, the autoshutoff criteria are satisfied.
+Completed 6785 iterations, or 5.434253e-14s of Simulation Time
+Process 0 starting to collect data
+    collecting TM monitor data
+    collecting TE monitor data
+    collecting TM source data
+    collecting TE source data
+Finished collecting data
+Simulation completed successfully at: 周四 11月 5 22:27:13 2026
+Peak CPU memory used in the simulation (GiB): 3.634076
+Overall wall time measurements in seconds: 270.681120
+  time to mesh and initialize: 6.934310
+  time to run FDTD simulation: 257.380970
+  time to checkpoint simulation: 0.000000
+  time to finalize data and save to files: 0.143496
+  miscellaneous time: 6.222294
+  FDTD solver speed on process 0 (Mnodes/s): 808.319750
+  total FDTD solver speed on 1 processes (Mnodes/s): 808.319750
+

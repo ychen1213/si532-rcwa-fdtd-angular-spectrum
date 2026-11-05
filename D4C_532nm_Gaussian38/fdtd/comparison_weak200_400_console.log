@@ -1,0 +1,136 @@
+{
+  "baseline": "ah53_h180_cap400_fine_t400",
+  "test": "ah53_h180_cap400_fine_t200",
+  "base_air_reference": "air_fine",
+  "test_air_reference": "air_fine",
+  "comparison": "source-leakage-subtracted raw E spectra, measured Pin, common reference .85um, no phase/gain fit",
+  "field_L2_NA06": 0.0003602879306203333,
+  "field_L2_nonzero_bands_NA06": 0.0045292545905756595,
+  "baseline_power_NA06": 0.2946685169980436,
+  "test_power_NA06": 0.2946711948600752,
+  "nonzero_power_relative_change": -0.00012630252921219665,
+  "zero_band_power_relative_change": 9.92529728560676e-06,
+  "order_bands": [
+    {
+      "m": 0,
+      "field_relative_L2": 6.083044921674764e-05,
+      "power_relative_change": 9.92529728560676e-06
+    },
+    {
+      "m": 1,
+      "field_relative_L2": 0.003270931321427379,
+      "power_relative_change": -0.00044336167462288856
+    },
+    {
+      "m": 2,
+      "field_relative_L2": 0.007614938828056898,
+      "power_relative_change": -0.0018795690504611606
+    },
+    {
+      "m": 3,
+      "field_relative_L2": 0.010839798825257237,
+      "power_relative_change": -0.001319997085614255
+    },
+    {
+      "m": 4,
+      "field_relative_L2": 0.005514426785681552,
+      "power_relative_change": 0.0004021466331125545
+    },
+    {
+      "m": 5,
+      "field_relative_L2": 0.003654552145111917,
+      "power_relative_change": 2.23627725164377e-05
+    },
+    {
+      "m": 6,
+      "field_relative_L2": 0.006292281952761682,
+      "power_relative_change": -0.0007307041781119405
+    },
+    {
+      "m": 7,
+      "field_relative_L2": 0.0078032705295260985,
+      "power_relative_change": 0.0003283765829191765
+    },
+    {
+      "m": 8,
+      "field_relative_L2": 0.00846218683750753,
+      "power_relative_change": -0.00167653217568009
+    },
+    {
+      "m": 9,
+      "field_relative_L2": 0.0032080886682394677,
+      "power_relative_change": 0.00023901009017834873
+    },
+    {
+      "m": 10,
+      "field_relative_L2": 0.0021266541073268756,
+      "power_relative_change": -0.0001379407959063439
+    },
+    {
+      "m": 11,
+      "field_relative_L2": 0.004088466066291326,
+      "power_relative_change": 0.0002798420778209465
+    },
+    {
+      "m": 12,
+      "field_relative_L2": 0.010317052115615526,
+      "power_relative_change": -0.0025825603166677036
+    },
+    {
+      "m": 13,
+      "field_relative_L2": 0.013099584862995789,
+      "power_relative_change": -0.0013963989054586179
+    },
+    {
+      "m": 14,
+      "field_relative_L2": 0.006665132272176219,
+      "power_relative_change": 0.0006766406892368959
+    },
+    {
+      "m": 15,
+      "field_relative_L2": 0.0038472218824460694,
+      "power_relative_change": 0.00014692185492215515
+    },
+    {
+      "m": 16,
+      "field_relative_L2": 0.006850007808622072,
+      "power_relative_change": -0.0004931975816979683
+    },
+    {
+      "m": 17,
+      "field_relative_L2": 0.009466954111209484,
+      "power_relative_change": 0.00017821014863783624
+    },
+    {
+      "m": 18,
+      "field_relative_L2": 0.00873800455008678,
+      "power_relative_change": -0.0029703417262267884
+    }
+  ],
+  "scans": {
+    "SUM": {
+      "relative_L2": 7.495024310540327e-05,
+      "Linf_over_baseline_span": 0.00016816668816150193,
+      "baseline_min": 0.0005883080336099934,
+      "baseline_max": 0.0018893533971275785,
+      "test_min": 0.0005883138727407895,
+      "test_max": 0.001889291068865878,
+      "raw_max_absolute": 2.187924899306297e-07
+    },
+    "DIFF": {
+      "relative_L2": 9.350927419457614e-05,
+      "Linf_over_baseline_span": 0.0001702855321891144,
+      "baseline_min": 0.00031056197534623644,
+      "baseline_max": 0.0016116073388638215,
+      "test_min": 0.0003105650577648344,
+      "test_max": 0.001611542253889923,
+      "raw_max_absolute": 2.2154920212877176e-07
+    }
+  },
+  "criterion": {
+    "max_field_relative": 0.001,
+    "max_scan_Linf_over_span": 0.002,
+    "passed_total_field_and_scan": true,
+    "passed_also_nonzero_field": false
+  }
+}

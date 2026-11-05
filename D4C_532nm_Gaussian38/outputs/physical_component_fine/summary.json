@@ -1,0 +1,151 @@
+{
+  "available_structures": [
+    "ah53_cap000",
+    "ah53_cap100",
+    "ah53_cap150",
+    "ah53_cap200",
+    "binary50_cap000",
+    "binary50_cap100",
+    "binary50_cap150",
+    "binary50_cap200"
+  ],
+  "all_eight_complete": true,
+  "inputs": [
+    {
+      "id": "ah53_cap000",
+      "spectrum_sha256": "b881bd10e7fd6133f00b6cebd834ee3d9c6c0e4086a553bd25da6a42ee9a303f",
+      "projection_metadata_sha256": "c47edfd508273eb60660230a2b873d10a8199998b8ad605ab95e8058d50d0c80",
+      "target_curve_sha256": "421a70452e653ed8f24787d9570e711fb6b654ffddd4f057d546483a16b79b44"
+    },
+    {
+      "id": "ah53_cap100",
+      "spectrum_sha256": "9f739910468f62a6a0578872ef4ed77e03225ee0c17ef2ee543d7a17fbb08919",
+      "projection_metadata_sha256": "3f8ce02e18ae8112d1407993dd91c1291f19344c0bf7726843d651586fc8c88b",
+      "target_curve_sha256": "562ccc77949d3b6824e23080fe1eb930df7c6f1b6a4f6b6892d0087782bf07eb"
+    },
+    {
+      "id": "ah53_cap150",
+      "spectrum_sha256": "a8b97bccb5f378e75be126f060d2a70556716b74a8e0a683fd8d1032b791d558",
+      "projection_metadata_sha256": "397670f1ec3fc15387982fcb37cc43452c470fd07007c7d305e8421e4804cb89",
+      "target_curve_sha256": "ea571a21dc77cae830e96b59f57dbc3b1c36b940eaf46e34f10bd3dba6ca2070"
+    },
+    {
+      "id": "ah53_cap200",
+      "spectrum_sha256": "e2b06ffa7581bee27b6d79284f89e95d2b4870b3a59eb3c9267000b65c6eff7a",
+      "projection_metadata_sha256": "3c5fb4c6462fa6a645514c2bf5a9df40743455b9ea6f8607145a2eef5fe05a57",
+      "target_curve_sha256": "90717a379b40279022e3cbc1cdf446bc4032056ae132b08f82d1fd671849c78e"
+    },
+    {
+      "id": "binary50_cap000",
+      "spectrum_sha256": "50519f1b246a22f15dfa04984da9a25bdd48ec6a9f4b8ff1936de36ff5abad87",
+      "projection_metadata_sha256": "53aa2109ac4e8d3fa468d416ac14680d476e8c2fecee46b3a2b24141632af9ea",
+      "target_curve_sha256": "28fb3c0e489caea9bcb39c4ff5d6a91935029febfc56b1bf48e3229ed87e451e"
+    },
+    {
+      "id": "binary50_cap100",
+      "spectrum_sha256": "be014250b0198e833b48fd8e69475841d830865ee872f9a089c75ac7877e8f20",
+      "projection_metadata_sha256": "c2db3ada25b531c446c41e037bfd9107eb66faedb1f9a911bea3e72db00541f3",
+      "target_curve_sha256": "52ccf183d05f59e69c27f615e4f7aba59e7fdb3fcceb597d26c8fb1dd510a299"
+    },
+    {
+      "id": "binary50_cap150",
+      "spectrum_sha256": "f057464eeb5fbc1d5da772dce2e04e9613e03d73c47dd038f4f3923d6d63c567",
+      "projection_metadata_sha256": "3921ec998e5fc605eaed77870c3a853219f3af14a3d65b449e8ca085729c928c",
+      "target_curve_sha256": "eced8430e052929375b4e93add6ca42b920ca0c492929401eda11d23bcf7f3dc"
+    },
+    {
+      "id": "binary50_cap200",
+      "spectrum_sha256": "df869df7c36cffea16a4192af80774ae401262093135ec2d39c9d240a7345ae8",
+      "projection_metadata_sha256": "eb70f916d530e761c48c6ce9e0ecbe88797bb1bc26096924753ae3d644f3a5c2",
+      "target_curve_sha256": "875953175912e6d994a2e09cea69be10439fec2e1cfd80c02eb5d72ef6f68bd1"
+    }
+  ],
+  "training_structures": [
+    "ah53_cap000",
+    "ah53_cap100",
+    "binary50_cap000",
+    "binary50_cap100"
+  ],
+  "heldout_structures": [
+    "ah53_cap150",
+    "ah53_cap200",
+    "binary50_cap150",
+    "binary50_cap200"
+  ],
+  "reconstruction": "Saved real-FDTD measured-source joint degree2 polynomial coefficients; no RCWA amplitudes used",
+  "readout": "Each physical +/-m source packet gets a single exp(-imGs); independent-pair power sums; scalar zero exactly once",
+  "target_curve_role": "Saved D4C curves only used after reconstruction for comparison and shared parameter training",
+  "selected_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "NA_controls": [
+    0.6,
+    0.65
+  ],
+  "instrument_weight": "K_m/gamma_m with user-authorized K2/K4 interpolation",
+  "zero_term": "[T0+L_channel*(1-T0)] times full-pupil reconstructed physical-zero power",
+  "training": "both geometries cap0/cap100 when available",
+  "heldout": "both geometries cap150/cap200 when available",
+  "fitting_candidates": [
+    "whole_signal: gain*(nonzero+c(T0)*P0)",
+    "nonzero_only: gain_ac*nonzero+c(T0)*P0; fixed leakage"
+  ],
+  "fitting_objectives": [
+    "curve-only, retained including failures",
+    "nonzero-gain joint fit with one equal-weight relative s0 block per curve"
+  ],
+  "baseline_protection": "The baseline-aware branch jointly minimizes curve/(RMS*sqrt(N)) and (s0_pred-s0_target)/s0_target, weight1 for both blocks for every training record",
+  "nonzero_gain_math_audit": {
+    "synthetic_only": true,
+    "training_structures": 4,
+    "heldout_structures": 4,
+    "known_gain_ac": 1.013,
+    "known_zero_transmission": 0.00041,
+    "recovered_parameters": {
+      "gain_ac": 1.013,
+      "zero_transmission": 0.00040999999999999967,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "gain_error": 0.0,
+    "transmission_error": 3.2526065174565133e-19,
+    "heldout_max_absolute_error": 4.336808689942018e-19,
+    "jacobian_rank": 2,
+    "baseline_aware_recovered_parameters": {
+      "gain_ac": 1.013,
+      "zero_transmission": 0.000410000000000001,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "baseline_aware_heldout_max_absolute_error": 3.469446951953614e-18,
+    "interpretation": "Checks shared nonzero-gain algebra only; does not validate any real FDTD or instrument model"
+  },
+  "partial_run_warning": "No eight-mark cross-validation claim unless all_eight_complete is true",
+  "limitations": [
+    "Source projection is an approximate polynomial field representation, not unique Maxwell mode decomposition",
+    "Independent physical-pair summation deliberately discards inter-order coherent cross terms, as the supplied D4C order sum does",
+    "Projection residual is omitted by packet scans; projected-nearest-band control separately quantifies its removal",
+    "The saved |q|<G source cutoff makes the modeled +m packets have no nonpositive-k power for m>=1; actual far tails need not vanish",
+    "NA=.65 is a representation control for full selected18 packets, not a claim that the real optical NA differs from .6",
+    "No per-mark DC offset and no per-order fitted gain is allowed",
+    "SUM/DIFF here differ only in supplied leakage, with no assertion about unresolved hardware interference signs"
+  ],
+  "rerun": "python analysis/physical_component_scan.py --suffix _fine --require-all-eight"
+}

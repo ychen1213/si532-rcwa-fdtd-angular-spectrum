@@ -1,0 +1,56 @@
+{
+  "suffix": "",
+  "available_structures": [
+    "ah53_cap000"
+  ],
+  "all_eight_complete": false,
+  "train": "both geometries, cap0/cap100",
+  "heldout": "both geometries, cap150/cap200",
+  "best_shared_physical_stop": {
+    "h_rad_um": 0.16750000000000004,
+    "gain": 1.032739109456258,
+    "train_mean_relative_L2_pct": 0.9088564231894346,
+    "heldout_mean_relative_L2_pct": null
+  },
+  "best_shared_physical_stop_errors": [
+    {
+      "id": "ah53_cap000",
+      "channel": "SUM",
+      "relative_L2_pct": 0.904500322704868,
+      "RMSE": 0.00022978943590919466,
+      "max_abs_error": 0.0006231059020315698,
+      "mean_error": 4.741539909688902e-06,
+      "mean_error_over_target_span_pct": 0.014167183418624902,
+      "centered_relative_L2_pct": 2.8302987919999807,
+      "span_ratio": 0.9940560973447926,
+      "minimum_target": 0.0006107176071496515,
+      "minimum_fdtd": 0.0008817619864009051,
+      "target_mean": 0.024073465035389964,
+      "fdtd_mean": 0.024078206575299646
+    },
+    {
+      "id": "ah53_cap000",
+      "channel": "DIFF",
+      "relative_L2_pct": 0.914157485538013,
+      "RMSE": 0.00022974679956060364,
+      "max_abs_error": 0.0006200641425751982,
+      "mean_error": 1.69978045331941e-06,
+      "mean_error_over_target_span_pct": 0.00507875118890425,
+      "centered_relative_L2_pct": 2.8302987919999847,
+      "span_ratio": 0.9940560973447926,
+      "minimum_target": 0.00032239176692855115,
+      "minimum_fdtd": 0.0005903943867234367,
+      "target_mean": 0.023785139195168864,
+      "fdtd_mean": 0.02378683897562218
+    }
+  ],
+  "primary_unfitted_model": "weighted_nostop_mode2_scalar",
+  "no_per_mark_offsets": true,
+  "no_per_order_fitted_gain": true,
+  "all_integrals": "angular domain, infinite image plane",
+  "K2_K4": "user-authorized linear interpolation",
+  "T_m": "user-confirmed |r_m|^2",
+  "fitted_h_is_grid_search": true,
+  "stop_grid_spacing_rad_um": 0.0025,
+  "interpretive_limit": "Fits compare numerical/readout models, not an independently calibrated physical instrument"
+}

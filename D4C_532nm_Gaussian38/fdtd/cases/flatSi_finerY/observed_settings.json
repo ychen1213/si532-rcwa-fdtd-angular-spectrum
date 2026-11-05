@@ -1,0 +1,60 @@
+{
+  "dimension": "2D",
+  "x min bc": "PML",
+  "x max bc": "PML",
+  "y min bc": "PML",
+  "y max bc": "PML",
+  "pml profile": 4.0,
+  "pml layers": 128.0,
+  "mesh type": "uniform",
+  "dx": 1e-08,
+  "dy": 2.5e-09,
+  "dt": 8.009216455537389e-18,
+  "simulation time": 1e-13,
+  "auto shutoff min": 1e-09,
+  "x span": 0.000192,
+  "y min": -8e-07,
+  "y max": 2.5e-06,
+  "mesh_actual": {
+    "x_m": {
+      "points": 19201,
+      "min_m": -9.6e-05,
+      "max_m": 9.6e-05,
+      "step_min_m": 9.999999999994822e-09,
+      "step_max_m": 1.0000000000021927e-08
+    },
+    "y_m": {
+      "points": 1321,
+      "min_m": -8e-07,
+      "max_m": 2.5e-06,
+      "step_min_m": 2.499999999999976e-09,
+      "step_max_m": 2.5000000000003996e-09
+    }
+  },
+  "source": {
+    "x": 0.0,
+    "x span": 0.0002,
+    "y": 1.35e-06,
+    "amplitude": 1.0,
+    "phase": 0.0,
+    "polarization angle": 90.0,
+    "waist radius w0": 1.9e-05,
+    "distance from waist": -1.35e-06,
+    "wavelength start": 5e-07,
+    "wavelength stop": 6e-07
+  },
+  "geometry": {
+    "kind": "flatSi",
+    "substrate_present": true,
+    "ridge_count": 0,
+    "oxide_present": false,
+    "Si_substrate": {
+      "material": "Si (Silicon) - Palik",
+      "x": 0.0,
+      "x span": 0.000196,
+      "y min": -2.8e-06,
+      "y max": 0.0,
+      "mesh order": 1.0
+    }
+  }
+}

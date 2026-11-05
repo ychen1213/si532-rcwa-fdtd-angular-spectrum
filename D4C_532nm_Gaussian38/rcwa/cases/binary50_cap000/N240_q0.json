@@ -1,0 +1,42 @@
+{
+  "variant": "binary50_cap000",
+  "config": {
+    "wavelength_m": 5.32e-07,
+    "period_m": 1.6e-05,
+    "height_m": 3.0000000000000004e-07,
+    "ridge_width_m": 8e-06,
+    "ridge_centers_m": [
+      0.0
+    ],
+    "cap_m": 0.0,
+    "air_n": {
+      "real": 1.0,
+      "imag": 0.0
+    },
+    "ridge_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "substrate_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "fill_n": {
+      "real": 1.0,
+      "imag": 0.0
+    },
+    "cap_n": {
+      "real": 1.4601075923261915,
+      "imag": -0.0
+    }
+  },
+  "config_sha256": "fee6363da7896228ec8c5a773fd3784d4241c2d0fb61a8fb7df924b949649ef5",
+  "solver_sha256": "f69590a8b8f72066ecc219f532c869d6ee1655173ddbdbcab5c4e89b05467d4a",
+  "max_order": 240,
+  "q_rad_m": 0.0,
+  "elapsed_s": 11.327026600018144,
+  "R": 0.3725762452924193,
+  "T_interface": 0.5330472183002646,
+  "finite_layer_absorption": 0.09437653640731614,
+  "npz": "rcwa/cases/binary50_cap000/N240_q0.npz"
+}

@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Uniform_film_Fresnel_cap0_q0.0",
+      "value": 8.326672684688674e-17,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap0_q0.0",
+      "value": 1.1102230246251565e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap0_q0.0",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap0_q0.04",
+      "value": 9.155133597044475e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap0_q0.04",
+      "value": 1.1102230246251565e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap0_q0.04",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap0_q0.3",
+      "value": 2.7755575615628914e-17,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap0_q0.3",
+      "value": 4.440892098500626e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap0_q0.3",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap100_q0.0",
+      "value": 1.7554167342883506e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap100_q0.0",
+      "value": 3.3306690738754696e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap100_q0.0",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap100_q0.04",
+      "value": 7.2377686124476805e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap100_q0.04",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap100_q0.04",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap100_q0.3",
+      "value": 8.617648093045562e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap100_q0.3",
+      "value": 2.220446049250313e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap100_q0.3",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap200_q0.0",
+      "value": 1.336885555457667e-15,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap200_q0.0",
+      "value": 1.1102230246251565e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap200_q0.0",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap200_q0.04",
+      "value": 1.5553031891404223e-15,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap200_q0.04",
+      "value": 3.3306690738754696e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap200_q0.04",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_Fresnel_cap200_q0.3",
+      "value": 2.0362550373838933e-15,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_lossless_film_interface_flux_cap200_q0.3",
+      "value": 2.220446049250313e-16,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uniform_film_no_spurious_orders_cap200_q0.3",
+      "value": 0.0,
+      "limit": 2e-12,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived_single_layer_regression_q0.0",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived_single_layer_regression_q125000.0",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Capped_structure_mirror_symmetry",
+      "value": 7.32287087238001e-15,
+      "limit": 2e-10,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Capped_structure_passivity",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Capped_Si_absorption_positive",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "TE equations; uniform capped-film Fresnel, flux, original solver regression, symmetry, passivity. No FDTD data fitted."
+}

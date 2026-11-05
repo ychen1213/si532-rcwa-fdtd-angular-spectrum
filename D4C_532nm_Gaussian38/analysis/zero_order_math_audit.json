@@ -1,0 +1,81 @@
+{
+  "source_file": "inputs\\D4C_FDTD_user_formula_20261105.md",
+  "source_sha256": "1a4e72ed5739f9c34d33d3dc5eee9a7d2411973a32aabb0df3b0923ad42ca6d4",
+  "source_priority": "User-supplied corrected formula, not the old illustrative Q network",
+  "T0": 0.000629728295091705,
+  "L_SUM": 0.00138,
+  "L_DIFF": 0.000431,
+  "c_SUM": 0.002008859270044478,
+  "c_DIFF": 0.0010604568821965205,
+  "K_confirmed": [
+    3,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15
+  ],
+  "K_provisional": [
+    1,
+    5,
+    8,
+    13,
+    16,
+    17,
+    18
+  ],
+  "K_missing": [],
+  "K_user_authorized_interpolation": {
+    "2": 0.4947,
+    "4": 0.49135
+  },
+  "T_m_mapping_status": "User confirmed T_m=|r_m|^2 in subsequent 2026-11-05 message",
+  "source_note_status": "Original source file preserves pre-confirmation uncertainty; this audit records subsequent explicit user clarification",
+  "no_implicit_Tm_mapping": true,
+  "no_per_mark_offsets": true,
+  "no_free_per_order_weights": true,
+  "checks": {
+    "pair_features_vs_full_angular_norm_max_error": 5.551115123125783e-17,
+    "joint_field_power_normalization_max_error": 2.7755575615628914e-17,
+    "k0_sample_power_retained": 0.0011464615827929867,
+    "global_transmission_recovery_error": 0.0,
+    "held_out_max_error": 0.0,
+    "modal_stopped_power_closure_error": 0.0,
+    "double_counted_minus_scalar_equals_passed_error": 0.0,
+    "four_parameter_degeneracy_rejected": "Global parameters unidentifiable: Jacobian rank 3/4; fix T0 or leakage"
+  },
+  "synthetic_only": true,
+  "zero_accounting_equations": {
+    "physical": "P0_pass + L_chi*(P0_raw-P0_pass)",
+    "scalar": "[T0 + L_chi*(1-T0)] * P0_raw",
+    "intentionally_repeated": "P0_pass + [T0+L_chi*(1-T0)]*P0_raw"
+  },
+  "normalization": {
+    "fourier": "A(k)=integral E(x) exp(-ikx) dx",
+    "electric_spectrum_weight": "gamma(k) dk / (4 pi Z0 Pin)",
+    "instrument_field_intensity_mapping": "K_m/gamma_m in addition to electromagnetic gamma(k)",
+    "instrument_efficiency_mapping": "K_m in addition to electromagnetic gamma(k)",
+    "k_zero": "Single zero quadrature node is retained in all power norms; dark-pair amplitude is zero at that node"
+  },
+  "finite_gaussian_controls": {
+    "waist_radius_um": 19.0,
+    "period_um": 16.0,
+    "periods": 9,
+    "field_at_mark_edge": 5.800736241199311e-07,
+    "power_outside_mark": 3.483697855927343e-14,
+    "zero_power_outside_opaque_stop_halfwidth_0p2_rad_um": 0.00014469608785023995,
+    "qualification": "Ideal Gaussian local-response estimates, not measured FDTD mode powers"
+  },
+  "limitations": [
+    "DIFF interference sign not determined: SUM/DIFF vary leakage only here",
+    "T_m=|r_m|^2 is user confirmed; callers must retain consistent E-field normalization",
+    "B0 angular band is not the full physical zeroth-order mode",
+    "A physical angular stop cannot generally implement only one modal attenuation",
+    "gamma(k) electromagnetic weight and K_m empirical instrument weight are separate",
+    "Bounds do not resolve tau/L_SUM/L_DIFF degeneracy",
+    "Positive-k dark-pair prefactor is a model convention, not verified hardware throughput"
+  ]
+}

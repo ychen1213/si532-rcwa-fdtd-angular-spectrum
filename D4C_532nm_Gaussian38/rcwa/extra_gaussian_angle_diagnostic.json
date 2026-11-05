@@ -1,0 +1,209 @@
+{
+  "label": "Same-N160 Gaussian sensitivity; ±250k, 25k step",
+  "max_order": 160,
+  "q_max_rad_m": 250000.0,
+  "q_nodes": 21,
+  "q0_AC_peak": 0.001281978764116706,
+  "angle_averaged_AC_peak": 0.0012853203994938989,
+  "AC_relative_L2": 0.002226538266738845,
+  "centered_AC_relative_L2": 0.004472018349514217,
+  "AC_span_relative_change": 0.0026066230352070896,
+  "AC_peak_relative_change": 0.0026066230352070896,
+  "I0_q0": 0.2956598739869442,
+  "I0_averaged": 0.29570823595779383,
+  "I0_relative_change": 0.00016357299418912064,
+  "power_outside_input_q_range": 2.0341664851374123e-06,
+  "input_power_weight": "gamma_in(q)*exp[-(q*w0)^2/2]",
+  "comparison": "Frozen q0 and angular average use identical N160; neither is the primary N640 target.",
+  "variant": "ah53_h180_cap400",
+  "materials_sha256": "f5f785689325eb979284241b86c0fb59ee1c3d4b9475cd774c088bcfcb6b2ef3",
+  "per_order": [
+    {
+      "m": 1,
+      "K": 0.4957,
+      "T_q0": 5.313075982012047e-05,
+      "T_Gaussian_mean": 5.3372728295655036e-05,
+      "relative_change": 0.0045542069481741,
+      "absolute_change": 2.4196847553456383e-07,
+      "weighted_AC_DC_q0": 5.267383528566743e-05,
+      "weighted_AC_DC_mean": 5.29137228323124e-05
+    },
+    {
+      "m": 2,
+      "K": 0.4947,
+      "T_q0": 1.1274473040956652e-05,
+      "T_Gaussian_mean": 1.0935521358017387e-05,
+      "relative_change": -0.030063638602705223,
+      "absolute_change": -3.3895168293926416e-07,
+      "weighted_AC_DC_q0": 1.115496362672251e-05,
+      "weighted_AC_DC_mean": 1.0819604831622402e-05
+    },
+    {
+      "m": 3,
+      "K": 0.4937,
+      "T_q0": 6.393982087700892e-06,
+      "T_Gaussian_mean": 6.3388205023819265e-06,
+      "relative_change": -0.008627109767021524,
+      "absolute_change": -5.5161585318965296e-08,
+      "weighted_AC_DC_q0": 6.313417913395861e-06,
+      "weighted_AC_DC_mean": 6.2589513640519145e-06
+    },
+    {
+      "m": 4,
+      "K": 0.49135,
+      "T_q0": 2.9146010790444474e-05,
+      "T_Gaussian_mean": 2.890451402731076e-05,
+      "relative_change": -0.00828575700702372,
+      "absolute_change": -2.4149676313371383e-07,
+      "weighted_AC_DC_q0": 2.8641784803769784e-05,
+      "weighted_AC_DC_mean": 2.8404465934638285e-05
+    },
+    {
+      "m": 5,
+      "K": 0.489,
+      "T_q0": 7.953571598019156e-05,
+      "T_Gaussian_mean": 7.968225409845136e-05,
+      "relative_change": 0.0018424190497801085,
+      "absolute_change": 1.4653811825979918e-07,
+      "weighted_AC_DC_q0": 7.778593022862735e-05,
+      "weighted_AC_DC_mean": 7.792924450828542e-05
+    },
+    {
+      "m": 6,
+      "K": 0.486,
+      "T_q0": 2.245915882104415e-05,
+      "T_Gaussian_mean": 2.2616101732191232e-05,
+      "relative_change": 0.006987924721384875,
+      "absolute_change": 1.569429111470835e-07,
+      "weighted_AC_DC_q0": 2.1830302374054912e-05,
+      "weighted_AC_DC_mean": 2.1982850883689876e-05
+    },
+    {
+      "m": 7,
+      "K": 0.4875,
+      "T_q0": 1.3581875099227722e-05,
+      "T_Gaussian_mean": 1.370176129973953e-05,
+      "relative_change": 0.008826925563365284,
+      "absolute_change": 1.1988620051180804e-07,
+      "weighted_AC_DC_q0": 1.3242328221747029e-05,
+      "weighted_AC_DC_mean": 1.3359217267246041e-05
+    },
+    {
+      "m": 8,
+      "K": 0.4783,
+      "T_q0": 1.0003209760991992e-05,
+      "T_Gaussian_mean": 9.894015998556001e-06,
+      "relative_change": -0.01091587250942161,
+      "absolute_change": -1.0919376243599049e-07,
+      "weighted_AC_DC_q0": 9.56907045736494e-06,
+      "weighted_AC_DC_mean": 9.464615704218671e-06
+    },
+    {
+      "m": 9,
+      "K": 0.4704,
+      "T_q0": 0.00010069597775847576,
+      "T_Gaussian_mean": 0.00010144182656275556,
+      "relative_change": 0.007406937405868952,
+      "absolute_change": 7.458488042797997e-07,
+      "weighted_AC_DC_q0": 9.4734775875174e-05,
+      "weighted_AC_DC_mean": 9.543647043024043e-05
+    },
+    {
+      "m": 10,
+      "K": 0.4708,
+      "T_q0": 0.0002954592829465578,
+      "T_Gaussian_mean": 0.0002965551119399409,
+      "relative_change": 0.0037089001992238746,
+      "absolute_change": 1.0958289933830564e-06,
+      "weighted_AC_DC_q0": 0.00027820446082247886,
+      "weighted_AC_DC_mean": 0.00027923629340264835
+    },
+    {
+      "m": 11,
+      "K": 0.4629,
+      "T_q0": 7.105941078526474e-05,
+      "T_Gaussian_mean": 7.152875269388469e-05,
+      "relative_change": 0.006604922605371044,
+      "absolute_change": 4.69341908619945e-07,
+      "weighted_AC_DC_q0": 6.578680250499809e-05,
+      "weighted_AC_DC_mean": 6.622131924399844e-05
+    },
+    {
+      "m": 12,
+      "K": 0.454,
+      "T_q0": 9.610656066181541e-06,
+      "T_Gaussian_mean": 9.281717251671464e-06,
+      "relative_change": -0.03422646822911124,
+      "absolute_change": -3.289388145100772e-07,
+      "weighted_AC_DC_q0": 8.726475708092839e-06,
+      "weighted_AC_DC_mean": 8.42779926451769e-06
+    },
+    {
+      "m": 13,
+      "K": 0.4478,
+      "T_q0": 6.80563709667321e-06,
+      "T_Gaussian_mean": 6.746612684080548e-06,
+      "relative_change": -0.008672870997120108,
+      "absolute_change": -5.902441259266199e-08,
+      "weighted_AC_DC_q0": 6.095128583780527e-06,
+      "weighted_AC_DC_mean": 6.042266319862539e-06
+    },
+    {
+      "m": 14,
+      "K": 0.438,
+      "T_q0": 3.34309348076763e-05,
+      "T_Gaussian_mean": 3.31041029987294e-05,
+      "relative_change": -0.009776328745430551,
+      "absolute_change": -3.268318089469e-07,
+      "weighted_AC_DC_q0": 2.9285498891524438e-05,
+      "weighted_AC_DC_mean": 2.8999194226886952e-05
+    },
+    {
+      "m": 15,
+      "K": 0.4293,
+      "T_q0": 0.00011845140393319055,
+      "T_Gaussian_mean": 0.00011854026890794553,
+      "relative_change": 0.00075022306029493,
+      "absolute_change": 8.886497475497858e-08,
+      "weighted_AC_DC_q0": 0.0001017023754170374,
+      "weighted_AC_DC_mean": 0.00010177867488436203
+    },
+    {
+      "m": 16,
+      "K": 0.42,
+      "T_q0": 3.988165912633509e-05,
+      "T_Gaussian_mean": 4.003848813587345e-05,
+      "relative_change": 0.0039323592090680926,
+      "absolute_change": 1.5682900953836103e-07,
+      "weighted_AC_DC_q0": 3.350059366612147e-05,
+      "weighted_AC_DC_mean": 3.3632330034133695e-05
+    },
+    {
+      "m": 17,
+      "K": 0.4056,
+      "T_q0": 1.997229550271409e-05,
+      "T_Gaussian_mean": 2.0161041248149596e-05,
+      "relative_change": 0.009450378170594131,
+      "absolute_change": 1.8874574543550603e-07,
+      "weighted_AC_DC_q0": 1.620152611180167e-05,
+      "weighted_AC_DC_mean": 1.635463666049895e-05
+    },
+    {
+      "m": 18,
+      "K": 0.248,
+      "T_q0": 1.7387042266105524e-05,
+      "T_Gaussian_mean": 1.7129721567336807e-05,
+      "relative_change": -0.014799567104655909,
+      "absolute_change": -2.5732069876871667e-07,
+      "weighted_AC_DC_q0": 8.62397296398834e-06,
+      "weighted_AC_DC_mean": 8.496341897399057e-06
+    }
+  ],
+  "primary_q0_reference_unchanged": true,
+  "limitations": [
+    "N160 same-truncation diagnostic, not N640-minus-N160.",
+    "No physical NA clipping/stop applied; user K already in the D4C coefficient mapping.",
+    "Gaussian intensity coefficient average diagnoses finite angular illumination; it is not a newly fitted target.",
+    "Negative q reconstructed with exact centered-material mirror symmetry."
+  ]
+}

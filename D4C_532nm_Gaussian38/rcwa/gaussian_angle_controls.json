@@ -1,0 +1,371 @@
+{
+  "structures": [
+    {
+      "variant": "ah53_cap000",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.0023459742310054546,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.006254922778786913,
+      "I0_q0": 0.30397250380978497,
+      "I0_Gaussian_angle_average": 0.3039268260594557,
+      "I0_angle_average_relative_change": -0.00015026934922327185,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "ah53_cap100",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.005982373039534907,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.007197797756376902,
+      "I0_q0": 0.07436920016795413,
+      "I0_Gaussian_angle_average": 0.074377366384649,
+      "I0_angle_average_relative_change": 0.000109806434335961,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "ah53_cap150",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.004989207255184002,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.00505892183918348,
+      "I0_q0": 0.0048962144728020955,
+      "I0_Gaussian_angle_average": 0.004889079827038885,
+      "I0_angle_average_relative_change": -0.0014571759065790625,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "ah53_cap200",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.0025106159191959254,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.003610200963409352,
+      "I0_q0": 0.14203510874372718,
+      "I0_Gaussian_angle_average": 0.14199566460680893,
+      "I0_angle_average_relative_change": -0.0002777069505358907,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "binary50_cap000",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.0007742783343446023,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.001967390597603362,
+      "I0_q0": 0.31220309979120164,
+      "I0_Gaussian_angle_average": 0.31221555485939195,
+      "I0_angle_average_relative_change": 3.989412084197398e-05,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "binary50_cap100",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.004198286026935511,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.004343258426089619,
+      "I0_q0": 0.013989124463579326,
+      "I0_Gaussian_angle_average": 0.013992077006110194,
+      "I0_angle_average_relative_change": 0.00021105985142636375,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "binary50_cap150",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.002133772615608806,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.002238970459546877,
+      "I0_q0": 0.022093151521846512,
+      "I0_Gaussian_angle_average": 0.02209813158113185,
+      "I0_angle_average_relative_change": 0.00022541190107777255,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    },
+    {
+      "variant": "binary50_cap200",
+      "max_order": 160,
+      "positive_q_solves": 9,
+      "negative_q_from_mirror": true,
+      "Gaussian_weighted_complex_L2_frozen_q0": 0.0017518245082906818,
+      "Gaussian_weighted_nonzero_complex_L2_frozen_q0": 0.002470016542474335,
+      "I0_q0": 0.15342648635812617,
+      "I0_Gaussian_angle_average": 0.153373226207941,
+      "I0_angle_average_relative_change": -0.0003471379124256949,
+      "excluded_Gaussian_incident_power_fraction": 0.00014469608785023995
+    }
+  ],
+  "optical": {
+    "T0": 0.000629728295091705,
+    "w0_m": 1.9e-05,
+    "matched_opaque_stop_halfwidth_rad_m": 179919.79895041988,
+    "old_stop_halfwidth_rad_m": 200000.0,
+    "old_stop_Gaussian_tail_power_fraction": 0.00014469608785023995,
+    "m0_nearest_bin_halfwidth_rad_m": 196349.5408493621,
+    "definition": "Ideal isolated Gaussian zero-order power fraction outside an opaque symmetric stop. Not the measured finite FDTD zero spectrum."
+  },
+  "timings": [
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 0.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.579277700046077
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 25000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.141962900059298
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 50000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.190707500092685
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 75000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.229271499905735
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 100000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.502388200024143
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 125000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.457235899986699
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 150000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.552899699890986
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 175000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.45732649997808
+    },
+    {
+      "geometry": "ah53",
+      "fill": false,
+      "q_rad_m": 200000.0,
+      "cap_variants": 1,
+      "elapsed_s": 6.5105812000110745
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 0.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.038614199962467
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 25000.0,
+      "cap_variants": 3,
+      "elapsed_s": 9.59961390006356
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 50000.0,
+      "cap_variants": 3,
+      "elapsed_s": 10.972267299890518
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 75000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.523840599926189
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 100000.0,
+      "cap_variants": 3,
+      "elapsed_s": 7.759208000032231
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 125000.0,
+      "cap_variants": 3,
+      "elapsed_s": 7.039902999997139
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 150000.0,
+      "cap_variants": 3,
+      "elapsed_s": 12.589499299880117
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 175000.0,
+      "cap_variants": 3,
+      "elapsed_s": 10.125322900013998
+    },
+    {
+      "geometry": "ah53",
+      "fill": true,
+      "q_rad_m": 200000.0,
+      "cap_variants": 3,
+      "elapsed_s": 9.939493399811909
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 0.0,
+      "cap_variants": 1,
+      "elapsed_s": 6.1287426999770105
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 25000.0,
+      "cap_variants": 1,
+      "elapsed_s": 5.49933909997344
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 50000.0,
+      "cap_variants": 1,
+      "elapsed_s": 6.101660200161859
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 75000.0,
+      "cap_variants": 1,
+      "elapsed_s": 6.40563639998436
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 100000.0,
+      "cap_variants": 1,
+      "elapsed_s": 4.5075387000106275
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 125000.0,
+      "cap_variants": 1,
+      "elapsed_s": 4.155503100017086
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 150000.0,
+      "cap_variants": 1,
+      "elapsed_s": 4.08220970002003
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 175000.0,
+      "cap_variants": 1,
+      "elapsed_s": 4.950522099854425
+    },
+    {
+      "geometry": "binary50",
+      "fill": false,
+      "q_rad_m": 200000.0,
+      "cap_variants": 1,
+      "elapsed_s": 4.9158073998987675
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 0.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.875264900038019
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 25000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.177857300033793
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 50000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.888531599892303
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 75000.0,
+      "cap_variants": 3,
+      "elapsed_s": 9.927733599906787
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 100000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.655853200005367
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 125000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.377225100062788
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 150000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.322850299999118
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 175000.0,
+      "cap_variants": 3,
+      "elapsed_s": 7.833387200022116
+    },
+    {
+      "geometry": "binary50",
+      "fill": true,
+      "q_rad_m": 200000.0,
+      "cap_variants": 3,
+      "elapsed_s": 8.912452099844813
+    }
+  ],
+  "materials_sha256": "f5f785689325eb979284241b86c0fb59ee1c3d4b9475cd774c088bcfcb6b2ef3",
+  "limitations": [
+    "N160 is a same-grid angular-sensitivity diagnostic. Primary q0 has independent higher-harmonic convergence.",
+    "25k rad/m q grid, ±200k support, trapezoid. No angular sampling convergence claim.",
+    "Gaussian spectrum belongs to an infinite periodic array, not finite nine-period FDTD.",
+    "Coefficient L2 uses incoming gamma_i-weighted Gaussian power; the I0 moment is the m0 angular power ratio because k_out=q.",
+    "Negative q is reconstructed from exact mirror symmetry of the centered materials geometry."
+  ]
+}

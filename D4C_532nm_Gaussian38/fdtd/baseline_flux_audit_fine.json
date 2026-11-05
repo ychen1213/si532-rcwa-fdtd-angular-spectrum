@@ -1,0 +1,45 @@
+{
+  "field_definition": "raw six-component monitors; angular E/H directional split; trapezoid endpoints; |k|<.98k0; reference_y .85um",
+  "suffix": "_fine",
+  "Pin_air_down_W_per_m": 3.158543622284546e-08,
+  "air_R_up_over_Pin": 6.820207875537674e-09,
+  "air_R_down_over_Pin": 7.057421652140287e-16,
+  "air_R2_up_over_Pin": 6.819671582241993e-09,
+  "flat_R_over_Pin": 0.3714503406418043,
+  "flat_fresnel_R": 0.3741682385342557,
+  "flat_R_relative_error": -0.007263839130489225,
+  "flat_fitted_r_y0": {
+    "re": -0.6094531824297131,
+    "im": -0.004142355259641396
+  },
+  "flat_fresnel_r": {
+    "re": -0.6116821919545248,
+    "im": -0.0036241661059632445
+  },
+  "flat_complex_relative_error": 0.003741174544992368,
+  "ah53_R_over_Pin": 0.36682108277850034,
+  "ah53_R_down_over_up": 6.309441600661095e-07,
+  "ah53_R2_vs_R_complex_relative_L2": 0.0008724210649217213,
+  "direct_vs_spectral_flux": {
+    "airINC": {
+      "direct_W_per_m": -3.158543472253007e-08,
+      "spectral_W_per_m": -3.158543472248845e-08,
+      "relative_difference": -1.3176045017066745e-12
+    },
+    "airR": {
+      "direct_W_per_m": 2.1541988755140632e-16,
+      "spectral_W_per_m": 2.154192185881694e-16,
+      "relative_difference": -3.105392192540973e-06
+    },
+    "flatR": {
+      "direct_W_per_m": 1.173242048697192e-08,
+      "spectral_W_per_m": 1.1732420486955471e-08,
+      "relative_difference": -1.402039219400241e-12
+    },
+    "ah53R": {
+      "direct_W_per_m": 1.1613219671473322e-08,
+      "spectral_W_per_m": 1.158619660504774e-08,
+      "relative_difference": -0.002326922868079411
+    }
+  }
+}

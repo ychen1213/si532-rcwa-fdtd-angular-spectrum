@@ -1,0 +1,44 @@
+{
+  "variant": "ah53_cap200",
+  "config": {
+    "wavelength_m": 5.32e-07,
+    "period_m": 1.6e-05,
+    "height_m": 3.0000000000000004e-07,
+    "ridge_width_m": 1.6e-06,
+    "ridge_centers_m": [
+      -3.2e-06,
+      0.0,
+      3.2e-06
+    ],
+    "cap_m": 2.0000000000000002e-07,
+    "air_n": {
+      "real": 1.0,
+      "imag": 0.0
+    },
+    "ridge_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "substrate_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "fill_n": {
+      "real": 1.4601075923261915,
+      "imag": -0.0
+    },
+    "cap_n": {
+      "real": 1.4601075923261915,
+      "imag": -0.0
+    }
+  },
+  "config_sha256": "34e94393f79ffd61d12f958afbe63256d12a977476c46636033d2f11676889c9",
+  "solver_sha256": "f69590a8b8f72066ecc219f532c869d6ee1655173ddbdbcab5c4e89b05467d4a",
+  "max_order": 240,
+  "q_rad_m": 0.0,
+  "elapsed_s": 8.919615499908105,
+  "R": 0.27758030977632403,
+  "T_interface": 0.6577555862872297,
+  "finite_layer_absorption": 0.06466410393644617,
+  "npz": "rcwa/cases/ah53_cap200/N240_q0.npz"
+}

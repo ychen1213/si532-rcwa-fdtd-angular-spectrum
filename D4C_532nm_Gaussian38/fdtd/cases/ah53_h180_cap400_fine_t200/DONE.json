@@ -1,0 +1,120 @@
+{
+  "status": "completed",
+  "settings": {
+    "case": "ah53_h180_cap400",
+    "wavelength_m": 5.32e-07,
+    "dx_m": 1e-08,
+    "dy_m": 5e-09,
+    "pml_layers": 64,
+    "t_max_s": 2e-13,
+    "auto_shutoff": 1e-09,
+    "x_span_m": 0.000192,
+    "monitor_span_m": 0.000184,
+    "y_min_m": -8e-07,
+    "y_max_m": 2.5e-06,
+    "source_y_m": 1.35e-06,
+    "source_span_m": 0.0002,
+    "waist_radius_m": 1.9e-05,
+    "reference_y_m": 8.5e-07,
+    "source_band_m": [
+      5e-07,
+      6e-07
+    ],
+    "monitor_y_m": {
+      "R": 1.8e-06,
+      "R2": 2e-06,
+      "INC": 8e-07,
+      "T": -6e-07
+    },
+    "mesh_refinement": "conformal variant 0",
+    "geometry": {
+      "id": "ah53_h180_cap400",
+      "geometry": "ah53",
+      "cap_nm": 400.0,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 180.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    "variant_source": {
+      "path": "inputs/extra_weak_mark.json",
+      "geometry_sha256": "63c32387d8390da1c0ddbe2e44d1ccd0987d78f340f6c285a76d525ffcbfe95b",
+      "held_out_from_original_eight": true
+    }
+  },
+  "termination": {
+    "iterations": 13543,
+    "simulated_time_s": 2.000066e-13,
+    "peak_memory_GiB": 1.852902,
+    "wall_s": 274.313796,
+    "Nx": 19328,
+    "Ny": 788,
+    "final_auto_shutoff": 2.81393e-06,
+    "completed_successfully": true,
+    "terminated_early": false
+  },
+  "solve_wall_s": 284.8993551998865,
+  "total_wall_s": 289.20904610003345,
+  "exports": {
+    "monitors": {
+      "R": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 1.8e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 0.2985635446457485
+      },
+      "R2": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 2e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 0.29855955037668164
+      },
+      "INC": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 8e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.7015163101345305
+      },
+      "T": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": -6e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.3257724949057328
+      }
+    },
+    "sourcepower_W_per_m": 3.158549384807221e-08,
+    "dt_s": 1.4768265435980683e-17,
+    "mesh": {
+      "x_m": {
+        "points": 19201,
+        "min_m": -9.6e-05,
+        "max_m": 9.6e-05,
+        "step_min_m": 9.999999999994822e-09,
+        "step_max_m": 1.0000000000021927e-08
+      },
+      "y_m": {
+        "points": 661,
+        "min_m": -8e-07,
+        "max_m": 2.5e-06,
+        "step_min_m": 4.999999999999952e-09,
+        "step_max_m": 5.000000000000376e-09
+      }
+    }
+  },
+  "completed_utc": "2026-11-05T14:52:25.794114+00:00",
+  "model_sha256": "ea141f7152d22ca8750c6d5f62380943cdc120ce2578fb77f08a8397c33b127e",
+  "raw_field_policy": "TOTAL fields, no flat subtraction; all six raw complex components retained"
+}

@@ -1,0 +1,40 @@
+{
+  "no_simulation": true,
+  "no_saved_project_modified": true,
+  "success": {
+    "profile": 4,
+    "max_layer_property": "pml max layers",
+    "max_layers": 128
+  },
+  "trials": [
+    {
+      "profile": 1,
+      "property": "pml max layers",
+      "before": 64.0,
+      "max_after": 64.0,
+      "layers_actual": 64.0,
+      "passed": false
+    },
+    {
+      "profile": 1,
+      "property": "pml maximum layers",
+      "error": "\"in getnamed, the requested property 'pml maximum layers' was not found\""
+    },
+    {
+      "profile": 1,
+      "property": "maximum pml layers",
+      "before": 64.0,
+      "max_after": 64.0,
+      "layers_actual": 64.0,
+      "passed": false
+    },
+    {
+      "profile": 4,
+      "property": "pml max layers",
+      "before": 64.0,
+      "max_after": 128.0,
+      "layers_actual": 128.0,
+      "passed": true
+    }
+  ]
+}

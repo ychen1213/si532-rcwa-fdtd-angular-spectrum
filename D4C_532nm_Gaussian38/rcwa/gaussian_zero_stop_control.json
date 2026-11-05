@@ -1,0 +1,9 @@
+{
+  "T0": 0.000629728295091705,
+  "w0_m": 1.9e-05,
+  "matched_opaque_stop_halfwidth_rad_m": 179919.79895041988,
+  "old_stop_halfwidth_rad_m": 200000.0,
+  "old_stop_Gaussian_tail_power_fraction": 0.00014469608785023995,
+  "m0_nearest_bin_halfwidth_rad_m": 196349.5408493621,
+  "definition": "Ideal isolated Gaussian zero-order power fraction outside an opaque symmetric stop. Not the measured finite FDTD zero spectrum."
+}

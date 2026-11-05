@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\Ansys Inc\\v252\\Lumerical\\bin\\fdtd-engine.exe",
+    "-t",
+    "8",
+    "-fullinfo",
+    "-log-stdout",
+    "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\flatSi_finerY\\model.fsp"
+  ],
+  "returncode": 0,
+  "started_utc": "2026-11-05T14:22:42.892435+00:00",
+  "elapsed_seconds": 281.3246647999622,
+  "stdout": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\flatSi_finerY\\engine_stdout.log",
+  "stderr": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\flatSi_finerY\\engine_stderr.log",
+  "threads": 8,
+  "processes": 1,
+  "device": "CPU"
+}

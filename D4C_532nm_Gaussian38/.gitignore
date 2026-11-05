@@ -1,0 +1,13 @@
+# Keep the study's sanitized logs and audit files when nested in the
+# publication repository, whose outer ignore rules exclude these names.
+!*.log
+!qa/
+!qa/**
+__pycache__/
+*.pyc
+*.fsp.bak
+*.tmp
+report/.report_pdf_build.md
+qa/draft_*.png
+qa/page_*.png
+qa/contact_sheet*.png

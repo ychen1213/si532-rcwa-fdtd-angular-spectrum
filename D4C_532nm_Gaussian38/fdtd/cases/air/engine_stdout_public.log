@@ -1,0 +1,152 @@
+All processes are communicating and ready to proceed to simulation...
+CPU threads per process: 8
+Checked out feature at start: 'FDTD_Solutions_engine'
+Ansys Lumerical 2025 R2 FDTD Solver Version 8.34.4175 (Windows 64bit)
+ expires (month/day/year): 12/31/2035
+current time: 周四 11月 5 21:32:45 2026
+host available memory (GiB) 7.751
+
+All processes are communicating and ready to proceed to simulation...
+Estimate of memory required: 0.412 GiB
+
+All processes are communicating and ready to proceed to simulation...
+number of processors is 1
+processors are distributed as: 1x1x1
+Peak CPU memory used by end of initialization: 0.077806 GiB
+Running 2D Simulation
+Starting meshing
+Simulation size in gridpoints: 9664 x 394 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 0.625000 seconds of CPU time
+18% initialized.
+18% initialized.
+20% initialized.
+20% initialized.
+25% initialized.
+25% initialized.
+Starting meshing
+Simulation size in gridpoints: 9664 x 394 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 0.562500 seconds of CPU time
+43% initialized.
+43% initialized.
+45% initialized.
+45% initialized.
+finished material properties
+Selected kernel with optimization level: 2 and split-field propagation direction: 0
+Starting meshing
+Simulation size in gridpoints: 9664 x 394 x 1
+Refined 0 mesh cells (0.000000%)
+Completed meshing!
+Meshing complete in 0.609375 seconds of CPU time
+86% initialized.
+86% initialized.
+90% initialized.
+90% initialized.
+Selected kernel with optimization level: 2 and split-field propagation direction: 0
+100% initialized.
+100% initialized.
+-----------------------------------------
+Beginning initialization of 2D FDTD Simulation
+  Including TM Simulation
+Starting to add sources to simulation
+
+Adding Gaussian source propagating in Y
+Starting to add boundary conditions to simulation
+Adding PML BC
+Adding PML BC
+Adding PML BC
+Adding PML BC
+Starting to add monitors to Simulation
+Adding analysis monitor
+Adding frequency monitor
+Adding frequency monitor
+Adding frequency monitor
+Adding frequency monitor
+Finished initialization of 2D Simulation
+-----------------------------------------
+Peak CPU memory used by end of meshing: 0.499070 GiB
+All processes are communicating and ready to proceed to simulation...
+Starting 20314 total iterations
+0.236292% complete. Elapsed simulation time: 1.41775e-15 secs. Max time remaining: 1 min, 34 secs. Auto Shutoff: 1
+0.236292% complete. Elapsed simulation time: 1.41775e-15 secs. Max time remaining: 1 min, 34 secs. Auto Shutoff: 1
+  Finished 64 iterations
+  Total X spatial steps 9664
+  Total Y spatial steps 394
+  Total Z spatial steps 1
+  FDTD loop runs at: 779.017 Mnodes/s
+   0.3128 seconds total loop time
+      6.9%, 0.0215 seconds spent in sources
+      3.2%, 0.0100 seconds spent in monitors
+      2.7%, 0.0085 seconds spent in boundary conditions
+     85.2%, 0.2667 seconds spent in electromagnetic field updates
+         38.8%, 0.1213 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0001 seconds spent in H-field updates (material update)
+         35.7%, 0.1116 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         10.8%, 0.0337 seconds spent in E-field updates (material update)
+      1.2%, 0.0037 seconds spent in updating auto-shutoff conditions
+
+2.44169% complete. Elapsed simulation time: 1.46501e-14 secs. Max time remaining: 1 min, 35 secs. Auto Shutoff: 1
+2.44169% complete. Elapsed simulation time: 1.46501e-14 secs. Max time remaining: 1 min, 35 secs. Auto Shutoff: 1
+  Finished 256 iterations
+  Total X spatial steps 9664
+  Total Y spatial steps 394
+  Total Z spatial steps 1
+  FDTD loop runs at: 847.601 Mnodes/s
+   1.1500 seconds total loop time
+      7.2%, 0.0824 seconds spent in sources
+      3.0%, 0.0343 seconds spent in monitors
+      2.3%, 0.0261 seconds spent in boundary conditions
+     85.6%, 0.9840 seconds spent in electromagnetic field updates
+         39.0%, 0.4483 seconds spent in B-field updates
+          0.0%, 0.0001 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0002 seconds spent in H-field updates (material update)
+         35.4%, 0.4066 seconds spent in D-field updates
+          0.0%, 0.0001 seconds spent in combining D-fields (BFAST)
+         11.2%, 0.1287 seconds spent in E-field updates (material update)
+      1.2%, 0.0142 seconds spent in updating auto-shutoff conditions
+
+3.70191% complete. Elapsed simulation time: 2.22115e-14 secs. Max time remaining: 1 min, 32 secs. Auto Shutoff: 0.000437224
+3.70191% complete. Elapsed simulation time: 2.22115e-14 secs. Max time remaining: 1 min, 32 secs. Auto Shutoff: 0.000437224
+  Finished 185 iterations
+  Total X spatial steps 9664
+  Total Y spatial steps 394
+  Total Z spatial steps 1
+  FDTD loop runs at: 842.828 Mnodes/s
+   0.8358 seconds total loop time
+      7.2%, 0.0604 seconds spent in sources
+      3.0%, 0.0255 seconds spent in monitors
+      2.3%, 0.0193 seconds spent in boundary conditions
+     85.8%, 0.7171 seconds spent in electromagnetic field updates
+         39.3%, 0.3283 seconds spent in B-field updates
+          0.0%, 0.0000 seconds spent in combining B-fields (BFAST)
+          0.0%, 0.0002 seconds spent in H-field updates (material update)
+         35.4%, 0.2955 seconds spent in D-field updates
+          0.0%, 0.0000 seconds spent in combining D-fields (BFAST)
+         11.1%, 0.0930 seconds spent in E-field updates (material update)
+      0.8%, 0.0068 seconds spent in updating auto-shutoff conditions
+
+100% complete. Max time remaining: 0 mins, 0 secs. Auto Shutoff: 7.14302e-13
+Early termination of simulation, the autoshutoff criteria are satisfied.
+Completed 937 iterations, or 2.767573e-14s of Simulation Time
+Process 0 starting to collect data
+    collecting TM monitor data
+    collecting TE monitor data
+    collecting TM source data
+    collecting TE source data
+Finished collecting data
+Simulation completed successfully at: 周四 11月 5 21:32:50 2026
+Peak CPU memory used in the simulation (GiB): 0.499070
+Overall wall time measurements in seconds: 13.313674
+  time to mesh and initialize: 1.335597
+  time to run FDTD simulation: 4.373953
+  time to checkpoint simulation: 0.000000
+  time to finalize data and save to files: 0.044539
+  miscellaneous time: 7.559536
+  FDTD solver speed on process 0 (Mnodes/s): 815.677799
+  total FDTD solver speed on 1 processes (Mnodes/s): 815.677799
+

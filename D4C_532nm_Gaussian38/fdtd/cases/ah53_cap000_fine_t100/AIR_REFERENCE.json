@@ -1,0 +1,8 @@
+{
+  "air_reference": "air_fine",
+  "path_base": "fdtd/cases",
+  "reference_reused": true,
+  "reason": "Identical source/domain/grid/PML; empty-domain pulse already met stricter-or-equal requested shutoff before mark end time; no duplicate air solve",
+  "reference_actual_time_s": 2.61989e-14,
+  "reference_final_auto_shutoff": 9.67097e-13
+}

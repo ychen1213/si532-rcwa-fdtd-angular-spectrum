@@ -1,0 +1,12 @@
+{
+  "status": "cancelled_by_design",
+  "completed": false,
+  "cancelled_utc": "2026-11-05T14:57:36.325155+00:00",
+  "reason": "Weak100fs failed the scan convergence criterion on its own small dynamic span; cancel this unfinished finer-grid100fs run and prioritize fine400fs temporal validation. Not a completed simulation and not evidence of spatial convergence.",
+  "owned_engine_pid_stopped": 28244,
+  "last_simulated_time_from_progress_s": 3.2165e-14,
+  "engine_returncode": 4294967295,
+  "complete_field_export_available": false,
+  "DONE_written": false,
+  "cleanup": "Python exited through its finally block, restoring and closing its own hidden CAD session."
+}

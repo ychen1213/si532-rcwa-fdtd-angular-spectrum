@@ -1,0 +1,533 @@
+{
+  "passed": true,
+  "test_count": 86,
+  "checks": [
+    {
+      "name": "ah53_cap000 S_SUM independently reconstructed",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 S_DIFF_same_kernel independently reconstructed",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 mirror amplitude",
+      "value": 2.0208803025217997e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap000 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 S_SUM independently reconstructed",
+      "value": 1.5265566588595902e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 S_DIFF_same_kernel independently reconstructed",
+      "value": 1.5265566588595902e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 mirror amplitude",
+      "value": 7.852062888576848e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap100 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 S_SUM independently reconstructed",
+      "value": 1.249000902703301e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 S_DIFF_same_kernel independently reconstructed",
+      "value": 1.249000902703301e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 mirror amplitude",
+      "value": 5.950836838078908e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap150 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 S_SUM independently reconstructed",
+      "value": 9.71445146547012e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 S_DIFF_same_kernel independently reconstructed",
+      "value": 9.71445146547012e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 mirror amplitude",
+      "value": 5.672745229612221e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "ah53_cap200 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 S_SUM independently reconstructed",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 S_DIFF_same_kernel independently reconstructed",
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 mirror amplitude",
+      "value": 5.63630985111288e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap000 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 S_SUM independently reconstructed",
+      "value": 8.326672684688674e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 S_DIFF_same_kernel independently reconstructed",
+      "value": 8.326672684688674e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 mirror amplitude",
+      "value": 4.1717329718121735e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap100 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 S_SUM independently reconstructed",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 S_DIFF_same_kernel independently reconstructed",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 mirror amplitude",
+      "value": 4.999238380045141e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap150 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 S_SUM independently reconstructed",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 S_SUM zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 S_DIFF_same_kernel independently reconstructed",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 S_DIFF_same_kernel zero-location bookkeeping",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 passivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 mirror amplitude",
+      "value": 4.2152872500753074e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 641 retained harmonics",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 three real truncation records",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 curve sample count",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "binary50_cap200 symbolic K sensitivity",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Notes have three purpose/conclusion pairs",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Notes have no accidental control characters",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "01_geometry PNG SVG CSV JSON all exist",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "02_d4c_targets PNG SVG CSV JSON all exist",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "03_rcwa_convergence PNG SVG CSV JSON all exist",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "32 independent solver checks passed",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    }
+  ],
+  "provenance": {
+    "materials_sha256": "f5f785689325eb979284241b86c0fb59ee1c3d4b9475cd774c088bcfcb6b2ef3",
+    "user_formula_sha256": "1a4e72ed5739f9c34d33d3dc5eee9a7d2411973a32aabb0df3b0923ad42ca6d4",
+    "experiment_sha256": "9e0b104d6521d4606a20c5febfddaae9b804ec72ab4d8d094dcd2f77279a2505",
+    "solver_sha256": "f69590a8b8f72066ecc219f532c869d6ee1655173ddbdbcab5c4e89b05467d4a",
+    "original_single_layer_sha256": "e2d21ec99106129f66203af9c4c0051f1af9e10d72f0d9f10fa900727cff3fee",
+    "reference_driver_sha256": "2459b6c79b3b31773a08c73e54005c147b39f44957334e38140eb63fe470d2af",
+    "materials_scope": "Actual FDTD fit at532nm, fit500-600nm",
+    "calculation_scope": "Independent TE RCWA Fourier-modal solve, 24 q0 truncation solves plus shared-pattern small-angle controls. No FDTD target fitting.",
+    "figure_visual_qa": "All 3 final PNGs visually inspected; figure1 annotations moved off axes; figure2 shared legend outside data; no clipped labels observed."
+  }
+}

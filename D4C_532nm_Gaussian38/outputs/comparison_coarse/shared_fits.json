@@ -1,0 +1,716 @@
+{
+  "decband_none_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 2.106769359770881e-18,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.640795188271415
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.03136587213737658,
+        "rmse": 0.0230195408624694,
+        "dc_error": 0.02168151818729216,
+        "relative_l2": 0.905872179887914
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.03137171802496734,
+        "rmse": 0.023025047038595592,
+        "dc_error": 0.021687364074882916,
+        "relative_l2": 0.9159305493977099
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "decband_none_gain": {
+    "parameters": {
+      "gain": 0.5214071178103642,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      2.71213131163107
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0005776785538505677,
+        "rmse": 0.0002961574229713162,
+        "dc_error": -0.00012188170148811061,
+        "relative_l2": 0.011654479641442924
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006650883552472495,
+        "rmse": 0.0002706004915753091,
+        "dc_error": 1.9249831620682913e-05,
+        "relative_l2": 0.010764419134536565
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "decband_none_gain+zero_transmission": {
+    "parameters": {
+      "gain": 0.5121917930780637,
+      "zero_transmission": 0.0037325892404001687,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      8.919152639773683,
+      0.847351064514586
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0005312358696954941,
+        "rmse": 0.0002379698238094022,
+        "dc_error": -7.290400043438105e-05,
+        "relative_l2": 0.009364663019549066
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006754178420888407,
+        "rmse": 0.00023747672107203447,
+        "dc_error": 7.127797195896624e-05,
+        "relative_l2": 0.009446763919138653
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "decband_K_over_gamma_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 0.003964724368048944,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.640795188271415
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.000978567902018211,
+        "rmse": 0.0003400847041338007,
+        "dc_error": -3.522211995285681e-06,
+        "relative_l2": 0.013383119764239039
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0009855337447606492,
+        "rmse": 0.0003400838993559646,
+        "dc_error": 3.4436307471528558e-06,
+        "relative_l2": 0.013528451527429463
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "decband_K_over_gamma_gain": {
+    "parameters": {
+      "gain": 1.0421187216863352,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      1.3569966022246662
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.000601072276387643,
+        "rmse": 0.00023633386578161584,
+        "dc_error": -2.2544355861920335e-05,
+        "relative_l2": 0.009300284286989204
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0005952058474054389,
+        "rmse": 0.00023696544226851522,
+        "dc_error": -2.8410784844122663e-05,
+        "relative_l2": 0.009426425377609597
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "decband_K_over_gamma_gain+zero_transmission": {
+    "parameters": {
+      "gain": 1.0326459823915972,
+      "zero_transmission": 0.00142046193461612,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      17.23295182461394,
+      0.43858057191890526
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0006034119818654274,
+        "rmse": 0.00022318139639370297,
+        "dc_error": 1.4974982116262477e-06,
+        "relative_l2": 0.008782704193340912
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006004503851830198,
+        "rmse": 0.0002231811747878424,
+        "dc_error": -1.4640984707810822e-06,
+        "relative_l2": 0.008878090702529266
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_none_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 2.137601586525606e-18,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.645005994578764
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.03128605482731,
+        "rmse": 0.022975183963192182,
+        "dc_error": 0.02164163654354234,
+        "relative_l2": 0.9041266332985455
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.03129182923584266,
+        "rmse": 0.022980623289801178,
+        "dc_error": 0.021647410952074987,
+        "relative_l2": 0.9141633839030467
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_none_gain": {
+    "parameters": {
+      "gain": 0.5218845447740069,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      2.709646224833633
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0005697963438142297,
+        "rmse": 0.0002990505463793688,
+        "dc_error": -0.00012073358100359915,
+        "relative_l2": 0.01176833073969008
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.000684829530801203,
+        "rmse": 0.0002743423380779025,
+        "dc_error": 2.0225893162076193e-05,
+        "relative_l2": 0.010913268842297753
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_none_gain+zero_transmission": {
+    "parameters": {
+      "gain": 0.5128471569561661,
+      "zero_transmission": 0.003665096051495593,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      8.930631631163358,
+      0.8464577039287196
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0005506324686238157,
+        "rmse": 0.00024389847026003595,
+        "dc_error": -7.278733069551463e-05,
+        "relative_l2": 0.00959796897104945
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006945837037127776,
+        "rmse": 0.0002434189178636836,
+        "dc_error": 7.116390439344431e-05,
+        "relative_l2": 0.009683143005048061
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_K_over_gamma_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 0.004030162262186551,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.645005994578764
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0009984263844698752,
+        "rmse": 0.00035181787574133517,
+        "dc_error": -3.495550164324756e-06,
+        "relative_l2": 0.013844847207224011
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0010053395211196432,
+        "rmse": 0.00035181710975673054,
+        "dc_error": 3.4175864854439487e-06,
+        "relative_l2": 0.013995195670473266
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_K_over_gamma_gain": {
+    "parameters": {
+      "gain": 1.0430613910140045,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      1.3557677011811322
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0006208794822227491,
+        "rmse": 0.00024128490188874677,
+        "dc_error": -2.1310944164500547e-05,
+        "relative_l2": 0.009495119010143167
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006146724256457375,
+        "rmse": 0.00024191214914321592,
+        "dc_error": -2.7518000741510684e-05,
+        "relative_l2": 0.009623204126328739
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec0_K_over_gamma_gain+zero_transmission": {
+    "parameters": {
+      "gain": 1.0339668791470222,
+      "zero_transmission": 0.0013870064327050093,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      17.25908714046361,
+      0.4380177127130675
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0006229332810582904,
+        "rmse": 0.00022951457295496838,
+        "dc_error": 1.728156893120113e-06,
+        "relative_l2": 0.009031929340421145
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006195155115534152,
+        "rmse": 0.00022951428596763238,
+        "dc_error": -1.6896126117574025e-06,
+        "relative_l2": 0.009130020263957676
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_none_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 2.137462051496026e-18,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.645028273954942
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.03128648127038978,
+        "rmse": 0.022975421328208786,
+        "dc_error": 0.021641850173069653,
+        "relative_l2": 0.9041359741610019
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.031292255300726726,
+        "rmse": 0.022980860296060106,
+        "dc_error": 0.021647624203406608,
+        "relative_l2": 0.9141728119521001
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_none_gain": {
+    "parameters": {
+      "gain": 0.521881986346604,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      2.709659531124523
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.00056983775319463,
+        "rmse": 0.0002990339751040357,
+        "dc_error": -0.00012073941459364788,
+        "relative_l2": 0.011767678621674405
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.000684724076693205,
+        "rmse": 0.000274321315391156,
+        "dc_error": 2.022058475489922e-05,
+        "relative_l2": 0.010912432565134474
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_none_gain+zero_transmission": {
+    "parameters": {
+      "gain": 0.5128436641891065,
+      "zero_transmission": 0.003665442118235395,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      8.930592321116071,
+      0.8464626642830819
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0005505291892700832,
+        "rmse": 0.00024386608877213117,
+        "dc_error": -7.278775552463896e-05,
+        "relative_l2": 0.009596694684598145
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006944812645307066,
+        "rmse": 0.0002433864669659918,
+        "dc_error": 7.116431973598506e-05,
+        "relative_l2": 0.009681852116542974
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_K_over_gamma_zero_transmission": {
+    "parameters": {
+      "gain": 1.0,
+      "zero_transmission": 0.004029800349368499,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      16.645028273954942
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.000998320932407211,
+        "rmse": 0.0003517549035534696,
+        "dc_error": -3.4953202492656553e-06,
+        "relative_l2": 0.0138423691059693
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0010052335901263513,
+        "rmse": 0.0003517541372971308,
+        "dc_error": 3.417337469874056e-06,
+        "relative_l2": 0.013992690641952727
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_K_over_gamma_gain": {
+    "parameters": {
+      "gain": 1.0430563141979954,
+      "zero_transmission": 0.000629728295091705,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain"
+    ],
+    "success": true,
+    "jacobian_rank": 1,
+    "jacobian_singular_values": [
+      1.355774314144639
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0006207742700211592,
+        "rmse": 0.0002412573677292251,
+        "dc_error": -2.1316974569197936e-05,
+        "relative_l2": 0.009494035477276178
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.0006145682527714698,
+        "rmse": 0.0002418847228692078,
+        "dc_error": -2.7522991818890202e-05,
+        "relative_l2": 0.009622113116083313
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  },
+  "dec2_K_over_gamma_gain+zero_transmission": {
+    "parameters": {
+      "gain": 1.0339598384776993,
+      "zero_transmission": 0.0013871779780700243,
+      "leak_sum": 0.00138,
+      "leak_diff": 0.000431
+    },
+    "free": [
+      "gain",
+      "zero_transmission"
+    ],
+    "success": true,
+    "jacobian_rank": 2,
+    "jacobian_singular_values": [
+      17.258993913270242,
+      0.4380207176127228
+    ],
+    "records": [
+      {
+        "id": "ah53_cap000",
+        "channel": "SUM",
+        "max_abs_error": 0.0006228295352541831,
+        "rmse": 0.0002294801087092812,
+        "dc_error": 1.7273245046209155e-06,
+        "relative_l2": 0.009030573092633441
+      },
+      {
+        "id": "ah53_cap000",
+        "channel": "DIFF",
+        "max_abs_error": 0.000619413411960975,
+        "rmse": 0.00022947982195528128,
+        "dc_error": -1.688798788587772e-06,
+        "relative_l2": 0.009128649294260443
+      }
+    ],
+    "shared_across_marks": true,
+    "per_mark_offsets": false,
+    "formula": "gain * [nonzero + {tau + L_channel*(1-tau)} * zero_power]",
+    "identifiability": "Only c_SUM and c_DIFF are identifiable if tau and both L are all free",
+    "heldout": null
+  }
+}

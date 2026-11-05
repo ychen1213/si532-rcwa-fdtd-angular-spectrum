@@ -1,0 +1,25 @@
+{
+  "synthetic_only": true,
+  "training_structures": 4,
+  "heldout_structures": 4,
+  "known_gain_ac": 1.013,
+  "known_zero_transmission": 0.00041,
+  "recovered_parameters": {
+    "gain_ac": 1.013,
+    "zero_transmission": 0.00040999999999999967,
+    "leak_sum": 0.00138,
+    "leak_diff": 0.000431
+  },
+  "gain_error": 0.0,
+  "transmission_error": 3.2526065174565133e-19,
+  "heldout_max_absolute_error": 4.336808689942018e-19,
+  "jacobian_rank": 2,
+  "baseline_aware_recovered_parameters": {
+    "gain_ac": 1.013,
+    "zero_transmission": 0.000410000000000001,
+    "leak_sum": 0.00138,
+    "leak_diff": 0.000431
+  },
+  "baseline_aware_heldout_max_absolute_error": 3.469446951953614e-18,
+  "interpretation": "Checks shared nonzero-gain algebra only; does not validate any real FDTD or instrument model"
+}

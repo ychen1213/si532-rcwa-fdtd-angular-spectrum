@@ -1,0 +1,44 @@
+{
+  "variant": "ah53_h180_cap400",
+  "config": {
+    "wavelength_m": 5.32e-07,
+    "period_m": 1.6e-05,
+    "height_m": 1.8000000000000002e-07,
+    "ridge_width_m": 1.6e-06,
+    "ridge_centers_m": [
+      -3.2e-06,
+      0.0,
+      3.2e-06
+    ],
+    "cap_m": 4.0000000000000003e-07,
+    "air_n": {
+      "real": 1.0,
+      "imag": 0.0
+    },
+    "ridge_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "substrate_n": {
+      "real": 4.149971915645845,
+      "imag": 0.048064634885764825
+    },
+    "fill_n": {
+      "real": 1.4601075923261915,
+      "imag": -0.0
+    },
+    "cap_n": {
+      "real": 1.4601075923261915,
+      "imag": -0.0
+    }
+  },
+  "config_sha256": "adb2eb6716dfc54ae99ad7e1b2461cc4a049ead0b72e75c8039d512c99a4e5c6",
+  "solver_sha256": "f69590a8b8f72066ecc219f532c869d6ee1655173ddbdbcab5c4e89b05467d4a",
+  "max_order": 160,
+  "q_rad_m": 100000.0,
+  "elapsed_s": 3.137519699987024,
+  "R": 0.30133342127895785,
+  "T_interface": 0.6541398188874681,
+  "finite_layer_absorption": 0.044526759833574125,
+  "npz": "rcwa/cases/ah53_h180_cap400/N160_q+100000.npz"
+}

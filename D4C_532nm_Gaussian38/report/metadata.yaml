@@ -1,0 +1,22 @@
+title: "D4C 扫描曲线与有限 Gaussian FDTD 的统一参数对标"
+subtitle: "8 组主验证 + 厚膜弱信号压力测试 · 完整角谱积分 · 零级会计"
+author: "可复现数值实验报告"
+date: "2026-11-05（Asia/Hong_Kong）"
+lang: zh-CN
+documentclass: ctexart
+classoption: [UTF8, a4paper, 11pt]
+geometry: [margin=21mm]
+mainfont: "Times New Roman"
+monofont: "Consolas"
+toc: true
+toc-depth: 2
+numbersections: true
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+header-includes:
+  - \usepackage{float,needspace,etoolbox}
+  - \floatplacement{figure}{H}
+  - \BeforeBeginEnvironment{longtable}{\Needspace{9\baselineskip}}
+  - \setlength{\emergencystretch}{3em}
+  - \setlength{\parskip}{0.35em}

@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "settings": {
+    "case": "air",
+    "wavelength_m": 5.32e-07,
+    "dx_m": 1e-08,
+    "dy_m": 5e-09,
+    "pml_layers": 64,
+    "t_max_s": 6.000000000000001e-13,
+    "auto_shutoff": 1e-09,
+    "x_span_m": 0.000192,
+    "monitor_span_m": 0.000184,
+    "y_min_m": -8e-07,
+    "y_max_m": 2.5e-06,
+    "source_y_m": 1.35e-06,
+    "source_span_m": 0.0002,
+    "waist_radius_m": 1.9e-05,
+    "reference_y_m": 8.5e-07,
+    "source_band_m": [
+      5e-07,
+      6e-07
+    ],
+    "monitor_y_m": {
+      "R": 1.8e-06,
+      "R2": 2e-06,
+      "INC": 8e-07,
+      "T": -6e-07
+    },
+    "mesh_refinement": "conformal variant 0"
+  },
+  "termination": {
+    "iterations": 1774,
+    "simulated_time_s": 2.61989e-14,
+    "peak_memory_GiB": 1.748933,
+    "wall_s": 60.897611,
+    "Nx": 19328,
+    "Ny": 788,
+    "final_auto_shutoff": 9.67097e-13,
+    "completed_successfully": true,
+    "terminated_early": true
+  },
+  "solve_wall_s": 71.75457570003346,
+  "total_wall_s": 74.81741569982842,
+  "exports": {
+    "monitors": {
+      "R": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 1.8e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 6.8202159063140295e-09
+      },
+      "R2": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 2e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 6.819678265134558e-09
+      },
+      "INC": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 8e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.9999981280792081
+      },
+      "T": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": -6e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.9999987296903212
+      }
+    },
+    "sourcepower_W_per_m": 3.158549384807221e-08,
+    "dt_s": 1.4768265435980683e-17,
+    "mesh": {
+      "x_m": {
+        "points": 19201,
+        "min_m": -9.6e-05,
+        "max_m": 9.6e-05,
+        "step_min_m": 9.999999999994822e-09,
+        "step_max_m": 1.0000000000021927e-08
+      },
+      "y_m": {
+        "points": 661,
+        "min_m": -8e-07,
+        "max_m": 2.5e-06,
+        "step_min_m": 4.999999999999952e-09,
+        "step_max_m": 5.000000000000376e-09
+      }
+    }
+  },
+  "completed_utc": "2026-11-05T13:37:24.118839+00:00",
+  "model_sha256": "d7ccd9330922915982e1b4949b6f4e1a16552481b5ece03808859798cb7642c9",
+  "raw_field_policy": "TOTAL fields, no flat subtraction; all six raw complex components retained"
+}

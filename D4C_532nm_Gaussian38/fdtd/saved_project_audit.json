@@ -1,0 +1,4035 @@
+{
+  "status": "passed",
+  "read_only": true,
+  "new_solver_calls": 0,
+  "case_count": 21,
+  "cases": [
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 32.0,
+      "mesh type": "uniform",
+      "dx": 2e-08,
+      "dy": 1e-08,
+      "dt": 2.9536530871961366e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap000",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.190415664629953,
+          "im": 0.4060561612197253
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 32,
+      "actual_pml_max": 32,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap000_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap000_fine_t100",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap100_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.0000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap150_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.5000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 2e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap150_fine_t200",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.5000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 128.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 2.5e-09,
+      "dt": 8.009216455537389e-18,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 4.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 128.0
+      },
+      "case": "ah53_cap150_finerY",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21778284336383,
+          "im": 0.39945792822093984
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.5000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 128,
+      "actual_pml_max": 128,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_cap200_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 5.000000000000001e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_h180_cap400_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 5.800000000000001e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 2e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_h180_cap400_fine_t200",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 5.800000000000001e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 4e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "ah53_h180_cap400_fine_t400",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 5.800000000000001e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-06,
+          "x span": 1.6e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.28e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.92e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 2.88e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.52e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.4800000000000005e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 5.12e-05,
+          "x span": 1.5999999999999982e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.08e-05,
+          "x span": 1.600000000000005e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_1": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_2": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.72e-05,
+          "x span": 1.6000000000000118e-06,
+          "y min": 0.0,
+          "y max": 1.8000000000000002e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 32.0,
+      "mesh type": "uniform",
+      "dx": 2e-08,
+      "dy": 1e-08,
+      "dt": 2.9536530871961366e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "air",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.190415664629953,
+          "im": 0.4060561612197253
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {},
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 32,
+      "actual_pml_max": 32,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "air_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {},
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 128.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 2.5e-09,
+      "dt": 8.009216455537389e-18,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 4.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 128.0
+      },
+      "case": "air_finerY",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21778284336383,
+          "im": 0.39945792822093984
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {},
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 128,
+      "actual_pml_max": 128,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "binary50_cap000_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 8e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "binary50_cap100_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.0000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 8e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "binary50_cap150_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 4.5000000000000003e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 8e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "binary50_cap200_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        },
+        "SiO2_planarization": {
+          "material": "SiO2 (Glass) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": 0.0,
+          "y max": 5.000000000000001e-07,
+          "mesh order": 2.0
+        },
+        "Si_ridge_00_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_01_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_02_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_03_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": -1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_04_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 8e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_05_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 1.6e-05,
+          "x span": 7.999999999999998e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_06_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 3.2e-05,
+          "x span": 8.000000000000001e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_07_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 4.8e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        },
+        "Si_ridge_08_0": {
+          "material": "Si (Silicon) - Palik",
+          "x": 6.4e-05,
+          "x span": 8.000000000000005e-06,
+          "y min": 0.0,
+          "y max": 3.0000000000000004e-07,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 1,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 32.0,
+      "mesh type": "uniform",
+      "dx": 2e-08,
+      "dy": 1e-08,
+      "dt": 2.9536530871961366e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "flatSi",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.190415664629953,
+          "im": 0.4060561612197253
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 32,
+      "actual_pml_max": 32,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 64.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 5e-09,
+      "dt": 1.4768265435980683e-17,
+      "simulation time": 6.000000000000001e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 1.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 64.0
+      },
+      "case": "flatSi_fine",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21256671772289,
+          "im": 0.4007156146543034
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 64,
+      "actual_pml_max": 64,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    },
+    {
+      "dimension": "2D",
+      "x min bc": "PML",
+      "x max bc": "PML",
+      "y min bc": "PML",
+      "y max bc": "PML",
+      "pml layers": 128.0,
+      "mesh type": "uniform",
+      "dx": 1e-08,
+      "dy": 2.5e-09,
+      "dt": 8.009216455537389e-18,
+      "simulation time": 1e-13,
+      "auto shutoff min": 1e-09,
+      "PML_parameters": {
+        "pml profile": 4.0,
+        "pml kappa": 2.0,
+        "pml sigma": 1.0,
+        "pml alpha": 0.0,
+        "pml polynomial": 3.0,
+        "pml alpha polynomial": 1.0,
+        "pml min layers": 8.0,
+        "pml max layers": 128.0
+      },
+      "case": "flatSi_finerY",
+      "source": {
+        "x": 0.0,
+        "y": 1.35e-06,
+        "x span": 0.0002,
+        "waist radius w0": 1.9e-05,
+        "distance from waist": -1.35e-06,
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "polarization angle": 90.0
+      },
+      "numerical_permittivity": {
+        "Si": {
+          "re": 17.21778284336383,
+          "im": 0.39945792822093984
+        },
+        "SiO2": {
+          "re": 2.1319141811685878,
+          "im": 0.0
+        }
+      },
+      "geometry": {
+        "Si_substrate": {
+          "material": "Si (Silicon) - Palik",
+          "x": 0.0,
+          "x span": 0.000196,
+          "y min": -2.8e-06,
+          "y max": 0.0,
+          "mesh order": 1.0
+        }
+      },
+      "oxide_object_count": 0,
+      "passed_all_PML": true,
+      "requested_pml_layers": 128,
+      "actual_pml_max": 128,
+      "cap000_bare_si": true,
+      "cap_positive_top_correct": true,
+      "passed": true
+    }
+  ]
+}

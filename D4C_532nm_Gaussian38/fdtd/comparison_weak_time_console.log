@@ -1,0 +1,136 @@
+{
+  "baseline": "ah53_h180_cap400_fine_t200",
+  "test": "ah53_h180_cap400_fine",
+  "base_air_reference": "air_fine",
+  "test_air_reference": "air_fine",
+  "comparison": "source-leakage-subtracted raw E spectra, measured Pin, common reference .85um, no phase/gain fit",
+  "field_L2_NA06": 0.002612712207001849,
+  "field_L2_nonzero_bands_NA06": 0.032000528669368006,
+  "baseline_power_NA06": 0.2946711948600752,
+  "test_power_NA06": 0.29454653571398104,
+  "nonzero_power_relative_change": 0.02654502631233502,
+  "zero_band_power_relative_change": -0.0005898592603016395,
+  "order_bands": [
+    {
+      "m": 0,
+      "field_relative_L2": 0.0007308905974096919,
+      "power_relative_change": -0.0005898592603016395
+    },
+    {
+      "m": 1,
+      "field_relative_L2": 0.032211644617520976,
+      "power_relative_change": 0.03300529507507366
+    },
+    {
+      "m": 2,
+      "field_relative_L2": 0.02641294402847458,
+      "power_relative_change": -0.004352419562304366
+    },
+    {
+      "m": 3,
+      "field_relative_L2": 0.03455872672348209,
+      "power_relative_change": -0.006649251929377931
+    },
+    {
+      "m": 4,
+      "field_relative_L2": 0.04075506410072336,
+      "power_relative_change": 0.010681514138868753
+    },
+    {
+      "m": 5,
+      "field_relative_L2": 0.032811379166264046,
+      "power_relative_change": 0.001010860352147036
+    },
+    {
+      "m": 6,
+      "field_relative_L2": 0.047866141958061645,
+      "power_relative_change": 0.0004968814709573888
+    },
+    {
+      "m": 7,
+      "field_relative_L2": 0.024851451353446446,
+      "power_relative_change": 0.004724044302375496
+    },
+    {
+      "m": 8,
+      "field_relative_L2": 0.02771643778909644,
+      "power_relative_change": -0.03910141280788737
+    },
+    {
+      "m": 9,
+      "field_relative_L2": 0.03022904194313298,
+      "power_relative_change": 0.05323583265883092
+    },
+    {
+      "m": 10,
+      "field_relative_L2": 0.025285279179806656,
+      "power_relative_change": 0.04229363288623755
+    },
+    {
+      "m": 11,
+      "field_relative_L2": 0.03813516239410487,
+      "power_relative_change": 0.06007999898350591
+    },
+    {
+      "m": 12,
+      "field_relative_L2": 0.03387702113787147,
+      "power_relative_change": -0.012526024305671069
+    },
+    {
+      "m": 13,
+      "field_relative_L2": 0.035274069284015275,
+      "power_relative_change": -0.0014877799363984812
+    },
+    {
+      "m": 14,
+      "field_relative_L2": 0.04125037755839883,
+      "power_relative_change": 0.008860245690210933
+    },
+    {
+      "m": 15,
+      "field_relative_L2": 0.031666273721579125,
+      "power_relative_change": 0.0022829060360285425
+    },
+    {
+      "m": 16,
+      "field_relative_L2": 0.0453176581525318,
+      "power_relative_change": 0.007895076747439056
+    },
+    {
+      "m": 17,
+      "field_relative_L2": 0.02463168172558998,
+      "power_relative_change": -0.0017027715513333597
+    },
+    {
+      "m": 18,
+      "field_relative_L2": 0.03326754376866259,
+      "power_relative_change": -0.04899425062293805
+    }
+  ],
+  "scans": {
+    "SUM": {
+      "relative_L2": 0.017081139228644127,
+      "Linf_over_baseline_span": 0.032213823719135885,
+      "baseline_min": 0.0005883138727407895,
+      "baseline_max": 0.001889291068865878,
+      "test_min": 0.0005879668503535769,
+      "test_max": 0.0019297959962970563,
+      "raw_max_absolute": 4.190945005858927e-05
+    },
+    "DIFF": {
+      "relative_L2": 0.020992971462845483,
+      "Linf_over_baseline_span": 0.03233975422048436,
+      "baseline_min": 0.0003105650577648344,
+      "baseline_max": 0.001611542253889923,
+      "test_min": 0.00031038186808817305,
+      "test_max": 0.0016522110140316526,
+      "raw_max_absolute": 4.2073282769140245e-05
+    }
+  },
+  "criterion": {
+    "max_field_relative": 0.001,
+    "max_scan_Linf_over_span": 0.002,
+    "passed_total_field_and_scan": false,
+    "passed_also_nonzero_field": false
+  }
+}

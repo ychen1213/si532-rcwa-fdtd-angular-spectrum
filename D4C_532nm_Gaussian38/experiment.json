@@ -1,0 +1,152 @@
+{
+  "created": "2026-11-05",
+  "wavelength_nm": 532,
+  "gaussian": {
+    "intensity_1e2_diameter_um": 38.0,
+    "waist_radius_um": 19.0,
+    "waist_y_um": 0.0,
+    "user_confirmed_existing_convention": true
+  },
+  "silicon": "Si (Silicon) - Palik",
+  "film": {
+    "material": "SiO2 (Glass) - Palik",
+    "geometry": "Planarized: fills grooves and covers ridge tops by cap_nm; top at ridge_height_nm+cap_nm",
+    "user_confirmed": true,
+    "cap_zero_policy": "cap_nm=0 is bare Si/air with no SiO2; cap_nm>0 fills trenches to ridge top and adds the stated thickness above it."
+  },
+  "variants": [
+    {
+      "id": "ah53_cap000",
+      "geometry": "ah53",
+      "cap_nm": 0,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap100",
+      "geometry": "ah53",
+      "cap_nm": 100,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap150",
+      "geometry": "ah53",
+      "cap_nm": 150,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap200",
+      "geometry": "ah53",
+      "cap_nm": 200,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "binary50_cap000",
+      "geometry": "binary50",
+      "cap_nm": 0,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap100",
+      "geometry": "binary50",
+      "cap_nm": 100,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap150",
+      "geometry": "binary50",
+      "cap_nm": 150,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap200",
+      "geometry": "binary50",
+      "cap_nm": 200,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    }
+  ],
+  "optics": {
+    "NA": 0.6,
+    "reference_y_um": 0.85,
+    "scan_um": [
+      -4.0,
+      4.0
+    ],
+    "scan_step_um": 0.005,
+    "B_phase": "exp(-i M(k) G s), signed nearest order with ties away from zero",
+    "image_aperture": "infinite; angular-domain power quadrature only"
+  },
+  "user_formula": {
+    "path": "inputs/D4C_FDTD_user_formula_20261105.md",
+    "sha256": "1a4e72ed5739f9c34d33d3dc5eee9a7d2411973a32aabb0df3b0923ad42ca6d4",
+    "L_SUM": 0.00138,
+    "L_DIFF": 0.000431,
+    "T0_definition": "erfc((5e-4*sqrt(2))/(.778*3.76e-4))",
+    "unresolved": [
+      "DIFF interference sign not determined by supplied note; supplied same-kernel comparison retained"
+    ]
+  },
+  "strategy": "D4C target first; compare FDTD angular-domain B formula; fit shared low-dimensional parameters on calibration structures, lock and validate held-out structures; no per-mark arbitrary offsets or per-order fitted gains; independent Maxwell/mesh error kept separate.",
+  "working_formula_contract": {
+    "T_m": "abs(r_plus_m)**2 (explicitly confirmed by user 2026-11-05)",
+    "I0": "abs(r_0)**2 at common reference, zero-order power/intensity equal at normal central incidence",
+    "phi_m": "arg(r_plus_m*conj(r_minus_m)); mirror-symmetric cases expected zero after origin alignment",
+    "K2_K4": "User authorized linear interpolation: K2=0.4947, K4=0.49135. Full 1..18 branch is the primary comparison.",
+    "SUM_DIFF": "same supplied 1-cos kernel for channel-parameter comparisons only; DIFF actual interference topology not claimed"
+  }
+}

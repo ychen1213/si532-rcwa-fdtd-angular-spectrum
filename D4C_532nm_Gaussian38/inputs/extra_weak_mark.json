@@ -1,0 +1,22 @@
+{
+  "variant": {
+    "id": "ah53_h180_cap400",
+    "geometry": "ah53",
+    "cap_nm": 400.0,
+    "period_um": 16.0,
+    "periods": 9,
+    "ridge_height_nm": 180.0,
+    "ridge_width_um": 1.6,
+    "ridge_centers_local_um": [
+      -3.2,
+      0.0,
+      3.2
+    ]
+  },
+  "objective": "User means scan vertical-axis peak .00x, not I0 or total reflection R.",
+  "split": "Extra held-out structure only; original cap0/100 fits and original eight variants remain fixed.",
+  "physical_change": "Both Si relief height300->180nm and planar SiO2 cap400nm; not a film-only effect.",
+  "fit_policy": "Apply the previously frozen shared gain/T0. Do not include this mark in any calibration.",
+  "material_source": "fdtd/materials.json",
+  "same_source_and_monitor_geometry": true
+}

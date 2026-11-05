@@ -1,0 +1,45 @@
+{
+  "wavelength_nm": 532.0,
+  "fit_band_nm": [
+    500.0,
+    600.0
+  ],
+  "solver_version": "8.34.4175",
+  "materials": {
+    "Si": {
+      "name": "Si (Silicon) - Palik",
+      "database_index": {
+        "n": 4.1501040188082685,
+        "k": 0.04393515056151286
+      },
+      "FDTD_fit_index": {
+        "n": 4.149971915645845,
+        "k": 0.048064634885764825,
+        "epsilon_re": 17.219956691522544,
+        "epsilon_im": 0.3989337698233911
+      }
+    },
+    "SiO2": {
+      "name": "SiO2 (Glass) - Palik",
+      "database_index": {
+        "n": 1.4607226165310925,
+        "k": 0.0
+      },
+      "FDTD_fit_index": {
+        "n": 1.4601075923261915,
+        "k": -0.0,
+        "epsilon_re": 2.1319141811685878,
+        "epsilon_im": -0.0
+      }
+    }
+  },
+  "source": {
+    "amplitude": 1.0,
+    "phase_deg": 0.0,
+    "waist_radius_um": 19.0,
+    "intensity_1e2_diameter_um": 38.0,
+    "waist_y_um": 0.0,
+    "source_y_um": 1.35
+  },
+  "phase_convention": "exp(-i omega t); incident -Y, reflected +Y; common reference y=0.85um; raw fields retain solver source phase"
+}

@@ -1,0 +1,10 @@
+{
+  "zero_transmission_definition": {
+    "purpose": "Test whether one fixed angular stop implements one universal zero transmission across structural variants",
+    "conclusion": "With known physical A0 the effective transmission is universal; defining zero as a nearest angular band introduces structural contamination"
+  },
+  "absolute_curve_errors": {
+    "purpose": "Separate D4C-to-finite-spectrum representation error from electromagnetic solver error",
+    "conclusion": "Finite-spectrum controls have nonzero model residuals even before FDTD; no mark-specific DC correction is applied"
+  }
+}

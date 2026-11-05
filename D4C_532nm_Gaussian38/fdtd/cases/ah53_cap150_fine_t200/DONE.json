@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "settings": {
+    "case": "ah53_cap150",
+    "wavelength_m": 5.32e-07,
+    "dx_m": 1e-08,
+    "dy_m": 5e-09,
+    "pml_layers": 64,
+    "t_max_s": 2e-13,
+    "auto_shutoff": 1e-09,
+    "x_span_m": 0.000192,
+    "monitor_span_m": 0.000184,
+    "y_min_m": -8e-07,
+    "y_max_m": 2.5e-06,
+    "source_y_m": 1.35e-06,
+    "source_span_m": 0.0002,
+    "waist_radius_m": 1.9e-05,
+    "reference_y_m": 8.5e-07,
+    "source_band_m": [
+      5e-07,
+      6e-07
+    ],
+    "monitor_y_m": {
+      "R": 1.8e-06,
+      "R2": 2e-06,
+      "INC": 8e-07,
+      "T": -6e-07
+    },
+    "mesh_refinement": "conformal variant 0",
+    "geometry": {
+      "id": "ah53_cap150",
+      "geometry": "ah53",
+      "cap_nm": 150,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    }
+  },
+  "termination": {
+    "iterations": 13543,
+    "simulated_time_s": 2.000066e-13,
+    "peak_memory_GiB": 1.855714,
+    "wall_s": 312.352175,
+    "Nx": 19328,
+    "Ny": 788,
+    "final_auto_shutoff": 7.78253e-07,
+    "completed_successfully": true,
+    "terminated_early": false
+  },
+  "solve_wall_s": 323.4148369000759,
+  "total_wall_s": 327.7479032999836,
+  "exports": {
+    "monitors": {
+      "R": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 1.8e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 0.16928736976217992
+      },
+      "R2": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 2e-06,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": 0.1692865900286633
+      },
+      "INC": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": 8e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.8307183294291671
+      },
+      "T": {
+        "points": 18401,
+        "x_min_m": -9.2e-05,
+        "x_max_m": 9.2e-05,
+        "monitor_y_m": -6e-07,
+        "wavelength_m": 5.32e-07,
+        "native_transmission_signed": -0.37683332848607476
+      }
+    },
+    "sourcepower_W_per_m": 3.158549384807221e-08,
+    "dt_s": 1.4768265435980683e-17,
+    "mesh": {
+      "x_m": {
+        "points": 19201,
+        "min_m": -9.6e-05,
+        "max_m": 9.6e-05,
+        "step_min_m": 9.999999999994822e-09,
+        "step_max_m": 1.0000000000021927e-08
+      },
+      "y_m": {
+        "points": 661,
+        "min_m": -8e-07,
+        "max_m": 2.5e-06,
+        "step_min_m": 4.999999999999952e-09,
+        "step_max_m": 5.000000000000376e-09
+      }
+    }
+  },
+  "completed_utc": "2026-11-05T14:19:32.234559+00:00",
+  "model_sha256": "2ddc5a1f3e39f7be9176a3626229da4faed8041db60be635aff10ce33877d889",
+  "raw_field_policy": "TOTAL fields, no flat subtraction; all six raw complex components retained"
+}

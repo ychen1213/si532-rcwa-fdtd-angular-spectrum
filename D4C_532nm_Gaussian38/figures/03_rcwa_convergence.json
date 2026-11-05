@@ -1,0 +1,7 @@
+{
+  "source": "rcwa/convergence.csv",
+  "orders_compared": "m=-18..18",
+  "changes": "N240 minus N160; N320 minus N240. Relative I0 uses final N320 I0.",
+  "final_max_relative_complex_L2": 0.00037052014133171445,
+  "final_max_abs_complex_change": 6.136732050530852e-05
+}

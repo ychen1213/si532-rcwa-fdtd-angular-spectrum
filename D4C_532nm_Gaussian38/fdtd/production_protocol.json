@@ -1,0 +1,68 @@
+{
+  "production_mesh_nm": {"dx": 10, "dy": 5},
+  "production_PML_layers_actual": 64,
+  "production_reference_air": "air_fine",
+  "production_reference_flat": "flatSi_fine",
+  "incident_reference_policy": "Measured empty-domain directional incident Poynting flux; shared across every structure on this mesh. No Fresnel gain correction and no mark-dependent scaling.",
+  "main_AH53_cap000": "ah53_cap000_fine: 600fs maximum, actual428.9295fs autoshutoff9.03884e-10",
+  "remaining_seven_variants": "variantid_fine: real100fs maximum; explicitly reused air_fine, actual simulation time and late residual retained in DONE/manifest",
+  "time_validation": {
+    "long": "ah53_cap000_fine",
+    "short": "ah53_cap000_fine_t100",
+    "NA": 0.6,
+    "complex_field_relative_L2": 0.000873770322547133,
+    "nonzero_bands_complex_field_relative_L2": 0.0023380797981451635,
+    "SUM_scan_Linf_over_long_span": 0.00022466365578208434,
+    "DIFF_scan_Linf_over_long_span": 0.00022491038167737616,
+    "criterion": "Task concerns integrated scan: total field<0.1% and scan<0.2%; both satisfied. Nonzero-band complex field alone has0.2338% residual and is not claimed<0.1%.",
+    "additional_thin_film_control": {
+      "long": "ah53_cap150_fine_t200",
+      "short": "ah53_cap150_fine",
+      "long_actual_time_fs": 200.0066,
+      "total_field_L2_NA06": 0.0008586987359347384,
+      "nonzero_field_L2_NA06": 0.0008534246501466623,
+      "SUM_scan_Linf_over_long_span": 0.0002734053983680994,
+      "DIFF_scan_Linf_over_long_span": 0.0002734470645232174,
+      "criterion_passed": true,
+      "zero_band_power_relative_change": 0.0010416244827242682
+    }
+  },
+  "spatial_validation": {
+    "coarse": "20/10nm, PML32, all-domain uniform",
+    "fine": "10/5nm, PML64, all-domain uniform",
+    "flat_Fresnel_power_error_coarse": -0.030498191238706673,
+    "flat_Fresnel_power_error_fine": -0.007263839130489225,
+    "meaning": "Mesh residual remains. Actual source-only beam waist is19.00001um. No post-hoc Fresnel correction is applied.",
+    "further_control": {
+      "cases": ["air_finerY", "flatSi_finerY", "ah53_cap150_finerY"],
+      "mesh_nm": {"dx": 10, "dy": 2.5},
+      "actual_PML_layers": 128,
+      "actual_PML_profile": "Custom4; coefficients exactly match Standard1",
+      "common_PML_parameters": {"kappa": 2, "sigma": 1, "alpha": 0, "polynomial": 3, "alpha_polynomial": 1, "min_layers": 8},
+      "Y_PML_thickness_nm": 320,
+      "X_PML_thickness_nm": 1280,
+      "fine_X_PML_thickness_nm": 640,
+      "flat_Fresnel_power_relative_error": -0.0016321626154506275,
+      "finer_incident_Pin_W_per_m": 3.159581308506017e-8,
+      "AH150_fine_to_finerY_scan_Linf_over_finer_span": 0.008858971484491872,
+      "meaning": "Y spatial grid and associated time step are refined; X-PML physical width also increases. No claim that only a single scalar parameter changes. All actual PML coefficients and geometry are read from native FSP audit."
+    }
+  },
+  "extra_weak_holdout": {
+    "id": "ah53_h180_cap400",
+    "source": "inputs/extra_weak_mark.json",
+    "geometry": "AH53 height180nm with planar SiO2 cap400nm, top580nm; original8 structures remain unchanged",
+    "initial_transient_case": "ah53_h180_cap400_fine",
+    "long_reference_case": "ah53_h180_cap400_fine_t400",
+    "candidate_validated_scan_case": "ah53_h180_cap400_fine_t200",
+    "time_controls": ["ah53_h180_cap400_fine_t200", "ah53_h180_cap400_fine_t400"],
+    "reference_air": "air_fine",
+    "fit_policy": "Independent held-out structure; never included in any calibration of shared instrument parameters",
+    "time_policy": "Compare actual100/200/400fs scans using this weak case's own small dynamic span; do not reuse strong-case absolute-error tolerances",
+    "100fs_time_failure": {"total_field_L2_NA06": 0.002612712207001849,"nonzero_field_L2_NA06": 0.032000528669368006,"SUM_scan_Linf_over_200fs_span": 0.032213823719135885,"DIFF_scan_Linf_over_200fs_span": 0.03233975422048436,"meaning": "100fs failed for this weak curve; the quick time audit uses nearest-band P0 and is a diagnostic, not the final source-mode-zero comparison."},
+    "200_to_400fs_time_validation": {"total_field_L2_NA06": 0.0003602879306203333,"nonzero_field_L2_NA06": 0.0045292545905756595,"SUM_scan_Linf_over_400fs_span": 0.00016816668816150193,"DIFF_scan_Linf_over_400fs_span": 0.0001702855321891144,"SUM_max_absolute_change": 2.187924899306297e-7,"scan_criterion_passed": true,"branch": "Quick nearest-band P0 one-time scalar term. Final source-projected-mode-zero branch is independently calculated by the main analysis pipeline; these diagnostics do not replace it."},
+    "cancelled_finerY100fs": "An incomplete32.165fs finer-grid attempt was intentionally stopped after the100fs temporal failure. CANCELLED.json and logs are preserved; it has no DONE or field export and is never used as spatial-convergence evidence."
+  },
+  "completed_solver_delivery": {"completed_cases": 21,"cancelled_incomplete_cases": 1,"all_completed_native_projects_audited": true,"all_four_actual_boundaries_PML": true,"sum_completed_solve_wall_s": 4492.543667099671,"maximum_engine_memory_GiB": 3.650334,"active_solver_processes_after_delivery": 0},
+  "engine_policy": "One native CPU engine at a time; one process, eight threads. Full six-component raw line E/H, model FSP, standalone LSF, and actual-time logs retained."
+}

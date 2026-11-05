@@ -1,0 +1,111 @@
+{
+  "variants": [
+    {
+      "id": "ah53_cap000",
+      "geometry": "ah53",
+      "cap_nm": 0,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap100",
+      "geometry": "ah53",
+      "cap_nm": 100,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap150",
+      "geometry": "ah53",
+      "cap_nm": 150,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "ah53_cap200",
+      "geometry": "ah53",
+      "cap_nm": 200,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 1.6,
+      "ridge_centers_local_um": [
+        -3.2,
+        0.0,
+        3.2
+      ]
+    },
+    {
+      "id": "binary50_cap000",
+      "geometry": "binary50",
+      "cap_nm": 0,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap100",
+      "geometry": "binary50",
+      "cap_nm": 100,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap150",
+      "geometry": "binary50",
+      "cap_nm": 150,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    },
+    {
+      "id": "binary50_cap200",
+      "geometry": "binary50",
+      "cap_nm": 200,
+      "period_um": 16.0,
+      "periods": 9,
+      "ridge_height_nm": 300.0,
+      "ridge_width_um": 8.0,
+      "ridge_centers_local_um": [
+        0.0
+      ]
+    }
+  ],
+  "waist_radius_um": 19.0,
+  "intensity_1e2_diameter_um": 38.0,
+  "geometry_scope": "Panels a/b are one mother cell at cap150; panel c shows nine AH53 cells; lengths are actual but x and y have different units/scales."
+}

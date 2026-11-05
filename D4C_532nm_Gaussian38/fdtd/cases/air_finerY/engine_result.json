@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\Ansys Inc\\v252\\Lumerical\\bin\\fdtd-engine.exe",
+    "-t",
+    "8",
+    "-fullinfo",
+    "-log-stdout",
+    "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\air_finerY\\model.fsp"
+  ],
+  "returncode": 0,
+  "started_utc": "2026-11-05T14:20:30.359199+00:00",
+  "elapsed_seconds": 129.43953810003586,
+  "stdout": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\air_finerY\\engine_stdout.log",
+  "stderr": "D:\\工作\\AH53_D4C_ZeroOrder_20261105\\fdtd\\cases\\air_finerY\\engine_stderr.log",
+  "threads": 8,
+  "processes": 1,
+  "device": "CPU"
+}

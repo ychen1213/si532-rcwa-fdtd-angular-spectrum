@@ -1,0 +1,81 @@
+{
+  "source": "Same saved RCWA amplitudes and confirmed D4C formula, evaluated on finer local displacement grids",
+  "new_electromagnetic_solves": false,
+  "axis": "Individual local x/y scales; every y axis starts at zero",
+  "purpose": "Resolve whether leakage was omitted or merely hidden by full-scale linear plotting",
+  "conclusion": "All 16 channel minima equal their strictly positive residual-plus-leakage term",
+  "minima": [
+    {
+      "id": "ah53_cap000",
+      "SUM_min": 0.0006107176071496515,
+      "DIFF_same_kernel_min": 0.00032239176692855115,
+      "zero_SUM": 0.0006107176071496515,
+      "zero_DIFF": 0.00032239176692855115,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 53.44618651811433
+    },
+    {
+      "id": "ah53_cap100",
+      "SUM_min": 0.00014904420468290767,
+      "DIFF_same_kernel_min": 7.867895723924793e-05,
+      "zero_SUM": 0.00014904420468290767,
+      "zero_DIFF": 7.867895723924793e-05,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 12.40248155797061
+    },
+    {
+      "id": "ah53_cap150",
+      "SUM_min": 9.784319252694556e-06,
+      "DIFF_same_kernel_min": 5.165045079986179e-06,
+      "zero_SUM": 9.784319252694556e-06,
+      "zero_DIFF": 5.165045079986179e-06,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 3.1490707284048582
+    },
+    {
+      "id": "ah53_cap200",
+      "SUM_min": 0.00028524542374554717,
+      "DIFF_same_kernel_min": 0.00015057822976286976,
+      "zero_SUM": 0.00028524542374554717,
+      "zero_DIFF": 0.00015057822976286976,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 17.769725062147206
+    },
+    {
+      "id": "binary50_cap000",
+      "SUM_min": 0.0006271795971383219,
+      "DIFF_same_kernel_min": 0.0003310818881522989,
+      "zero_SUM": 0.0006271795971383219,
+      "zero_DIFF": 0.0003310818881522989,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 85.25912292051973
+    },
+    {
+      "id": "binary50_cap100",
+      "SUM_min": 2.8040857536921507e-05,
+      "DIFF_same_kernel_min": 1.480249054831113e-05,
+      "zero_SUM": 2.8040857536921507e-05,
+      "zero_DIFF": 1.480249054831113e-05,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 9.590605533847352
+    },
+    {
+      "id": "binary50_cap150",
+      "SUM_min": 4.4412589865048985e-05,
+      "DIFF_same_kernel_min": 2.3444965648350193e-05,
+      "zero_SUM": 4.4412589865048985e-05,
+      "zero_DIFF": 2.3444965648350193e-05,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 11.826754165919555
+    },
+    {
+      "id": "binary50_cap200",
+      "SUM_min": 0.00030821181137882754,
+      "DIFF_same_kernel_min": 0.0001627019579841931,
+      "zero_SUM": 0.00030821181137882754,
+      "zero_DIFF": 0.0001627019579841931,
+      "all_minima_positive": true,
+      "local_halfwidth_nm": 32.88936290609208
+    }
+  ]
+}

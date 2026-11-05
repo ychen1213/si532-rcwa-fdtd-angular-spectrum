@@ -1,0 +1,6 @@
+# Scientific provenance hashes refer to exact bytes, including line endings.
+* -text
+*.npz binary
+*.fsp binary
+*.png binary
+*.pdf binary
