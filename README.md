@@ -6,6 +6,8 @@
 
 **后续 D4C 扫描曲线研究（2026-11-05）：** [八组 Mark、38 μm Gaussian 与共同参数验证](D4C_532nm_Gaussian38/README.md) · [教材 PDF](D4C_532nm_Gaussian38/report/REPORT_zh.pdf) · [报告全文](D4C_532nm_Gaussian38/report/REPORT_zh.md)。后续研究保存在独立目录；本页原有 2 μm 周期与长阵列角谱研究保持完整。
 
+**全部聊天原文归档（2026-11-06）：** [含进度的完整 Markdown 与问答阅读版](D4C_532nm_Gaussian38/docs/discussions/README.md)，保留从本研究最初任务到 D4C 零级处理、挡板、K/γ、共享增益和 Python 入口的全部对话原文，并核对整个程序包已上传。
+
 报告按问题、结构、符号、数学推导、实际计算、图表、误差核验和最终结论组织，共有 12 张带目的与结论的科学图。解析 sinc 示例与真实 FDTD 数据均明确标记。
 
 ## 直接结论

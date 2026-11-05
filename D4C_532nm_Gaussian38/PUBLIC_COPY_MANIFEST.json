@@ -183,6 +183,48 @@
       "log_header_redacted": false
     },
     {
+      "path": "docs/discussions/20261106_all_messages_verbatim.md",
+      "bytes": 140043,
+      "sha256": "2f047f73880d07e8e78a422f1452a2bdebcd57ae61a9cff0a17271cee216fbf9",
+      "source_sha256": "2f047f73880d07e8e78a422f1452a2bdebcd57ae61a9cff0a17271cee216fbf9",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/20261106_conversation_provenance.json",
+      "bytes": 44246,
+      "sha256": "3e59c27d71d55c9ec12c30bc9c5a328f36676929a3273a8850a0b89cbb367e3c",
+      "source_sha256": "3e59c27d71d55c9ec12c30bc9c5a328f36676929a3273a8850a0b89cbb367e3c",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/20261106_package_verification.md",
+      "bytes": 2032,
+      "sha256": "ca378b4b389da7b033d63af1d75bb68e3854b0c64b69d00f26a31150ec0f3a1b",
+      "source_sha256": "ca378b4b389da7b033d63af1d75bb68e3854b0c64b69d00f26a31150ec0f3a1b",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/20261106_questions_and_answers_verbatim.md",
+      "bytes": 93219,
+      "sha256": "773a1fa0fa19ed4412d1d5712c2bc4839ca2b5939561dd87bd8a6d76eac81c8d",
+      "source_sha256": "773a1fa0fa19ed4412d1d5712c2bc4839ca2b5939561dd87bd8a6d76eac81c8d",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/README.md",
+      "bytes": 3922,
+      "sha256": "041f49f72cf687308d7a5fc2a23aaffda08517d3065673a069625b0bed34eb0f",
+      "source_sha256": "041f49f72cf687308d7a5fc2a23aaffda08517d3065673a069625b0bed34eb0f",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/export_conversation_verbatim.py",
+      "bytes": 10831,
+      "sha256": "be69d1cfe41de93bb2facc851169cc4f1e92332d5c33688bb06a974a5458112d",
+      "source_sha256": "be69d1cfe41de93bb2facc851169cc4f1e92332d5c33688bb06a974a5458112d",
+      "log_header_redacted": false
+    },
+    {
       "path": "docs/prepare_public_copy.py",
       "bytes": 2885,
       "sha256": "9661c125be6c1079ebdf6bcbb8bebaf788b940c4c6b85862bceccd2ee23cbdf4",
@@ -4776,9 +4818,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 3284,
-      "sha256": "887bcc6594bcb589c96d3f619d2bf38889a62a71ea8bec1ab95c85938cf84bf8",
-      "source_sha256": "887bcc6594bcb589c96d3f619d2bf38889a62a71ea8bec1ab95c85938cf84bf8",
+      "bytes": 3498,
+      "sha256": "2309f302a3fe6b513b8a7d12c946f6e3690c22bd232fbf664857facff4a34f16",
+      "source_sha256": "2309f302a3fe6b513b8a7d12c946f6e3690c22bd232fbf664857facff4a34f16",
       "log_header_redacted": false
     },
     {
@@ -4860,6 +4902,6 @@
     }
   ],
   "policy": "Only machine/license log header lines and transient build files are excluded; scientific arrays retained unchanged",
-  "file_count": 694,
-  "total_bytes": 265461947
+  "file_count": 700,
+  "total_bytes": 265756454
 }
