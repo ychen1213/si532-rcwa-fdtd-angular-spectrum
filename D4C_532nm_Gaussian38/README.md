@@ -8,6 +8,7 @@
 - [用户原始公式](inputs/D4C_FDTD_user_formula_20261105.md)及[后续确认](docs/user_clarifications.md)
 - [完整实验定义](experiment.json)
 - [全部对话原文 Markdown（2026-10-31 至 2026-11-06）](docs/discussions/README.md)：含全部问答、进度消息、逐条原文校验及程序包核对；另提供不含进度消息的问答阅读版。
+- [BF mark 与 RCWA→D4C 偏振矩阵扩展原文（2026-11-07）](docs/discussions/20261107_bf_polarization_verbatim.md)：保留名称更正、几何与原图、Jones 矢量公式及后续确认。
 
 532 nm、二维 TE、16 μm 周期、300 nm Si 台阶、38 μm 强度 1/e² 直径光斑（w₀=19 μm）；四边 PML，真实 finite Mark，不使用横向周期边界。主比较采用用户已确认 Tₘ=|rₘ|²，K₂=.4947、K₄=.49135 为用户授权线性插值。SUM/DIFF 只比较原文同一干涉核下的 leakage 参数，不推定未知真实端口符号。
 

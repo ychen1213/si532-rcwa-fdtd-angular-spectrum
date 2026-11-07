@@ -211,10 +211,45 @@
       "log_header_redacted": false
     },
     {
+      "path": "docs/discussions/20261107_bf_polarization_provenance.json",
+      "bytes": 12113,
+      "sha256": "215749389e1967ab2347bcf1e0099b689de91327227f990f0efa235041a0af99",
+      "source_sha256": "215749389e1967ab2347bcf1e0099b689de91327227f990f0efa235041a0af99",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/20261107_bf_polarization_questions_and_answers_verbatim.md",
+      "bytes": 21627,
+      "sha256": "08fe84e388c035e4aaad6b6d437326d42fd044a4bf87d8ce4f496c507d13efaa",
+      "source_sha256": "08fe84e388c035e4aaad6b6d437326d42fd044a4bf87d8ce4f496c507d13efaa",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/20261107_bf_polarization_verbatim.md",
+      "bytes": 23768,
+      "sha256": "251271d5068f528522d12ad1a8a3c5836fb0c684fa87d71525ef857321d16a2c",
+      "source_sha256": "251271d5068f528522d12ad1a8a3c5836fb0c684fa87d71525ef857321d16a2c",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/discussions/assets/20261106_bf_mark_user_original.png",
+      "bytes": 73283,
+      "sha256": "6434e1c00b78e00bdc80c3219113775bd36829f10a02cd3d88987047434237ae",
+      "source_sha256": "6434e1c00b78e00bdc80c3219113775bd36829f10a02cd3d88987047434237ae",
+      "log_header_redacted": false
+    },
+    {
       "path": "docs/discussions/README.md",
-      "bytes": 3922,
-      "sha256": "041f49f72cf687308d7a5fc2a23aaffda08517d3065673a069625b0bed34eb0f",
-      "source_sha256": "041f49f72cf687308d7a5fc2a23aaffda08517d3065673a069625b0bed34eb0f",
+      "bytes": 5304,
+      "sha256": "f4dc4c132dccc5ce0c4af7b8ba738fd88aabf2a2a918090e93c93377a04a5b2b",
+      "source_sha256": "f4dc4c132dccc5ce0c4af7b8ba738fd88aabf2a2a918090e93c93377a04a5b2b",
+      "log_header_redacted": false
+    },
+    {
+      "path": "docs/export_bf_polarization_verbatim.py",
+      "bytes": 10635,
+      "sha256": "39db5ab2e6ac8e6786bf8a1b2b6ab9d047f3dca32d46d15f09875240b53230bb",
+      "source_sha256": "39db5ab2e6ac8e6786bf8a1b2b6ab9d047f3dca32d46d15f09875240b53230bb",
       "log_header_redacted": false
     },
     {
@@ -4818,9 +4853,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 3498,
-      "sha256": "2309f302a3fe6b513b8a7d12c946f6e3690c22bd232fbf664857facff4a34f16",
-      "source_sha256": "2309f302a3fe6b513b8a7d12c946f6e3690c22bd232fbf664857facff4a34f16",
+      "bytes": 3699,
+      "sha256": "84ade1c056c21646a322137bf7fbdd0e76d34a904650261ce8cfdd6e8276400c",
+      "source_sha256": "84ade1c056c21646a322137bf7fbdd0e76d34a904650261ce8cfdd6e8276400c",
       "log_header_redacted": false
     },
     {
@@ -4902,6 +4937,6 @@
     }
   ],
   "policy": "Only machine/license log header lines and transient build files are excluded; scientific arrays retained unchanged",
-  "file_count": 700,
-  "total_bytes": 265756454
+  "file_count": 705,
+  "total_bytes": 265899463
 }

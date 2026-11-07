@@ -1,0 +1,388 @@
+{
+  "scope": "BF mark discussion only; source session stays local",
+  "export_date_hong_kong": "2026-11-07",
+  "timezone": "Asia/Hong_Kong",
+  "first_source_line": 5227,
+  "cutoff_source_line": 5452,
+  "source_prefix_sha256": "41f5c8a8deb20d7e0e9d66ce06d10f5ab77495a1e27eeaaafc42b4b3c7df7186",
+  "excluded_application_context_messages": 2,
+  "message_count": 16,
+  "counts": {
+    "user": 8,
+    "commentary": 4,
+    "interactive_question": 1,
+    "final_answer": 3
+  },
+  "displayed_question_count": 2,
+  "exactness": "All original text blocks are copied in original order without rewriting. Interactive-question titles/options retain original strings. Headers, code fences and usable attachment links are added outside the original text body. Embedded image bytes are decoded unchanged.",
+  "exclusions": "Application environment/page-state, internal instructions/reasoning, tool execution output and agent communication",
+  "messages": [
+    {
+      "id": "bf-message-0001",
+      "source_line": 5227,
+      "timestamp_utc": "2026-11-06T14:27:06.620Z",
+      "kind": "user",
+      "sha256": "b7e6b7305f5f9756fec5a846545fbaeba7de6936ec360f3f7c90903c6e2af7ec",
+      "body_chars": 216,
+      "body_utf8_bytes": 507,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 216,
+          "utf8_bytes": 507,
+          "sha256": "b7e6b7305f5f9756fec5a846545fbaeba7de6936ec360f3f7c90903c6e2af7ec"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0002",
+      "source_line": 5230,
+      "timestamp_utc": "2026-11-06T14:28:53.961Z",
+      "kind": "commentary",
+      "sha256": "be408f0f70190298057acff858ba6cc1f14ef8e677f820df7f65992a0d737b48",
+      "body_chars": 117,
+      "body_utf8_bytes": 304,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 117,
+          "utf8_bytes": 304,
+          "sha256": "be408f0f70190298057acff858ba6cc1f14ef8e677f820df7f65992a0d737b48"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0003",
+      "source_line": 5239,
+      "timestamp_utc": "2026-11-06T14:29:33.207Z",
+      "kind": "interactive_question",
+      "sha256": "2c12709e58fe28af89e8b8057bf5b71b51d78bd2396f302cbd008c28e3c4819d",
+      "body_chars": 172,
+      "body_utf8_bytes": 398,
+      "fenced": false,
+      "original_text_blocks": [],
+      "images": [],
+      "displayed_question_count": 2
+    },
+    {
+      "id": "bf-message-0004",
+      "source_line": 5261,
+      "timestamp_utc": "2026-11-06T14:30:32.296Z",
+      "kind": "user",
+      "sha256": "a410042e6da503f663c23ef51de4cd24e9390d496762d0dd0e7bf840f5013801",
+      "body_chars": 403,
+      "body_utf8_bytes": 515,
+      "fenced": true,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 403,
+          "utf8_bytes": 515,
+          "sha256": "a410042e6da503f663c23ef51de4cd24e9390d496762d0dd0e7bf840f5013801"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0005",
+      "source_line": 5266,
+      "timestamp_utc": "2026-11-06T14:30:38.175Z",
+      "kind": "user",
+      "sha256": "5e981fbe1dfc4a66a548723c08f29996d75d7c1a2550c79a18aad4e3932852e3",
+      "body_chars": 17,
+      "body_utf8_bytes": 35,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 17,
+          "utf8_bytes": 35,
+          "sha256": "5e981fbe1dfc4a66a548723c08f29996d75d7c1a2550c79a18aad4e3932852e3"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0006",
+      "source_line": 5271,
+      "timestamp_utc": "2026-11-06T14:31:03.598Z",
+      "kind": "commentary",
+      "sha256": "db311b087243c7cd9bc4771a31d19b782894d97c72e755a23745bee2db285273",
+      "body_chars": 145,
+      "body_utf8_bytes": 364,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 145,
+          "utf8_bytes": 364,
+          "sha256": "db311b087243c7cd9bc4771a31d19b782894d97c72e755a23745bee2db285273"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0007",
+      "source_line": 5285,
+      "timestamp_utc": "2026-11-06T14:31:42.997Z",
+      "kind": "user",
+      "sha256": "6e210927bdab3c00d94832341f0012d75a1d29623b4b548aca56001b416365c8",
+      "body_chars": 431,
+      "body_utf8_bytes": 439,
+      "fenced": true,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 302,
+          "utf8_bytes": 310,
+          "sha256": "d221f158bf31589e8a03726f3c6e38ad7620feeb7a03fb3860f8f822cd88c7a9"
+        },
+        {
+          "content_index": 1,
+          "type": "input_text",
+          "chars": 121,
+          "utf8_bytes": 121,
+          "sha256": "75d21fd876832620600df1ac76eec5612c7b6d09a7b40ff1930ea4573b93c046"
+        },
+        {
+          "content_index": 3,
+          "type": "input_text",
+          "chars": 8,
+          "utf8_bytes": 8,
+          "sha256": "74dc9557ab981926699a7670ad1610533cbe2ee728b3d6599281f799e3ed7f0b"
+        }
+      ],
+      "images": [
+        {
+          "content_index": 2,
+          "path": "assets/20261106_bf_mark_user_original.png",
+          "bytes": 73283,
+          "sha256": "6434e1c00b78e00bdc80c3219113775bd36829f10a02cd3d88987047434237ae",
+          "source": "Original input_image PNG data URL, decoded without modification"
+        }
+      ],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0008",
+      "source_line": 5290,
+      "timestamp_utc": "2026-11-06T14:32:15.244Z",
+      "kind": "user",
+      "sha256": "45980b932af8de4ddb3d5050a6a731fd81629a62691d6674c533c3d8f66fad32",
+      "body_chars": 35,
+      "body_utf8_bytes": 79,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 35,
+          "utf8_bytes": 79,
+          "sha256": "45980b932af8de4ddb3d5050a6a731fd81629a62691d6674c533c3d8f66fad32"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0009",
+      "source_line": 5295,
+      "timestamp_utc": "2026-11-06T14:32:26.833Z",
+      "kind": "commentary",
+      "sha256": "b69f78e56ffa365393fb627f00dd99f45be4f19e00abd20f25c2d6ba0e84828a",
+      "body_chars": 138,
+      "body_utf8_bytes": 308,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 138,
+          "utf8_bytes": 308,
+          "sha256": "b69f78e56ffa365393fb627f00dd99f45be4f19e00abd20f25c2d6ba0e84828a"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0010",
+      "source_line": 5388,
+      "timestamp_utc": "2026-11-06T14:37:46.704Z",
+      "kind": "commentary",
+      "sha256": "dfb91b283888b48270ae80082acd640ff701ee2e9f640581b9c3e90c8482af7f",
+      "body_chars": 215,
+      "body_utf8_bytes": 394,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 215,
+          "utf8_bytes": 394,
+          "sha256": "dfb91b283888b48270ae80082acd640ff701ee2e9f640581b9c3e90c8482af7f"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0011",
+      "source_line": 5413,
+      "timestamp_utc": "2026-11-06T14:41:42.390Z",
+      "kind": "final_answer",
+      "sha256": "5658af0d3b2d3b5cb7db3d8183a3e06c02f45d515a95d570d459b5d20d6969ac",
+      "body_chars": 5672,
+      "body_utf8_bytes": 10006,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 5672,
+          "utf8_bytes": 10006,
+          "sha256": "5658af0d3b2d3b5cb7db3d8183a3e06c02f45d515a95d570d459b5d20d6969ac"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0012",
+      "source_line": 5424,
+      "timestamp_utc": "2026-11-07T01:13:23.313Z",
+      "kind": "user",
+      "sha256": "74f3470e1da217fa87a82091a347a4ed7cd05718a636d5ade21e0d14ff23e20a",
+      "body_chars": 48,
+      "body_utf8_bytes": 130,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 48,
+          "utf8_bytes": 130,
+          "sha256": "74f3470e1da217fa87a82091a347a4ed7cd05718a636d5ade21e0d14ff23e20a"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0013",
+      "source_line": 5433,
+      "timestamp_utc": "2026-11-07T01:14:19.411Z",
+      "kind": "final_answer",
+      "sha256": "497a9f85fa1c13a233e5707c04d628c7e606db5ac1fdfc4b3fef54f46794163a",
+      "body_chars": 1992,
+      "body_utf8_bytes": 3414,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 1992,
+          "utf8_bytes": 3414,
+          "sha256": "497a9f85fa1c13a233e5707c04d628c7e606db5ac1fdfc4b3fef54f46794163a"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0014",
+      "source_line": 5440,
+      "timestamp_utc": "2026-11-07T01:16:01.835Z",
+      "kind": "user",
+      "sha256": "7492bff52c6607ecbaece00208deaca5d66ce7d02568632d508396e556db6989",
+      "body_chars": 32,
+      "body_utf8_bytes": 94,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 32,
+          "utf8_bytes": 94,
+          "sha256": "7492bff52c6607ecbaece00208deaca5d66ce7d02568632d508396e556db6989"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0015",
+      "source_line": 5445,
+      "timestamp_utc": "2026-11-07T01:16:30.770Z",
+      "kind": "final_answer",
+      "sha256": "d4eb5dc805fbc6f7b16126040438b28d5d10df0633f5a75bd95b452c7d7c95c0",
+      "body_chars": 1060,
+      "body_utf8_bytes": 1872,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "output_text",
+          "chars": 1060,
+          "utf8_bytes": 1872,
+          "sha256": "d4eb5dc805fbc6f7b16126040438b28d5d10df0633f5a75bd95b452c7d7c95c0"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    },
+    {
+      "id": "bf-message-0016",
+      "source_line": 5452,
+      "timestamp_utc": "2026-11-07T01:17:39.949Z",
+      "kind": "user",
+      "sha256": "b95c969796365b7d914830ea263e2a15cbf5da47b2298adb8922ffe3b9ecefca",
+      "body_chars": 19,
+      "body_utf8_bytes": 43,
+      "fenced": false,
+      "original_text_blocks": [
+        {
+          "content_index": 0,
+          "type": "input_text",
+          "chars": 19,
+          "utf8_bytes": 43,
+          "sha256": "b95c969796365b7d914830ea263e2a15cbf5da47b2298adb8922ffe3b9ecefca"
+        }
+      ],
+      "images": [],
+      "displayed_question_count": 0
+    }
+  ],
+  "markdown_checks": [
+    {
+      "file": "20261107_bf_polarization_verbatim.md",
+      "messages": 16,
+      "exact_message_text_verified": true,
+      "sha256": "251271d5068f528522d12ad1a8a3c5836fb0c684fa87d71525ef857321d16a2c",
+      "bytes": 23768
+    },
+    {
+      "file": "20261107_bf_polarization_questions_and_answers_verbatim.md",
+      "messages": 12,
+      "exact_message_text_verified": true,
+      "sha256": "08fe84e388c035e4aaad6b6d437326d42fd044a4bf87d8ce4f496c507d13efaa",
+      "bytes": 21627
+    }
+  ],
+  "original_attachment_bytes_verified": true
+}
